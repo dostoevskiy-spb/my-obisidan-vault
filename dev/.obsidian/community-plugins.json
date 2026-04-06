@@ -1,3 +1,12 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "templater-obsidian",
+  "obsidian-tasks-plugin",
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "obsidian-kanban",
+  "obsidian-icon-folder",
+  "terminal",
+  "calendar",
+  "omnisearch"
 ]

@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Добро пожаловать.md",
+                "file": "10 Projects/Бадян/настройка.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Добро пожаловать"
-            }
-          },
-          {
-            "id": "9b1d8f1433129a50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Без названия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "настройка"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Без названия.md",
+                "file": "10 Projects/Бадян/настройка.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Без названия"
+              "title": "Обратные ссылки для настройка"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Без названия.md",
+                "file": "10 Projects/Бадян/настройка.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Без названия"
+              "title": "Исходящие ссылки из настройка"
             }
           },
           {
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Без названия.md",
+                "file": "10 Projects/Бадян/настройка.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Без названия"
+              "title": "Структура настройка"
             }
           },
           {
@@ -188,6 +173,16 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "aefdf2cfe7ae37d9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -206,26 +201,51 @@
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
       "bases:Создать новую базу": false,
-      "fileorganizer2000:Note Companion": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "terminal:Open terminal": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "ec99bf5a295c5877",
+  "active": "670f40bf513c7953",
   "lastOpenFiles": [
+    "Templates/Project.md",
+    "Templates/Literature.md",
+    "Templates/Daily Note.md",
+    "10 Projects/Бадян/BOOTSTRAP-draft.md",
+    "2026-04-06.md",
+    "Daily/2026-04-06.md",
+    "01 Inbox/Добро пожаловать.md",
+    "01 Inbox/Без названия.md",
     "Добро пожаловать.md",
-    "Без названия.md",
-    "_NoteCompanion/Templates/flash_cards.md",
-    "_NoteCompanion/Templates/enhance.md",
-    "_NoteCompanion/Templates/youtube_video.md",
+    "00 HUB/MOC Index.md",
     "_NoteCompanion/Templates/research_paper.md",
-    "_NoteCompanion/Templates/meeting_note.md",
-    "Recordings",
-    "_NoteCompanion/Backups",
-    "_NoteCompanion/Templates",
-    "_NoteCompanion/Logs",
-    "_NoteCompanion/Processed/Attachments",
-    "_NoteCompanion/Processed",
-    "_NoteCompanion/Inbox",
-    "_NoteCompanion"
+    "00 HUB/Dashboard.md",
+    "10 Projects/Бадян/эксперименты.md",
+    "Без названия.md",
+    "10 Projects/Бадян/эксперименты.md.tmp.3193039.1775501117500",
+    "10 Projects/Бадян/настройка.md",
+    "10 Projects/Бадян/настройка.md.tmp.3193039.1775501112756",
+    "10 Projects/Бадян/BOOTSTRAP-draft.md.tmp.3193039.1775501102436",
+    "10 Projects/Бадян/HEARTBEAT-draft.md",
+    "10 Projects/Бадян/HEARTBEAT-draft.md.tmp.3193039.1775501097286",
+    "10 Projects/Бадян/TOOLS-draft.md",
+    "10 Projects/Бадян/TOOLS-draft.md.tmp.3193039.1775501092140",
+    "10 Projects/Бадян/AGENTS-draft.md",
+    "10 Projects/Бадян/AGENTS-draft.md.tmp.3193039.1775501085338",
+    "10 Projects/Бадян/USER-draft.md",
+    "10 Projects/Бадян/USER-draft.md.tmp.3193039.1775501076636",
+    "10 Projects/Бадян/IDENTITY-draft.md",
+    "10 Projects/Бадян/IDENTITY-draft.md.tmp.3193039.1775501073447",
+    "10 Projects/Бадян/SOUL-draft.md",
+    "10 Projects/Бадян/SOUL-draft.md.tmp.3193039.1775501071725",
+    "CLAUDE.md",
+    "CLAUDE.md.tmp.3193039.1775501047991",
+    "70 Alerts/triggers.md",
+    "70 Alerts/Dashboard.md",
+    "60 Kill-List/someday.md",
+    "60 Kill-List/this-week.md"
   ]
 }
