@@ -181,13 +181,13 @@
             }
           },
           {
-            "id": "330d7d6599c8857c",
+            "id": "e7bcd3d8125c9323",
             "type": "leaf",
             "state": {
-              "type": "fo2k.assistant.sidebar2",
+              "type": "git-view",
               "state": {},
-              "icon": "sparkle",
-              "title": "Note Companion"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -206,10 +206,11 @@
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
       "bases:Создать новую базу": false,
-      "fileorganizer2000:Note Companion": false
+      "fileorganizer2000:Note Companion": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "330d7d6599c8857c",
+  "active": "ec99bf5a295c5877",
   "lastOpenFiles": [
     "Добро пожаловать.md",
     "Без названия.md",
