@@ -3,5 +3,8 @@
     "allow": [
       "WebFetch(domain:docs.openclaw.ai)"
     ]
+  },
+  "enabledPlugins": {
+    "obsidian@obsidian-skills": true
   }
 }

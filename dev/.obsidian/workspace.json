@@ -126,7 +126,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ Claude Code"
+              "title": "Terminal: ✳ Set up data flow pipeline for Obsidian notes aggregation"
             }
           },
           {
@@ -154,12 +154,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Inbox/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Без названия"
+              "title": "Исходящие ссылки"
             }
           },
           {
@@ -176,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 908.5
+    "width": 1281.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,10 +194,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "670f40bf513c7953",
+  "active": "31dce199e115bcee",
   "lastOpenFiles": [
-    "01 Inbox/Добро пожаловать.md",
+    "Daily/2026-04-07.md",
     "01 Inbox/Без названия.md",
+    "01 Inbox/Добро пожаловать.md",
     "10 Projects/Бадян/настройка.md",
     "Templates/Project.md",
     "Templates/Literature.md",
@@ -231,7 +231,6 @@
     "CLAUDE.md.tmp.3193039.1775501047991",
     "70 Alerts/triggers.md",
     "70 Alerts/Dashboard.md",
-    "60 Kill-List/someday.md",
-    "60 Kill-List/this-week.md"
+    "60 Kill-List/someday.md"
   ]
 }
