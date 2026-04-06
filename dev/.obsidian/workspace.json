@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Projects/Бадян/настройка.md",
+                "file": "01 Inbox/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "настройка"
+              "title": "Без названия"
             }
           }
         ]
@@ -89,6 +89,47 @@
         "type": "tabs",
         "children": [
           {
+            "id": "31dce199e115bcee",
+            "type": "leaf",
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/home/pavel/dev/obsidian/dev",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "--login"
+                    ],
+                    "executable": "/bin/zsh",
+                    "followTheme": true,
+                    "name": "claude",
+                    "platforms": {
+                      "darwin": false,
+                      "linux": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": false
+                  },
+                  "serial": null
+                }
+              },
+              "icon": "terminal",
+              "title": "Terminal: ✳ Claude Code"
+            }
+          },
+          {
             "id": "ff1b33a7e223b4b3",
             "type": "leaf",
             "state": {
@@ -113,60 +154,16 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10 Projects/Бадян/настройка.md",
+                "file": "01 Inbox/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из настройка"
+              "title": "Исходящие ссылки из Без названия"
             }
           },
           {
-            "id": "adebf7ec59259a75",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Теги"
-            }
-          },
-          {
-            "id": "9b15e18bbb1e82e9",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "Все свойства"
-            }
-          },
-          {
-            "id": "ec99bf5a295c5877",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "10 Projects/Бадян/настройка.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Структура настройка"
-            }
-          },
-          {
-            "id": "e7bcd3d8125c9323",
+            "id": "839b6ffc05bb56e6",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -174,19 +171,8 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "aefdf2cfe7ae37d9",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -211,14 +197,15 @@
   },
   "active": "670f40bf513c7953",
   "lastOpenFiles": [
+    "01 Inbox/Добро пожаловать.md",
+    "01 Inbox/Без названия.md",
+    "10 Projects/Бадян/настройка.md",
     "Templates/Project.md",
     "Templates/Literature.md",
     "Templates/Daily Note.md",
     "10 Projects/Бадян/BOOTSTRAP-draft.md",
     "2026-04-06.md",
     "Daily/2026-04-06.md",
-    "01 Inbox/Добро пожаловать.md",
-    "01 Inbox/Без названия.md",
     "Добро пожаловать.md",
     "00 HUB/MOC Index.md",
     "_NoteCompanion/Templates/research_paper.md",
@@ -226,7 +213,6 @@
     "10 Projects/Бадян/эксперименты.md",
     "Без названия.md",
     "10 Projects/Бадян/эксперименты.md.tmp.3193039.1775501117500",
-    "10 Projects/Бадян/настройка.md",
     "10 Projects/Бадян/настройка.md.tmp.3193039.1775501112756",
     "10 Projects/Бадян/BOOTSTRAP-draft.md.tmp.3193039.1775501102436",
     "10 Projects/Бадян/HEARTBEAT-draft.md",
