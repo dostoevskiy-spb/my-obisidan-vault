@@ -126,7 +126,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠐ obsidian-project-data-pipeline"
+              "title": "Terminal: ✳ obsidian-project-data-pipeline"
             }
           },
           {
@@ -196,6 +196,8 @@
   },
   "active": "31dce199e115bcee",
   "lastOpenFiles": [
+    "scripts/collect-sessions.sh",
+    "scripts/collect-sessions.sh.tmp.3795967.1775558880299",
     "40 Archive/sessions",
     "01 Inbox/sessions/raw",
     "01 Inbox/sessions",
@@ -223,8 +225,6 @@
     "10 Projects/Бадян/эксперименты.md",
     "Без названия.md",
     "10 Projects/Бадян/эксперименты.md.tmp.3193039.1775501117500",
-    "10 Projects/Бадян/настройка.md.tmp.3193039.1775501112756",
-    "10 Projects/Бадян/BOOTSTRAP-draft.md.tmp.3193039.1775501102436",
     "10 Projects/Бадян/HEARTBEAT-draft.md",
     "10 Projects/Бадян/AGENTS-draft.md",
     "10 Projects/Бадян/USER-draft.md",
