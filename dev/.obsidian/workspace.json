@@ -174,7 +174,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠂ obsidian-project-data-pipeline"
+              "title": "Terminal: ✳ obsidian-project-data-pipeline"
             }
           }
         ],
@@ -203,6 +203,7 @@
   },
   "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "01 Inbox/autonomous-dev-ai-factory.md",
     "01 Inbox/second-brain-research.md",
     "40 Archive/claude-memory/omnicom-crm-v2",
     "40 Archive/claude-memory/obsidian",
@@ -237,7 +238,6 @@
     "40 Archive/sessions/bringo--2026-04-04_00-56_api-client-portal.md",
     "40 Archive/sessions/bringo--plan--2026-04-04_01-24_client-portal-plan.md",
     "40 Archive/sessions/bringo--2026-04-06_01-13_update-superpowers.md",
-    "40 Archive/sessions/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md",
-    "01 Inbox/bringo--2026-04-05--api-webhooks.md"
+    "40 Archive/sessions/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md"
   ]
 }
