@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "647afc1d5c6ba05b",
+        "id": "ff67a2c2cb01663a",
         "type": "tabs",
         "children": [
           {
-            "id": "670f40bf513c7953",
+            "id": "f2c8ba9f0e99b974",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "bringo--2026-04-05--api-epic-audit"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -92,41 +88,10 @@
             "id": "31dce199e115bcee",
             "type": "leaf",
             "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "/home/pavel/dev/obsidian/dev",
-                  "focus": false,
-                  "profile": {
-                    "args": [
-                      "--login"
-                    ],
-                    "executable": "/bin/zsh",
-                    "followTheme": true,
-                    "name": "claude",
-                    "platforms": {
-                      "darwin": false,
-                      "linux": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": false
-                  },
-                  "serial": null
-                }
-              },
-              "icon": "terminal",
-              "title": "Terminal: ✳ obsidian-project-data-pipeline"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           },
           {
@@ -135,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10 Projects/Бадян/настройка.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +109,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для настройка"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -170,8 +134,47 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "fdcb48f260bbb4a4",
+            "type": "leaf",
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/home/pavel/dev/obsidian/dev",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/sh",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "linux": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "icon": "terminal",
+              "title": "Terminal: ✳ obsidian-project-data-pipeline"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -194,8 +197,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "31dce199e115bcee",
+  "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-04-07 15.31.42.excalidraw.md",
+    "Excalidraw",
+    "01 Inbox/Untitled Kanban.md",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564957401",
     "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564951444",
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md",
@@ -211,8 +217,6 @@
     "10 Projects/Bringo/api/adr.md",
     "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564770386",
     "10 Projects/Bringo/bringo.md",
-    "10 Projects/Bringo/bringo.md.tmp.3795967.1775564768057",
-    "10 Projects/Bringo/front",
     "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
     "00 HUB/Dashboard.md",
     "01 Inbox/bringo--2026-04-04--api-client-portal.md",
@@ -230,7 +234,6 @@
     "01 Inbox/bringo--2026-04-05--api-webhooks.md",
     "01 Inbox/bringo--2026-04-04--client-portal-plan.md",
     "01 Inbox/bringo--2026-04-05--api-role-tests.md",
-    "01 Inbox/bringo--2026-04-04--filament-jobs-monitor.md",
-    "01 Inbox/bringo--2026-04-04--api-request-details-table.md"
+    "01 Inbox/bringo--2026-04-04--filament-jobs-monitor.md"
   ]
 }
