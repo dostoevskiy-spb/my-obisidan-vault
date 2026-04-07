@@ -5,7 +5,7 @@ source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/plans/2026
 session_date: 2026-04-04
 tags: [session-plan, raw, bringo]
 created: 2026-04-07
-status: unprocessed
+status: processed
 ---
 
 # План: Клиентский портал API — роли, invite, ЛК, логи, финансы
