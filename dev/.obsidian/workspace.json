@@ -174,7 +174,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠐ obsidian-project-data-pipeline"
+              "title": "Terminal: ✳ obsidian-project-data-pipeline"
             }
           }
         ],
@@ -203,6 +203,11 @@
   },
   "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "40 Archive/claude-memory/omnicom-crm-v2",
+    "40 Archive/claude-memory/obsidian",
+    "40 Archive/claude-memory/bringo-backend",
+    "40 Archive/claude-memory/bringo",
+    "40 Archive/claude-memory",
     "Daily/2026-04-07.md.tmp.1888948.1775576165874",
     "Daily/2026-04-07.md",
     "Daily/2026-04-06.md",
@@ -216,14 +221,9 @@
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md.tmp.3795967.1775564932264",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564887517",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md",
-    "Templates/Session Log.md.tmp.3795967.1775564827957",
-    "CLAUDE.md.tmp.3795967.1775564818156",
     "00 HUB/Claude Code Analytics.md",
-    "00 HUB/Claude Code Analytics.md.tmp.3795967.1775564806402",
     "Templates/ADR.md",
-    "Templates/ADR.md.tmp.3795967.1775564772636",
     "10 Projects/Bringo/api/adr.md",
-    "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564770386",
     "10 Projects/Bringo/bringo.md",
     "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
     "01 Inbox/bringo--2026-04-04--api-client-portal.md",
