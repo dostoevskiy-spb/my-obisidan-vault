@@ -174,7 +174,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ obsidian-project-data-pipeline"
+              "title": "Terminal: ⠂ obsidian-project-data-pipeline"
             }
           }
         ],
@@ -203,6 +203,7 @@
   },
   "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "01 Inbox/second-brain-research.md",
     "40 Archive/claude-memory/omnicom-crm-v2",
     "40 Archive/claude-memory/obsidian",
     "40 Archive/claude-memory/bringo-backend",
@@ -219,7 +220,6 @@
     "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564951444",
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md",
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md.tmp.3795967.1775564932264",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564887517",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md",
     "00 HUB/Claude Code Analytics.md",
     "Templates/ADR.md",
