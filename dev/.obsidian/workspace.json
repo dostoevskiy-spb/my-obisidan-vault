@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 HUB/Dashboard.md",
+                "file": "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dashboard"
+              "title": "bringo--2026-04-05--api-epic-audit"
             }
           }
         ]
@@ -196,6 +196,27 @@
   },
   "active": "31dce199e115bcee",
   "lastOpenFiles": [
+    "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564957401",
+    "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564951444",
+    "10 Projects/Bringo/api/api--2026-04-05--webhooks.md",
+    "10 Projects/Bringo/api/api--2026-04-05--webhooks.md.tmp.3795967.1775564932264",
+    "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564887517",
+    "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md",
+    "Templates/Session Log.md.tmp.3795967.1775564827957",
+    "CLAUDE.md.tmp.3795967.1775564818156",
+    "00 HUB/Claude Code Analytics.md",
+    "00 HUB/Claude Code Analytics.md.tmp.3795967.1775564806402",
+    "Templates/ADR.md",
+    "Templates/ADR.md.tmp.3795967.1775564772636",
+    "10 Projects/Bringo/api/adr.md",
+    "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564770386",
+    "10 Projects/Bringo/bringo.md",
+    "10 Projects/Bringo/bringo.md.tmp.3795967.1775564768057",
+    "10 Projects/Bringo/front",
+    "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
+    "00 HUB/Dashboard.md",
+    "01 Inbox/bringo--2026-04-04--api-client-portal.md",
+    "01 Inbox/bringo--2026-04-06--update-superpowers.md",
     "40 Archive/sessions/bringo--2026-04-05_00-52_api-webhooks.md",
     "40 Archive/sessions/bringo--2026-04-04_21-34_filament-jobs-monitor.md",
     "40 Archive/sessions/bringo--2026-04-05_15-32_api-epic-audit.md",
@@ -203,34 +224,13 @@
     "40 Archive/sessions/bringo--2026-04-04_21-17_api-request-details-table.md",
     "40 Archive/sessions/bringo--2026-04-05_13-03_api-code-review.md",
     "40 Archive/sessions/bringo--2026-04-04_00-56_api-client-portal.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_15-32_api-epic-audit.md.tmp.3795967.1775561378503",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775561377800",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_13-06_api-role-tests.md.tmp.3795967.1775561377659",
-    "01 Inbox/sessions/raw/bringo--2026-04-04_21-34_filament-jobs-monitor.md.tmp.3795967.1775561377306",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_13-03_api-code-review.md.tmp.3795967.1775561377262",
     "40 Archive/sessions/bringo--plan--2026-04-04_01-24_client-portal-plan.md",
     "40 Archive/sessions/bringo--2026-04-06_01-13_update-superpowers.md",
     "40 Archive/sessions/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-04_00-56_api-client-portal.md.tmp.3795967.1775561375462",
-    "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
-    "01 Inbox/bringo--2026-04-05--api-epic-audit.md.tmp.3795967.1775561372283",
     "01 Inbox/bringo--2026-04-05--api-webhooks.md",
-    "01 Inbox/bringo--2026-04-05--api-webhooks.md.tmp.3795967.1775561370625",
-    "01 Inbox/sessions/raw/bringo--plan--2026-04-04_01-24_client-portal-plan.md.tmp.3795967.1775561369200",
-    "01 Inbox/sessions/raw/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md.tmp.3795967.1775561367695",
     "01 Inbox/bringo--2026-04-04--client-portal-plan.md",
     "01 Inbox/bringo--2026-04-05--api-role-tests.md",
     "01 Inbox/bringo--2026-04-04--filament-jobs-monitor.md",
-    "01 Inbox/bringo--2026-04-06--update-superpowers.md",
-    "01 Inbox/bringo--2026-04-04--api-request-details-table.md",
-    "01 Inbox/bringo--2026-04-05--api-code-review.md",
-    "01 Inbox/bringo--2026-04-06--e2e-full-lifecycle-test.md",
-    "01 Inbox/bringo--2026-04-04--api-client-portal.md",
-    "01 Inbox/sessions/raw/bringo--plan--2026-04-04_01-24_client-portal-plan.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_15-32_api-epic-audit.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_13-06_api-role-tests.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-05_13-03_api-code-review.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-06_01-13_update-superpowers.md"
+    "01 Inbox/bringo--2026-04-04--api-request-details-table.md"
   ]
 }
