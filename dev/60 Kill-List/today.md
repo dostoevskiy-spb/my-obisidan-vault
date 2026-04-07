@@ -12,3 +12,5 @@ updated: 2026-04-06
 
 ## Завершено сегодня
 
+
+- [x] Настроить marketplace skills (vault-tools, session-log, dev-tools) и OpenClaw workspace Бадяна ⏫ 📅 2026-04-07
