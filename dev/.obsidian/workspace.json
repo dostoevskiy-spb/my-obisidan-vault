@@ -104,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2026-04-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для 2026-04-07"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -123,12 +122,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2026-04-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из 2026-04-07"
+              "title": "Исходящие ссылки"
             }
           },
           {
@@ -176,7 +174,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ obsidian-project-data-pipeline"
+              "title": "Terminal: ⠐ obsidian-project-data-pipeline"
             }
           }
         ],
@@ -203,8 +201,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "f2c8ba9f0e99b974",
+  "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "Daily/2026-04-07.md.tmp.1888948.1775576165874",
+    "Daily/2026-04-07.md",
     "Daily/2026-04-06.md",
     "00 HUB/Dashboard.md",
     "Excalidraw/Drawing 2026-04-07 15.31.42.excalidraw.md",
@@ -238,8 +238,6 @@
     "40 Archive/sessions/bringo--plan--2026-04-04_01-24_client-portal-plan.md",
     "40 Archive/sessions/bringo--2026-04-06_01-13_update-superpowers.md",
     "40 Archive/sessions/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md",
-    "01 Inbox/bringo--2026-04-05--api-webhooks.md",
-    "01 Inbox/bringo--2026-04-04--client-portal-plan.md",
-    "01 Inbox/bringo--2026-04-05--api-role-tests.md"
+    "01 Inbox/bringo--2026-04-05--api-webhooks.md"
   ]
 }
