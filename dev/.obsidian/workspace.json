@@ -203,6 +203,9 @@
   },
   "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "30 Resources/Digests/digest-preferences.md",
+    "Templates/daily-digest-template.md",
+    "30 Resources/Digests",
     "01 Inbox/autonomous-dev-ai-factory.md",
     "01 Inbox/second-brain-research.md",
     "40 Archive/claude-memory/omnicom-crm-v2",
@@ -220,7 +223,6 @@
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md.tmp.3795967.1775564957401",
     "10 Projects/Bringo/api/adr.md.tmp.3795967.1775564951444",
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md",
-    "10 Projects/Bringo/api/api--2026-04-05--webhooks.md.tmp.3795967.1775564932264",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md",
     "00 HUB/Claude Code Analytics.md",
     "Templates/ADR.md",
@@ -236,8 +238,6 @@
     "40 Archive/sessions/bringo--2026-04-04_21-17_api-request-details-table.md",
     "40 Archive/sessions/bringo--2026-04-05_13-03_api-code-review.md",
     "40 Archive/sessions/bringo--2026-04-04_00-56_api-client-portal.md",
-    "40 Archive/sessions/bringo--plan--2026-04-04_01-24_client-portal-plan.md",
-    "40 Archive/sessions/bringo--2026-04-06_01-13_update-superpowers.md",
-    "40 Archive/sessions/bringo--2026-04-06_00-21_e2e-full-lifecycle-test.md"
+    "40 Archive/sessions/bringo--plan--2026-04-04_01-24_client-portal-plan.md"
   ]
 }
