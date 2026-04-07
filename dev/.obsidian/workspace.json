@@ -196,6 +196,11 @@
   },
   "active": "31dce199e115bcee",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.3795967.1775560447218",
+    "70 Alerts/triggers.md.tmp.3795967.1775560441694",
+    "00 HUB/Dashboard.md.tmp.3795967.1775560436394",
+    "Templates/Session Log.md",
+    "Templates/Session Log.md.tmp.3795967.1775560421154",
     "scripts/collect-sessions.sh",
     "scripts/collect-sessions.sh.tmp.3795967.1775558880299",
     "40 Archive/sessions",
@@ -204,10 +209,7 @@
     "scripts",
     "CLAUDE.md",
     "10 Projects/CRM",
-    "10 Projects/BCU",
     "10 Projects/Бадян/TOOLS-draft.md",
-    "20 Areas/Семья",
-    "20 Areas/Машина",
     "Daily/2026-04-07.md",
     "01 Inbox/Без названия.md",
     "01 Inbox/Добро пожаловать.md",
@@ -224,13 +226,11 @@
     "00 HUB/Dashboard.md",
     "10 Projects/Бадян/эксперименты.md",
     "Без названия.md",
-    "10 Projects/Бадян/эксперименты.md.tmp.3193039.1775501117500",
     "10 Projects/Бадян/HEARTBEAT-draft.md",
     "10 Projects/Бадян/AGENTS-draft.md",
     "10 Projects/Бадян/USER-draft.md",
     "10 Projects/Бадян/IDENTITY-draft.md",
     "10 Projects/Бадян/SOUL-draft.md",
-    "70 Alerts/triggers.md",
-    "70 Alerts/Dashboard.md"
+    "70 Alerts/triggers.md"
   ]
 }

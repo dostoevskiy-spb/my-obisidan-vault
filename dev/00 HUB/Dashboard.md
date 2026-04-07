@@ -38,6 +38,24 @@ SORT file.mtime DESC
 LIMIT 10
 ```
 
+## Недавние сессии разработки
+
+```dataview
+TABLE project, session_date
+FROM "01 Inbox"
+WHERE type = "session-log"
+SORT session_date DESC
+LIMIT 10
+```
+
+## Необработанные логи
+
+```dataview
+LIST
+FROM "01 Inbox/sessions/raw"
+WHERE status = "unprocessed"
+```
+
 ## Сейчас читаю
 
 ```dataview

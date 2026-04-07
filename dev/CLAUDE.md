@@ -38,6 +38,9 @@
 - **moc**: tags содержит [moc]
 - **kill-list**: horizon (today/week/someday)
 - **triggers**: правила для автоматизации
+- **session-log**: project, source, session_date — обработанные саммари сессий
+- **session-log-raw**: project, source, session_date, status (unprocessed/processed) — сырые логи из проектов
+- **session-plan-raw**: project, source, status — планы из проектов
 
 Все заметки: `type`, `tags[]`, `created` (YYYY-MM-DD).
 
