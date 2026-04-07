@@ -53,3 +53,7 @@ created: 2026-04-07
 ## Связи
 - [[Bringo]]
 - [[bringo|10 Projects/Bringo/bringo]]
+
+
+### Кросс-проектный контекст
+- [ai-workspace](https://github.com/lee-to/ai-workspace) — Rust CLI + MCP-сервер. Группировка проектов → общий пул файлов/заметок → AI-агент видит всё через MCP. Решает проблему «слепоты» агента при работе с микросервисами/монорепо. SQLite, .ai-workspace.json в git. Полезно для Bringo (api+backend+front в одной группе).
