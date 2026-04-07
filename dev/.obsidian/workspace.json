@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "00 HUB/Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "Dashboard"
             }
           }
         ]
@@ -126,7 +126,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ obsidian-project-data-pipeline"
+              "title": "Terminal: ⠐ obsidian-project-data-pipeline"
             }
           },
           {
@@ -196,6 +196,8 @@
   },
   "active": "31dce199e115bcee",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.3795967.1775560794404",
+    "00 HUB/Dashboard.md",
     "CLAUDE.md.tmp.3795967.1775560447218",
     "70 Alerts/triggers.md.tmp.3795967.1775560441694",
     "00 HUB/Dashboard.md.tmp.3795967.1775560436394",
@@ -208,7 +210,6 @@
     "01 Inbox/sessions",
     "scripts",
     "CLAUDE.md",
-    "10 Projects/CRM",
     "10 Projects/Бадян/TOOLS-draft.md",
     "Daily/2026-04-07.md",
     "01 Inbox/Без названия.md",
@@ -223,7 +224,6 @@
     "Добро пожаловать.md",
     "00 HUB/MOC Index.md",
     "_NoteCompanion/Templates/research_paper.md",
-    "00 HUB/Dashboard.md",
     "10 Projects/Бадян/эксперименты.md",
     "Без названия.md",
     "10 Projects/Бадян/HEARTBEAT-draft.md",
