@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Read(//tmp/openclaw/**)"
+      "Read(//tmp/openclaw/**)",
+      "Bash(journalctl --user -u openclaw-gateway --since \"5 min ago\" --no-pager)",
+      "Bash(journalctl --user -u openclaw-gateway --since \"2 min ago\" --no-pager)",
+      "Bash(journalctl --user -u openclaw-gateway --since \"1 min ago\" --no-pager)",
+      "Bash(journalctl --user -u openclaw-gateway --since \"3 min ago\" --no-pager)"
     ]
   }
 }
