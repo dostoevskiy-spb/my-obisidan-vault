@@ -176,7 +176,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: sh"
+              "title": "Terminal: ⠴ obsidian"
             }
           },
           {
@@ -271,7 +271,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -294,8 +294,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "f2c8ba9f0e99b974",
+  "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "10 Projects/AZT/azt.md.tmp.123226.1776025807425",
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776025792864",
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776025762208",
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md",
     "01 Inbox/AZT — Полный аудит 2026-04-12.md",
     "00 HUB/Dashboard.md",
     "00 HUB/MOC Index.md",
@@ -303,7 +307,6 @@
     "01 Inbox/Без названия.md",
     "01 Inbox/autonomous-dev-ai-factory.md",
     "01 Inbox/second-brain-research.md",
-    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776025208704",
     "10 Projects/AZT/azt.md",
     "10 Projects/AZT/azt.md.tmp.123226.1776025130152",
@@ -319,8 +322,6 @@
     "40 Archive/claude-memory/obsidian",
     "40 Archive/claude-memory/bringo-backend",
     "40 Archive/claude-memory/bringo",
-    "40 Archive/claude-memory",
-    "Daily/2026-04-07.md.tmp.1888948.1775576165874",
     "Daily/2026-04-07.md",
     "Daily/2026-04-06.md",
     "Excalidraw/Drawing 2026-04-07 15.31.42.excalidraw.md",
@@ -330,7 +331,6 @@
     "10 Projects/Bringo/api/adr.md",
     "10 Projects/Bringo/bringo.md",
     "01 Inbox/bringo--2026-04-05--api-epic-audit.md",
-    "01 Inbox/bringo--2026-04-06--update-superpowers.md",
-    "40 Archive/sessions/bringo--2026-04-05_00-52_api-webhooks.md"
+    "01 Inbox/bringo--2026-04-06--update-superpowers.md"
   ]
 }
