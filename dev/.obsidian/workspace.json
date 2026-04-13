@@ -176,7 +176,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠼ obsidian"
+              "title": "Terminal: obsidian"
             }
           },
           {
@@ -267,11 +267,11 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠐ Create AZT project with full audit storage"
+              "title": "Terminal: ✳ Create AZT project with full audit storage"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -294,8 +294,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "5f5d8e15f6e8edb4",
+  "active": "fdcb48f260bbb4a4",
   "lastOpenFiles": [
+    "10 Projects/AZT/azt.md.tmp.123226.1776067592728",
+    "10 Projects/AZT/azt.md.tmp.123226.1776067568503",
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776067560022",
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776067503689",
     "10 Projects/AZT/AZT — Контент-план SEO-GEO 2026 Q2-Q3-codex.md",
     "10 Projects/AZT/AZT — ТЗ для разработчика Bitrix 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
@@ -320,17 +324,13 @@
     "01 Inbox/second-brain-research.md",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776025208704",
     "10 Projects/AZT/azt.md",
-    "10 Projects/AZT/azt.md.tmp.123226.1776025130152",
-    "10 Projects/AZT",
     "01 Inbox/Untitled Kanban.md",
     "01 Inbox/bringo--2026-04-04--api-request-details-table.md",
     "01 Inbox/bringo--2026-04-04--api-client-portal.md",
     "01 Inbox/bringo--2026-04-04--filament-jobs-monitor.md",
     "Templates/daily-digest-template.md",
     "30 Resources/Digests/digest-preferences.md",
-    "30 Resources/Digests",
     "Daily/2026-04-07.md",
-    "Daily/2026-04-06.md",
-    "Excalidraw/Drawing 2026-04-07 15.31.42.excalidraw.md"
+    "Daily/2026-04-06.md"
   ]
 }
