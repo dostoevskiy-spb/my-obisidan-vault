@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md",
+                "file": "10 Projects/AZT/AZT — Полный аудит 2026-04-12-codex.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AZT — Полный аудит 2026-04-12"
+              "title": "AZT — Полный аудит 2026-04-12-codex"
             }
           }
         ]
@@ -176,7 +176,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ⠴ obsidian"
+              "title": "Terminal: obsidian"
             }
           },
           {
@@ -294,8 +294,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "fdcb48f260bbb4a4",
+  "active": "f2c8ba9f0e99b974",
   "lastOpenFiles": [
+    "10 Projects/AZT/AZT — Полный аудит 2026-04-12-codex.md",
     "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens-plan.md",
     "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens-plan.md.tmp.465753.1776035082892",
     "01 Inbox/sessions/raw/bringo--2026-04-09_15-18_api-webhook-relay-research.md",
@@ -330,7 +331,6 @@
     "10 Projects/Bringo/api/api--2026-04-05--webhooks.md",
     "01 Inbox/sessions/raw/bringo--2026-04-05_00-52_api-webhooks.md",
     "Templates/ADR.md",
-    "10 Projects/Bringo/api/adr.md",
-    "10 Projects/Bringo/bringo.md"
+    "10 Projects/Bringo/api/adr.md"
   ]
 }
