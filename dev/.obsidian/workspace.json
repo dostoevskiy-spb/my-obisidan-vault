@@ -292,7 +292,8 @@
               "title": "Terminal: obsidian"
             }
           }
-        ]
+        ],
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -315,16 +316,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "f2c8ba9f0e99b974",
+  "active": "c948db3a8b11f0e2",
   "lastOpenFiles": [
+    "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
+    "10 Projects/AZT/AZT — Итоговый отчёт  2026-04-14.pdf",
+    "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.pdf",
+    "10 Projects/AZT/AZT — ТЗ для разработчика Bitrix 2026-04-13-codex.md",
+    "10 Projects/AZT/AZT — Анализ SEO-плана агентства vs аудит 2026-04-14.md",
     "01 Inbox/Теплица АЗТ Премиум.md",
     "01 Inbox/404.php.md",
-    "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
     "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md",
     "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md.tmp.1263863.1776157288159",
     "10 Projects/AZT/AZT — Контент-план SEO-GEO 2026 Q2-Q3-codex.md",
     "10 Projects/AZT/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — Анализ SEO-плана агентства vs аудит 2026-04-14.md",
     "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md.tmp.999112.1776155829544",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12-codex.md",
@@ -335,7 +339,6 @@
     "01 Inbox/sessions/raw/bringo--2026-04-13_23-54_enterprise-parallel-standard.md.tmp.617259.1776121524019",
     "10 Projects/AZT/AZT — Prioritized backlog 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — Fix plan для разработчика 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — ТЗ для разработчика Bitrix 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — Exec summary для собственника 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — MASTER INDEX 2026-04-13-codex.md",
     "10 Projects/AZT/azt.md.tmp.123226.1776067592728",
@@ -343,15 +346,12 @@
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776067560022",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md.tmp.123226.1776067503689",
     "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens-plan.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens-plan.md.tmp.465753.1776035082892",
     "01 Inbox/sessions/raw/bringo--2026-04-09_15-18_api-webhook-relay-research.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-09_15-18_api-webhook-relay-research.md.tmp.465753.1776035006170",
     "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens.md",
     "01 Inbox/AZT — Полный аудит 2026-04-12.md",
     "00 HUB/Dashboard.md",
     "00 HUB/MOC Index.md",
     "00 HUB/Claude Code Analytics.md",
-    "01 Inbox/Без названия.md",
-    "01 Inbox/autonomous-dev-ai-factory.md"
+    "01 Inbox/Без названия.md"
   ]
 }
