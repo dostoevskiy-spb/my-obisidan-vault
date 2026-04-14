@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Projects/AZT/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
+                "file": "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex"
+              "title": "AZT — Итоговый отчёт для собственника 2026-04-14"
             }
           }
         ]
@@ -104,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Inbox/Без названия.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Без названия"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -123,12 +122,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Inbox/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Без названия"
+              "title": "Исходящие ссылки"
             }
           },
           {
@@ -239,7 +237,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: obsidian"
+              "title": "Terminal: sh"
             }
           },
           {
@@ -281,7 +279,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -304,7 +302,7 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c948db3a8b11f0e2",
+  "active": "5f5d8e15f6e8edb4",
   "lastOpenFiles": [
     "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
     "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md.tmp.1263863.1776157288159",
