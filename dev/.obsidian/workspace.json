@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
+                "file": "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AZT — Итоговый отчёт для собственника 2026-04-14"
+              "title": "AZT — SEO roadmap от агентства (апрель-май 2026)"
             }
           }
         ]
@@ -275,15 +275,14 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ azt-final-owner-report"
+              "title": "Terminal: obsidian"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 1281.5
+    "width": 715.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -302,14 +301,14 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "5f5d8e15f6e8edb4",
+  "active": "31dce199e115bcee",
   "lastOpenFiles": [
+    "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md",
     "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
     "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md.tmp.1263863.1776157288159",
     "10 Projects/AZT/AZT — Контент-план SEO-GEO 2026 Q2-Q3-codex.md",
     "10 Projects/AZT/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — Анализ SEO-плана агентства vs аудит 2026-04-14.md",
-    "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md",
     "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md.tmp.999112.1776155829544",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md",
     "10 Projects/AZT/AZT — Полный аудит 2026-04-12-codex.md",
