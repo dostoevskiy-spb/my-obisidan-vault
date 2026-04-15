@@ -11,14 +11,12 @@
             "id": "f2c8ba9f0e99b974",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md",
-                "mode": "source",
-                "source": false
+                "file": "10 Projects/AZT/AZT — Итоговый отчёт  2026-04-14.pdf"
               },
-              "icon": "lucide-file",
-              "title": "AZT — Сводный план развития проекта 2026-04-15"
+              "icon": "lucide-file-text",
+              "title": "AZT — Итоговый отчёт  2026-04-14"
             }
           }
         ]
@@ -237,7 +235,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "Terminal: ✳ azt-final-owner-report"
+              "title": "Terminal: ⠐ azt-final-owner-report"
             }
           },
           {
@@ -304,17 +302,18 @@
   },
   "active": "5f5d8e15f6e8edb4",
   "lastOpenFiles": [
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-files.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-iblock-20.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-iblock-9.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-ekb-sitemap-files.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-iblock-12.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-ekb-sitemap-iblock-20.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-ekb-sitemap-iblock-9.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-izh-sitemap-files.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-izh-sitemap-iblock-20.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-izh-sitemap-iblock-4.xml",
+    "10 Projects/AZT/sitemaps-2026-04-15/sitemap-ekb-sitemap-iblock-4.xml",
     "10 Projects/AZT/AZT — Baseline Яндекс Вебмастер 2026-04-15.md",
-    "10 Projects/AZT/AZT — Baseline Яндекс Вебмастер 2026-04-15.md.tmp.2976911.1776279312551",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.pdf",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776209097885",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776209084464",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776209020678",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776209007294",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776208962808",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776208945677",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776208869669",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md.tmp.1138868.1776208827106",
     "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md",
     "01 Inbox/Теплица АЗТ Премиум.md",
     "01 Inbox/sessions/raw/bringo--2026-04-13_16-07_openapi-spec-validation.md",
@@ -338,7 +337,6 @@
     "10 Projects/AZT/AZT — Prioritized backlog 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — Fix plan для разработчика 2026-04-13-codex.md",
     "10 Projects/AZT/AZT — Exec summary для собственника 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — MASTER INDEX 2026-04-13-codex.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-09_14-06_enterprise-api-tokens-plan.md"
+    "10 Projects/AZT/AZT — MASTER INDEX 2026-04-13-codex.md"
   ]
 }
