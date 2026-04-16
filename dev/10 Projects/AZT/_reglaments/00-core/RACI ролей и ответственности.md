@@ -1,15 +1,15 @@
 ---
 title: AZT — RACI ролей и ответственности
 date: 2026-04-17
-project: AZT
+project: Digital Growth Framework
 type: RACI
 status: draft
 author: Codex
 postfix: cx
 source_docs:
-  - "AZT — Сквозной флоу управляемой системы роста 2026-04-16-cx"
+  - "Сквозной флоу управляемой системы роста"
 depends_on:
-  - "AZT — Запрос доступов и данных для коллег 2026-04-16-cx"
+  - "Запрос доступов и данных для коллег"
 feeds:
   - "AZT — Карта решений и действий 2026-04-17-cx"
   - "AZT — Журнал изменений и контроля внедрения 2026-04-cx"
