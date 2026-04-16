@@ -5,7 +5,20 @@
       "Bash(journalctl --user -u openclaw-gateway --since \"5 min ago\" --no-pager)",
       "Bash(journalctl --user -u openclaw-gateway --since \"2 min ago\" --no-pager)",
       "Bash(journalctl --user -u openclaw-gateway --since \"1 min ago\" --no-pager)",
-      "Bash(journalctl --user -u openclaw-gateway --since \"3 min ago\" --no-pager)"
+      "Bash(journalctl --user -u openclaw-gateway --since \"3 min ago\" --no-pager)",
+      "Bash(python3 /tmp/md2pdf_azt.py)",
+      "mcp__yandex-metrika__get-counter",
+      "mcp__yandex-metrika__get-counters",
+      "mcp__yandex-metrika__get-goals",
+      "mcp__yandex-metrika__get-traffic-summary",
+      "mcp__yandex-metrika__get-traffic-sources",
+      "mcp__yandex-metrika__get-search-phrases",
+      "mcp__yandex-metrika__get-geography",
+      "mcp__yandex-metrika__get-popular-pages",
+      "mcp__yandex-metrika__get-devices",
+      "mcp__yandex-metrika__get-report",
+      "Bash(awk '{print $9, \"\\(\" $5 \"\\)\"}')",
+      "Bash(sort -k2)"
     ]
   }
 }

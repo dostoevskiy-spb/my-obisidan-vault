@@ -1,0 +1,2 @@
+10[[:space:]]Projects/AZT/_data/**/*.json filter=lfs diff=lfs merge=lfs -text
+10[[:space:]]Projects/AZT/_reports/**/*.pdf filter=lfs diff=lfs merge=lfs -text

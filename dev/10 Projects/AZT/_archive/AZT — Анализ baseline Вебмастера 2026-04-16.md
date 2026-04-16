@@ -2,6 +2,7 @@
 type: project
 tags: [azt, analysis, yandex-webmaster, baseline, insights]
 created: 2026-04-16
+comment: "Промежуточный анализ — итоговая версия: AZT — Итоговый анализ данных Яндекс Вебмастер 2026-04-16"
 ---
 
 # AZT — Анализ baseline Яндекс Вебмастера

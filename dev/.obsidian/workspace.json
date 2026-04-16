@@ -11,14 +11,14 @@
             "id": "f2c8ba9f0e99b974",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md",
-                "mode": "source",
-                "source": false
+                "aFile": "dev/10 Projects/AZT/_archive/AZT — Анализ данных Яндекс Вебмастер 2026-04-16.md",
+                "bFile": "dev/10 Projects/AZT/_archive/AZT — Анализ данных Яндекс Вебмастер 2026-04-16.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16"
+              "icon": "diff",
+              "title": "Diff: AZT — Анализ данных Яндекс Вебмастер 2026-04-16  (Working Tree)"
             }
           }
         ]
@@ -279,7 +279,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -302,43 +302,43 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "5f5d8e15f6e8edb4",
+  "active": "839b6ffc05bb56e6",
   "lastOpenFiles": [
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.3212153.1776322379294",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321616523",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321584969",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321572041",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321558562",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321549913",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321541061",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321495092",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776321459927",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md",
-    "10 Projects/AZT/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.2976911.1776320727797",
-    "30 Resources/Digests/2026-04-16-digest.md",
-    "Daily/2026-04-16.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-15_10-27_client-api-qa.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-15_10-27_client-api-qa.md.tmp.3352148.1776294312930",
-    "10 Projects/AZT/AZT — Анализ запросов и проверка гипотез 2026-04-16.md",
-    "10 Projects/AZT/AZT — Анализ baseline Вебмастера 2026-04-16.md",
-    "10 Projects/AZT/sitemaps-2026-04-15/README.md",
-    "10 Projects/AZT/AZT — Baseline Яндекс Вебмастер 2026-04-15.md",
-    "10 Projects/AZT/AZT — Сводный план развития проекта 2026-04-15.md",
-    "01 Inbox/Теплица АЗТ Премиум.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-13_16-07_openapi-spec-validation.md",
-    "01 Inbox/sessions/raw/bringo--2026-04-13_15-04_subscription-grpc-bug.md",
-    "10 Projects/AZT/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — План развития проекта 2026-04-15.md",
-    "10 Projects/AZT/AZT — План работ по Яндекс Вебмастеру и Яндекс Бизнесу 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — План развития (версия Павел+AI) 2026-04-15.md",
-    "10 Projects/AZT/AZT — Анализ плана агентства по контекстной рекламе 2026-04-15.md",
-    "10 Projects/AZT/AZT — Детализированный план исправления ошибок для разработчика 2026-04-14.md",
-    "10 Projects/AZT/AZT — Итоговый отчёт для собственника 2026-04-14.md",
-    "10 Projects/AZT/AZT — ТЗ для разработчика Bitrix 2026-04-13-codex.md",
-    "10 Projects/AZT/AZT — Анализ SEO-плана агентства vs аудит 2026-04-14.md",
-    "01 Inbox/404.php.md",
-    "10 Projects/AZT/AZT — SEO roadmap от агентства (апрель-май 2026).md",
-    "10 Projects/AZT/AZT — Контент-план SEO-GEO 2026 Q2-Q3-codex.md",
-    "10 Projects/AZT/AZT — Полный аудит 2026-04-12.md"
+    "10 Projects/AZT/AZT — MASTER INDEX 2026-04-13-codex.md.tmp.524912.1776357927267",
+    "10 Projects/AZT/03-dev/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md.tmp.524912.1776357868899",
+    "10 Projects/AZT/_archive/AZT — Exec summary для собственника 2026-04-13-codex.md.tmp.524912.1776357838950",
+    "10 Projects/AZT/_archive/AZT — Prioritized backlog 2026-04-13-codex.md.tmp.524912.1776357837742",
+    "10 Projects/AZT/_archive/AZT — Детализированный план исправления ошибок для разработчика 2026-04-14.md.tmp.524912.1776357834974",
+    "10 Projects/AZT/_archive/AZT — Fix plan для разработчика 2026-04-13-codex.md.tmp.524912.1776357832498",
+    "10 Projects/AZT/_archive/AZT — План развития (версия Павел+AI) 2026-04-15.md.tmp.524912.1776357830420",
+    "10 Projects/AZT/_archive/AZT — План развития проекта 2026-04-15.md.tmp.524912.1776357828233",
+    "10 Projects/AZT/_archive/AZT — Анализ данных Яндекс Вебмастер 2026-04-16.md.tmp.524912.1776357826324",
+    "10 Projects/AZT/_archive/AZT — Анализ baseline Вебмастера 2026-04-16.md.tmp.524912.1776357824485",
+    "10 Projects/AZT/_archive/AZT — Полный аудит 2026-04-12.md.tmp.524912.1776357822350",
+    "10 Projects/AZT/05-agency/AZT — SEO roadmap от агентства (апрель-май 2026).md",
+    "10 Projects/AZT/05-agency/AZT — Анализ плана агентства по контекстной рекламе 2026-04-15.md",
+    "10 Projects/AZT/05-agency/AZT — Анализ SEO-плана агентства vs аудит 2026-04-14.md",
+    "10 Projects/AZT/04-strategy/AZT — План работ по Яндекс Вебмастеру и Яндекс Бизнесу 2026-04-13-codex.md",
+    "10 Projects/AZT/04-strategy/AZT — Контент-план SEO-GEO 2026 Q2-Q3-codex.md",
+    "10 Projects/AZT/04-strategy/AZT — SEO-GEO roadmap 30-60-90 2026-04-13-codex.md",
+    "10 Projects/AZT/03-dev/AZT — ТЗ для разработчика Bitrix 2026-04-13-codex.md",
+    "10 Projects/AZT/03-dev/AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16.md",
+    "10 Projects/AZT/03-dev/AZT — Срочное ТЗ по P0 задачам Bitrix 2026-04-16.md",
+    "10 Projects/AZT/02-owner/AZT — Сводный план развития проекта 2026-04-15.md",
+    "10 Projects/AZT/02-owner/AZT — Итоговый отчёт для собственника 2026-04-14.md",
+    "10 Projects/AZT/02-owner/AZT — Краткий бизнес-отчёт для собственника 2026-04-16.md",
+    "10 Projects/AZT/01-audit/AZT — Анализ запросов и проверка гипотез 2026-04-16.md",
+    "10 Projects/AZT/01-audit/AZT — Итоговый анализ данных Яндекс Вебмастер 2026-04-16.md",
+    "10 Projects/AZT/01-audit/AZT — Полный аудит 2026-04-12-codex.md",
+    "10 Projects/AZT/_archive/AZT — Exec summary для собственника 2026-04-13-codex.md",
+    "10 Projects/AZT/_archive/AZT — Prioritized backlog 2026-04-13-codex.md",
+    "10 Projects/AZT/_archive/AZT — Детализированный план исправления ошибок для разработчика 2026-04-14.md",
+    "10 Projects/AZT/_archive/AZT — Fix plan для разработчика 2026-04-13-codex.md",
+    "10 Projects/AZT/_archive/AZT — План развития (версия Павел+AI) 2026-04-15.md",
+    "10 Projects/AZT/_archive/AZT — План развития проекта 2026-04-15.md",
+    "10 Projects/AZT/_archive/AZT — Анализ данных Яндекс Вебмастер 2026-04-16.md",
+    "10 Projects/AZT/_archive/AZT — Анализ baseline Вебмастера 2026-04-16.md",
+    "10 Projects/AZT/_archive/AZT — Полный аудит 2026-04-12.md",
+    "10 Projects/AZT/_baseline/sitemaps-2026-04-15/README.md"
   ]
 }

@@ -2,6 +2,7 @@
 type: project
 tags: [azt, seo, technical, fix-plan, bitrix]
 created: 2026-04-13
+comment: "Заменён на: AZT — Срочное ТЗ по P0 задачам Bitrix 2026-04-16"
 ---
 
 # AZT — Fix plan для разработчика

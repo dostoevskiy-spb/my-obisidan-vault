@@ -2,6 +2,7 @@
 type: project
 tags: [azt, backlog, project-management, seo, yandex]
 created: 2026-04-13
+comment: "Бэклог пересмотрен — заменён на: AZT — P0 задачи с обоснованием из Вебмастера 2026-04-16"
 ---
 
 # AZT — Prioritized backlog

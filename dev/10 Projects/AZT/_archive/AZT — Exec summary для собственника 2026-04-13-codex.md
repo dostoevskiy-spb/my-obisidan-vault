@@ -2,6 +2,7 @@
 type: project
 tags: [azt, summary, seo, yandex, business]
 created: 2026-04-13
+comment: "Заменён на: AZT — Краткий бизнес-отчёт для собственника 2026-04-16 и AZT — Итоговый отчёт для собственника 2026-04-14"
 ---
 
 # AZT — Exec summary для собственника
