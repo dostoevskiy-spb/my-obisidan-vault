@@ -18,7 +18,9 @@
       "mcp__yandex-metrika__get-devices",
       "mcp__yandex-metrika__get-report",
       "Bash(awk '{print $9, \"\\(\" $5 \"\\)\"}')",
-      "Bash(sort -k2)"
+      "Bash(sort -k2)",
+      "Bash(python3 -c \"import weasyprint; print\\('weasyprint ok'\\)\")",
+      "Bash(python3 -c \"import markdown; print\\('markdown ok'\\)\")"
     ]
   }
 }
