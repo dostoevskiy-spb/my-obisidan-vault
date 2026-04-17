@@ -20,7 +20,10 @@
       "Bash(awk '{print $9, \"\\(\" $5 \"\\)\"}')",
       "Bash(sort -k2)",
       "Bash(python3 -c \"import weasyprint; print\\('weasyprint ok'\\)\")",
-      "Bash(python3 -c \"import markdown; print\\('markdown ok'\\)\")"
+      "Bash(python3 -c \"import markdown; print\\('markdown ok'\\)\")",
+      "Read(//tmp/gdrive-mcp-repo/**)",
+      "Bash(python3 -c \"import json; print\\(json.load\\(open\\('/home/pavel/.claude/gdrive-credentials.json'\\)\\)['access_token']\\)\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

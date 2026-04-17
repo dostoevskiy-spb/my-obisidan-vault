@@ -1,3 +1,5 @@
 .obsidian/workspace.json
 scripts/.collect-state.json
 .mcp.json
+gcp-oauth.keys.json
+.credentials.md

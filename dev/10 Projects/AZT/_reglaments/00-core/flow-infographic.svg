@@ -1,0 +1,440 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1760" font-family="-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f1d1a"/>
+    </marker>
+    <marker id="arrow-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a6741"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b3a2f"/>
+    </marker>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="1400" height="1760" fill="#faf7f2"/>
+
+  <!-- =================== HEADER =================== -->
+  <text x="700" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="#1f1d1a" letter-spacing="0.3">
+    СКВОЗНОЙ ФЛОУ УПРАВЛЯЕМОЙ СИСТЕМЫ РОСТА
+  </text>
+  <text x="700" y="84" text-anchor="middle" font-size="14" fill="#5a564e" letter-spacing="1.2">
+    ОТ ДАННЫХ К ДОКАЗАННОМУ КОММЕРЧЕСКОМУ РЕЗУЛЬТАТУ
+  </text>
+
+  <!-- Главный принцип — цепочка -->
+  <g transform="translate(0,110)" font-size="11" fill="#5a564e" letter-spacing="0.5">
+    <rect x="80" y="0" width="1240" height="46" rx="4" fill="none" stroke="#d6cfc0" stroke-width="1"/>
+    <text x="100" y="19" font-weight="600" fill="#1f1d1a" font-size="10">ГЛАВНЫЙ ПРИНЦИП</text>
+    <text x="100" y="37" font-size="12" fill="#1f1d1a">
+      данные → проверка качества → классификация → сопоставление источников → доказанный вывод → приоритет → решение → действие → внедрение → контроль влияния → следующий цикл
+    </text>
+  </g>
+
+  <!-- Легенда -->
+  <g transform="translate(1090,175)" font-size="10" fill="#5a564e">
+    <rect x="0" y="0" width="230" height="78" rx="4" fill="#f1ece1" stroke="#d6cfc0"/>
+    <text x="12" y="18" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ЛЕГЕНДА</text>
+    <circle cx="22" cy="33" r="6" fill="#2d4a5a"/>
+    <text x="36" y="37">этап флоу</text>
+    <path d="M16,48 L28,42 L28,54 Z" fill="#8b3a2f"/>
+    <text x="36" y="52">QA Gate</text>
+    <rect x="17" y="60" width="12" height="9" fill="#4a6741"/>
+    <text x="36" y="68">выход / артефакт</text>
+    <text x="120" y="37" fill="#7a6f55">— регламент</text>
+    <text x="120" y="52" fill="#a87c3a">— beta / internal</text>
+  </g>
+
+  <!-- =================== SVG — ОСЬ ФЛОУ =================== -->
+  <!-- Центр оси: x=700, ширина станции 680 (360..1040) -->
+
+  <!-- ========== СТАНЦИЯ 1: Данные и baseline ========== -->
+  <g transform="translate(0,200)">
+    <!-- карточка -->
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <!-- номерной круг -->
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">1</text>
+    <!-- заголовок -->
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Данные и baseline</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">зафиксировать исходное состояние до любых выводов</text>
+    <!-- контент -->
+    <g font-size="12" fill="#1f1d1a">
+      <text x="380" y="92">• выгрузки Метрики, Вебмастера, Я.Бизнеса, Директа, Wordstat, CRM</text>
+      <text x="380" y="112">• доступы, RACI, словарь метрик, опросник бизнеса</text>
+      <text x="380" y="132">• журнал ограничений данных, пробелов и источников</text>
+    </g>
+
+    <!-- Регламенты слева -->
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Выгрузка и качество</text>
+      <text x="0" y="34">RACI</text>
+      <text x="0" y="50">Словарь метрик</text>
+      <text x="0" y="66">Опросники</text>
+      <text x="0" y="82">Запрос доступов</text>
+    </g>
+
+    <!-- Выходы справа -->
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">_data, _reports</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">baseline</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">журнал ограничений</text>
+      <rect x="0" y="64" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="74">RACI заполнен</text>
+    </g>
+  </g>
+
+  <!-- GATE 1 -->
+  <g transform="translate(0,375)">
+    <path d="M686,0 L714,14 L686,28 L658,14 Z" fill="#8b3a2f"/>
+    <text x="672" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="#faf7f2">G1</text>
+    <line x1="714" y1="14" x2="1000" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="725" y="11" font-size="11" font-weight="700" fill="#8b3a2f" letter-spacing="0.3">GATE 1 — ДАННЫЕ ПРОВЕРЕНЫ И ПРИГОДНЫ</text>
+    <text x="725" y="25" font-size="10" fill="#5a564e">источники, периоды, счетчики, ошибки API, ограничения</text>
+    <line x1="658" y1="14" x2="400" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="648" y="11" text-anchor="end" font-size="10" fill="#5a564e">без gate: нельзя</text>
+    <text x="648" y="25" text-anchor="end" font-size="10" fill="#5a564e">финальные выводы, P0, бюджет</text>
+    <line x1="700" y1="32" x2="700" y2="52" stroke="#1f1d1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ========== СТАНЦИЯ 2: Первичные анализы ========== -->
+  <g transform="translate(0,438)">
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">2</text>
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Первичные анализы</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">разобрать каждый источник отдельно, без подмены</text>
+    <!-- 5 параллельных пакетов -->
+    <g transform="translate(380,75)" font-size="10" fill="#1f1d1a">
+      <rect x="0" y="0" width="120" height="70" rx="4" fill="#eef1f3" stroke="#2d4a5a" stroke-width="0.8"/>
+      <text x="60" y="16" text-anchor="middle" font-weight="700">техника</text>
+      <text x="60" y="32" text-anchor="middle" font-size="9">Вебмастер</text>
+      <text x="60" y="44" text-anchor="middle" font-size="9">crawl, sitemap</text>
+      <text x="60" y="56" text-anchor="middle" font-size="9">логи сервера</text>
+
+      <rect x="130" y="0" width="120" height="70" rx="4" fill="#eef1f3" stroke="#2d4a5a" stroke-width="0.8"/>
+      <text x="190" y="16" text-anchor="middle" font-weight="700">аналитика</text>
+      <text x="190" y="32" text-anchor="middle" font-size="9">Метрика</text>
+      <text x="190" y="44" text-anchor="middle" font-size="9">цели, UTM</text>
+      <text x="190" y="56" text-anchor="middle" font-size="9">Я.Бизнес</text>
+
+      <rect x="260" y="0" width="120" height="70" rx="4" fill="#eef1f3" stroke="#2d4a5a" stroke-width="0.8"/>
+      <text x="320" y="16" text-anchor="middle" font-weight="700">спрос</text>
+      <text x="320" y="32" text-anchor="middle" font-size="9">Wordstat</text>
+      <text x="320" y="44" text-anchor="middle" font-size="9">SERP</text>
+      <text x="320" y="56" text-anchor="middle" font-size="9">конкуренты</text>
+
+      <rect x="390" y="0" width="120" height="70" rx="4" fill="#eef1f3" stroke="#2d4a5a" stroke-width="0.8"/>
+      <text x="450" y="16" text-anchor="middle" font-weight="700">реклама</text>
+      <text x="450" y="32" text-anchor="middle" font-size="9">Директ</text>
+      <text x="450" y="44" text-anchor="middle" font-size="9">медиаплан</text>
+      <text x="450" y="56" text-anchor="middle" font-size="9">семантика</text>
+
+      <rect x="520" y="0" width="120" height="70" rx="4" fill="#eef1f3" stroke="#2d4a5a" stroke-width="0.8"/>
+      <text x="580" y="16" text-anchor="middle" font-weight="700">UX</text>
+      <text x="580" y="32" text-anchor="middle" font-size="9">Вебвизор</text>
+      <text x="580" y="44" text-anchor="middle" font-size="9">PageSpeed</text>
+      <text x="580" y="56" text-anchor="middle" font-size="9">формы</text>
+    </g>
+
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Метрика+Вебмастер</text>
+      <text x="0" y="34">Я.Бизнес</text>
+      <text x="0" y="50">Wordstat</text>
+      <text x="0" y="66">Директ</text>
+      <text x="0" y="82">Вебвизор</text>
+      <text x="0" y="98">Конкуренты</text>
+    </g>
+
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">анализ по каждому</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">контент-инвентаризация</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">тех.crawl, карта URL</text>
+      <rect x="0" y="64" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="74">факт vs гипотеза</text>
+    </g>
+  </g>
+
+  <!-- GATE 2 -->
+  <g transform="translate(0,613)">
+    <path d="M686,0 L714,14 L686,28 L658,14 Z" fill="#8b3a2f"/>
+    <text x="672" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="#faf7f2">G2</text>
+    <line x1="714" y1="14" x2="1000" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="725" y="11" font-size="11" font-weight="700" fill="#8b3a2f" letter-spacing="0.3">GATE 2 — ИСТОЧНИКИ РАЗОБРАНЫ БЕЗ ПОДМЕНЫ</text>
+    <text x="725" y="25" font-size="10" fill="#5a564e">Wordstat ≠ трафик, Вебвизор ≠ статистика, Я.Бизнес ≠ поведение сайта</text>
+    <line x1="658" y1="14" x2="400" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="648" y="11" text-anchor="end" font-size="10" fill="#5a564e">без gate: нельзя</text>
+    <text x="648" y="25" text-anchor="end" font-size="10" fill="#5a564e">коммерческая модель</text>
+    <line x1="700" y1="32" x2="700" y2="52" stroke="#1f1d1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ========== СТАНЦИЯ 3: Матрица доказательств ========== -->
+  <g transform="translate(0,676)">
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">3</text>
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Сопоставление и доказательная база</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">связи источников → проверяемые выводы → альтернативы отсечены</text>
+    <g font-size="12" fill="#1f1d1a">
+      <text x="380" y="92">• связки: Wordstat → SERP → конкуренты → сайт</text>
+      <text x="380" y="112">• связки: Вебмастер → URL → Метрика → цель; Директ → UTM → посадочная → цель</text>
+      <text x="380" y="132">• каждый сильный вывод имеет источник, статус и альтернативные объяснения</text>
+    </g>
+
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Матрица доказательств</text>
+      <text x="0" y="34">Многоуровневая проверка</text>
+      <text x="0" y="50">Цели и конверсии</text>
+      <text x="0" y="66">Словарь метрик</text>
+    </g>
+
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">матрица доказательств</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">карта спроса</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">карта потерь</text>
+      <rect x="0" y="64" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="74">карта тех.рисков</text>
+    </g>
+  </g>
+
+  <!-- GATE 3 -->
+  <g transform="translate(0,851)">
+    <path d="M686,0 L714,14 L686,28 L658,14 Z" fill="#8b3a2f"/>
+    <text x="672" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="#faf7f2">G3</text>
+    <line x1="714" y1="14" x2="1000" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="725" y="11" font-size="11" font-weight="700" fill="#8b3a2f" letter-spacing="0.3">GATE 3 — МАТРИЦА СОГЛАСОВАНА</text>
+    <text x="725" y="25" font-size="10" fill="#5a564e">сильные выводы имеют источники, статусы, альтернативные объяснения</text>
+    <line x1="658" y1="14" x2="400" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="648" y="11" text-anchor="end" font-size="10" fill="#5a564e">без gate: нельзя</text>
+    <text x="648" y="25" text-anchor="end" font-size="10" fill="#5a564e">документы для бизнеса, ТЗ</text>
+    <line x1="700" y1="32" x2="700" y2="52" stroke="#1f1d1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ========== СТАНЦИЯ 4: Модель и приоритеты ========== -->
+  <g transform="translate(0,914)">
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">4</text>
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Коммерческая модель и приоритеты</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">сайт как платформа, каналы как усилители — связать всё в экономику</text>
+    <g font-size="12" fill="#1f1d1a">
+      <text x="380" y="92">• оценка потенциала по сегментам, P0/P1/P2 через модель приоритизации</text>
+      <text x="380" y="112">• коммерческая модель онлайн-присутствия: каналы, бюджет, роль сайта</text>
+      <text x="380" y="132">• сценарный прогноз 3/6/12 мес — только внутренне (см. блок beta →)</text>
+    </g>
+
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Модель приоритизации</text>
+      <text x="0" y="34">Коммерческая модель</text>
+      <text x="0" y="50">Прогнозирование (beta)</text>
+      <text x="0" y="66">Карта потерь</text>
+    </g>
+
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">приоритеты P0/P1/P2</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">коммерческая модель</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">карта каналов</text>
+      <rect x="0" y="64" width="6" height="12" fill="#a87c3a"/>
+      <text x="12" y="74" fill="#a87c3a">beta-сценарии (внутр.)</text>
+    </g>
+  </g>
+
+  <!-- GATE 4 + Gate 4 internal -->
+  <g transform="translate(0,1089)">
+    <path d="M686,0 L714,14 L686,28 L658,14 Z" fill="#8b3a2f"/>
+    <text x="672" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="#faf7f2">G4</text>
+    <line x1="714" y1="14" x2="1000" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="725" y="11" font-size="11" font-weight="700" fill="#8b3a2f" letter-spacing="0.3">GATE 4 — МОДЕЛЬ ГОТОВА (+ GATE 4 INTERNAL: BETA-ПРОГНОЗ)</text>
+    <text x="725" y="25" font-size="10" fill="#5a564e">модель, RACI, приоритеты; прогнозные цифры и ссылки не в адресные документы</text>
+    <line x1="658" y1="14" x2="400" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="648" y="11" text-anchor="end" font-size="10" fill="#5a564e">без gate: нельзя</text>
+    <text x="648" y="25" text-anchor="end" font-size="10" fill="#5a564e">передача задач в работу</text>
+    <line x1="700" y1="32" x2="700" y2="52" stroke="#1f1d1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ========== СТАНЦИЯ 5: Адресные документы ========== -->
+  <g transform="translate(0,1152)">
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">5</text>
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Адресные документы под исполнителей</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">превратить модель в конкретные действия — без прогнозных цифр</text>
+    <g font-size="12" fill="#1f1d1a">
+      <text x="380" y="92">• отчёт для бизнеса без API-деталей; ТЗ разработчику без риторики</text>
+      <text x="380" y="112">• вопросы агентству со ссылками на факты; SEO-ТЗ только при готовности</text>
+      <text x="380" y="132">• каждая задача имеет A (accountable) и R (responsible) по RACI</text>
+    </g>
+
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Отчёт для бизнеса</text>
+      <text x="0" y="34">ТЗ для разработчика</text>
+      <text x="0" y="50">Вопросы агентству</text>
+      <text x="0" y="66">Финальное ревью</text>
+      <text x="0" y="82">RACI</text>
+    </g>
+
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">отчёт для бизнеса</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">ТЗ разработчику</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">вопросы агентству</text>
+      <rect x="0" y="64" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="74">план цикла</text>
+    </g>
+  </g>
+
+  <!-- GATE 5 -->
+  <g transform="translate(0,1327)">
+    <path d="M686,0 L714,14 L686,28 L658,14 Z" fill="#8b3a2f"/>
+    <text x="672" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="#faf7f2">G5</text>
+    <line x1="714" y1="14" x2="1000" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="725" y="11" font-size="11" font-weight="700" fill="#8b3a2f" letter-spacing="0.3">GATE 5 — ВНЕДРЕНИЕ И КОНТРОЛЬ</text>
+    <text x="725" y="25" font-size="10" fill="#5a564e">изменения зафиксированы, baseline есть, контрольные окна запущены</text>
+    <line x1="658" y1="14" x2="400" y2="14" stroke="#8b3a2f" stroke-width="1"/>
+    <text x="648" y="11" text-anchor="end" font-size="10" fill="#5a564e">без gate: нельзя</text>
+    <text x="648" y="25" text-anchor="end" font-size="10" fill="#5a564e">закрывать задачи по словам</text>
+    <line x1="700" y1="32" x2="700" y2="52" stroke="#1f1d1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ========== СТАНЦИЯ 6: Внедрение и контроль ========== -->
+  <g transform="translate(0,1390)">
+    <rect x="360" y="0" width="680" height="160" rx="10" fill="#ffffff" stroke="#2d4a5a" stroke-width="1.5"/>
+    <circle cx="395" cy="42" r="26" fill="#2d4a5a"/>
+    <text x="395" y="49" text-anchor="middle" font-size="22" font-weight="700" fill="#faf7f2">6</text>
+    <text x="440" y="36" font-size="18" font-weight="700" fill="#1f1d1a">Внедрение и контроль влияния</text>
+    <text x="440" y="55" font-size="11" fill="#5a564e">проверяем цифрами, обновляем матрицу, запускаем следующий цикл</text>
+    <g font-size="12" fill="#1f1d1a">
+      <text x="380" y="92">• журнал изменений, карта решений и действий (DEC → ACT → CHG → IMP)</text>
+      <text x="380" y="112">• контроль через согласованное окно: техн. — сразу, KPI — через окно</text>
+      <text x="380" y="132">• факт против прогноза (внутренне) → обновление матрицы → приоритеты</text>
+    </g>
+
+    <g transform="translate(30,14)" font-size="10" fill="#7a6f55">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">РЕГЛАМЕНТЫ</text>
+      <text x="0" y="18">Наблюдаемость</text>
+      <text x="0" y="34">Учёт времени/решений</text>
+      <text x="0" y="50">QA Gate</text>
+    </g>
+
+    <g transform="translate(1070,14)" font-size="10" fill="#4a6741">
+      <text x="0" y="0" font-weight="700" fill="#1f1d1a" font-size="10" letter-spacing="0.5">ВЫХОДЫ</text>
+      <rect x="0" y="10" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="20">карта влияния</text>
+      <rect x="0" y="28" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="38">обновлённая матрица</text>
+      <rect x="0" y="46" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="56">журнал изменений</text>
+      <rect x="0" y="64" width="6" height="12" fill="#4a6741"/>
+      <text x="12" y="74">факт vs прогноз</text>
+    </g>
+  </g>
+
+  <!-- LOOP back to top -->
+  <g transform="translate(0,1570)">
+    <path d="M700,0 Q700,80 600,80 L170,80 Q70,80 70,-1140 Q70,-1240 170,-1240 L360,-1240"
+          fill="none" stroke="#4a6741" stroke-width="2.2" stroke-dasharray="6,4" marker-end="url(#arrow-loop)"/>
+    <rect x="220" y="50" width="360" height="56" rx="6" fill="#eef1e4" stroke="#4a6741" stroke-width="1.2"/>
+    <text x="400" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#4a6741">СЛЕДУЮЩИЙ ЦИКЛ</text>
+    <text x="400" y="92" text-anchor="middle" font-size="10" fill="#1f1d1a">обновлённая матрица → новые приоритеты → новый baseline</text>
+  </g>
+
+  <!-- ========== БОКОВАЯ ВСТАВКА: BETA-ПРОГНОЗ ========== -->
+  <g transform="translate(1060,914)">
+    <rect x="0" y="0" width="320" height="230" rx="8" fill="#fff8ea" stroke="#a87c3a" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <rect x="0" y="0" width="320" height="26" rx="8" fill="#a87c3a"/>
+    <text x="14" y="18" font-size="11" font-weight="700" fill="#faf7f2" letter-spacing="0.6">BETA · INTERNAL ONLY</text>
+    <text x="14" y="50" font-size="13" font-weight="700" fill="#1f1d1a">Сценарный прогноз</text>
+    <text x="14" y="68" font-size="10" fill="#5a564e">3 / 6 / 12 месяцев</text>
+
+    <text x="14" y="92" font-size="10" fill="#1f1d1a">4 сценария:</text>
+    <text x="14" y="107" font-size="10" fill="#5a564e">базовый · консервативный</text>
+    <text x="14" y="120" font-size="10" fill="#5a564e">рабочий · оптимистичный</text>
+
+    <line x1="14" y1="132" x2="306" y2="132" stroke="#d6cfc0"/>
+
+    <text x="14" y="150" font-size="10" font-weight="700" fill="#8b3a2f">ВЫХОД ИЗ BETA — 5 ЦИКЛОВ</text>
+    <text x="14" y="167" font-size="10" fill="#1f1d1a">• 5 полных сверок факт/прогноз</text>
+    <text x="14" y="182" font-size="10" fill="#1f1d1a">• рабочий сценарий попал 3 из 5</text>
+    <text x="14" y="197" font-size="10" fill="#1f1d1a">• консервативный не пробит снизу</text>
+    <text x="14" y="212" font-size="10" fill="#1f1d1a">• методика стабильна 2 цикла</text>
+  </g>
+
+  <!-- ========== БОКОВАЯ ВСТАВКА: СТОП-КРИТЕРИИ ========== -->
+  <g transform="translate(20,438)">
+    <rect x="0" y="0" width="320" height="398" rx="8" fill="#fff3ef" stroke="#8b3a2f" stroke-width="1.2"/>
+    <rect x="0" y="0" width="320" height="26" rx="8" fill="#8b3a2f"/>
+    <text x="14" y="18" font-size="11" font-weight="700" fill="#faf7f2" letter-spacing="0.6">STOP — НЕ ВЫПУСКАТЬ ВЫВОД</text>
+
+    <g font-size="10" fill="#1f1d1a">
+      <text x="14" y="50">• источник неясен, период не указан</text>
+      <text x="14" y="68">• данные неполные, API-ошибки</text>
+      <text x="14" y="86">• счётчики перепутаны</text>
+      <text x="14" y="104">• цель не классифицирована</text>
+      <text x="14" y="122">• Wordstat = трафик (подмена)</text>
+      <text x="14" y="140">• Вебвизор = статистика (подмена)</text>
+      <text x="14" y="158">• Я.Бизнес смешан с сайтом</text>
+      <text x="14" y="176">• отчёт агентства = факт</text>
+      <text x="14" y="194">• вывод без доказательств</text>
+      <text x="14" y="212">• альтернативы не проверены</text>
+      <text x="14" y="230">• нет следующего действия</text>
+      <text x="14" y="248">• нет критерия проверки</text>
+      <text x="14" y="266" fill="#8b3a2f" font-weight="700">• прогнозные цифры в адресных</text>
+      <text x="14" y="280" fill="#8b3a2f" font-weight="700">  документах до выхода из beta</text>
+    </g>
+
+    <line x1="14" y1="300" x2="306" y2="300" stroke="#d6cfc0"/>
+    <text x="14" y="320" font-size="11" font-weight="700" fill="#1f1d1a" letter-spacing="0.4">ЦЕНТРАЛЬНАЯ РОЛЬ САЙТА</text>
+    <text x="14" y="340" font-size="10" fill="#1f1d1a">Сайт — управляемая платформа</text>
+    <text x="14" y="356" font-size="10" fill="#1f1d1a">онлайн-присутствия.</text>
+    <text x="14" y="374" font-size="10" fill="#5a564e">Директ, SEO, Я.Бизнес, контент,</text>
+    <text x="14" y="388" font-size="10" fill="#5a564e">карточки — усилители сайта,</text>
+  </g>
+
+  <!-- ========== БОКОВАЯ ВСТАВКА: ЭКОНОМИЧЕСКАЯ РАМКА ========== -->
+  <g transform="translate(20,914)">
+    <rect x="0" y="0" width="320" height="160" rx="8" fill="#eff3ec" stroke="#4a6741" stroke-width="1.2"/>
+    <rect x="0" y="0" width="320" height="26" rx="8" fill="#4a6741"/>
+    <text x="14" y="18" font-size="11" font-weight="700" fill="#faf7f2" letter-spacing="0.6">ЭКОНОМИЧЕСКАЯ РАМКА</text>
+
+    <text x="14" y="50" font-size="11" font-weight="700" fill="#1f1d1a">Платный трафик:</text>
+    <text x="14" y="68" font-size="10" fill="#1f1d1a">max целевых лидов / min денег</text>
+    <text x="14" y="86" font-size="9" fill="#5a564e">UTM · цели · посадочные · CPL</text>
+
+    <text x="14" y="112" font-size="11" font-weight="700" fill="#1f1d1a">SEO / GEO / контент:</text>
+    <text x="14" y="130" font-size="10" fill="#1f1d1a">max эффект / min лишних работ</text>
+    <text x="14" y="148" font-size="9" fill="#5a564e">спрос · готовность · воронка</text>
+  </g>
+
+  <!-- ========== ФУТЕР ========== -->
+  <g transform="translate(0,1710)">
+    <line x1="80" y1="0" x2="1320" y2="0" stroke="#d6cfc0"/>
+    <text x="80" y="22" font-size="10" fill="#5a564e">
+      <tspan font-weight="700" fill="#1f1d1a">Главное правило:</tspan> документы — не цель. Цель — управляемая коммерческая система, где каждая задача отвечает на вопрос «как это даёт больше целевых действий через технически готовый сайт».
+    </text>
+    <text x="1320" y="22" text-anchor="end" font-size="9" fill="#7a6f55">AZT · Digital Growth Framework · 2026-04-17</text>
+  </g>
+</svg>
