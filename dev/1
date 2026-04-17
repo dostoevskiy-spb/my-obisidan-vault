@@ -1,2 +1,8 @@
 nohup: ввод игнорируется, вывод добавляется в 'nohup.out'
 nohup: ввод игнорируется, вывод добавляется в 'nohup.out'
+[27654:0418/014842.822016:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 1 times!
+[27654:0418/014842.822016:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 1 times!
+[27654:0418/014842.830491:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 2 times!
+[27654:0418/014842.830491:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 2 times!
+[27654:0418/014842.866810:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 3 times!
+[27654:0418/014842.866810:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 3 times!
