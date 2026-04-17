@@ -25,7 +25,12 @@
       "Bash(python3 -c \"import json; print\\(json.load\\(open\\('/home/pavel/.claude/gdrive-credentials.json'\\)\\)['access_token']\\)\")",
       "Bash(python3 -c ' *)",
       "Bash(curl -s -H 'Authorization: Bearer __TRACKED_VAR__' 'https://www.googleapis.com/drive/v3/files/1xPqmxZ__uql2Ofy0S6TY5AaI73LEjCvWMjtK4QImgeA/export?mimeType=application/vnd.openxmlformats-officedocument.wordprocessingml.document' -o '__TRACKED_VAR__/ТЗ на статьи.docx')",
-      "Bash(curl -s -H 'Authorization: Bearer __TRACKED_VAR__' 'https://www.googleapis.com/drive/v3/files/1xPqmxZ__uql2Ofy0S6TY5AaI73LEjCvWMjtK4QImgeA/export?mimeType=text/plain' -o '__TRACKED_VAR__/ТЗ на статьи.txt')"
+      "Bash(curl -s -H 'Authorization: Bearer __TRACKED_VAR__' 'https://www.googleapis.com/drive/v3/files/1xPqmxZ__uql2Ofy0S6TY5AaI73LEjCvWMjtK4QImgeA/export?mimeType=text/plain' -o '__TRACKED_VAR__/ТЗ на статьи.txt')",
+      "Bash(python3 -c \"import markdownify; print\\('ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python3)",
+      "Bash(pandoc --version)",
+      "Bash(sudo apt-get *)"
     ]
   }
 }
