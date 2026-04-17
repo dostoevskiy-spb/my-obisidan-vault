@@ -33,7 +33,8 @@
       "Bash(sudo apt-get *)",
       "Bash(pandoc --track-changes=all '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/agency-articles-2026-04-17-cx/ТЗ на статьи.docx' -o '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/agency-articles-2026-04-17-cx/ТЗ на статьи.md')",
       "WebFetch(domain:aistudio.yandex.ru)",
-      "WebFetch(domain:yandex.ru)"
+      "WebFetch(domain:yandex.ru)",
+      "Bash(curl -sS -X POST -H 'Authorization: Api-Key AQVN0FGU7zXNyYk82vSvTeLy3Cr-r-IYQZkT0dev' -H 'Content-Type: application/json' -d '{\"phrase\":\"теплица\",\"period\":\"MONTHLY\",\"fromDate\":\"2025-01-01T00:00:00Z\",\"toDate\":\"2026-01-01T00:00:00Z\"}' https://searchapi.api.cloud.yandex.net/v2/wordstat/dynamics)"
     ]
   }
 }
