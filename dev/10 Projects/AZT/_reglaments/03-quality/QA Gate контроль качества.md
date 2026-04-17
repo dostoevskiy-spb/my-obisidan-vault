@@ -1,10 +1,17 @@
 ---
 title: QA Gate контроль качества
 date: 2026-04-17
+updated: 2026-04-17
 project: Digital Growth Framework
 type: регламент
 status: draft
 author: Codex
+source_docs: []
+depends_on: []
+feeds: []
+evidence_status: draft
+decision_ids: []
+action_ids: []
 ---
 
 # QA Gate контроль качества

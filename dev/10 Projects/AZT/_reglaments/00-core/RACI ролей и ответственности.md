@@ -1,6 +1,7 @@
 ---
 title: RACI ролей и ответственности
 date: 2026-04-17
+updated: 2026-04-17
 project: Digital Growth Framework
 type: RACI
 status: draft
