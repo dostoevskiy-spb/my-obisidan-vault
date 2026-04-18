@@ -1,0 +1,18 @@
+{"ts": 1776550901.5497324, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776550947.1121864, "service": "clients", "method": "get", "units": null, "ok": true}
+{"ts": 1776550957.441576, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776550964.3961143, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776550965.1254117, "service": "adgroups", "method": "get", "error": {"request_id": "1245399860697506407", "error_code": 4001, "error_detail": "В структуре SelectionCriteria должен быть указан хотя бы один из параметров: Ids, CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776550965.8684278, "service": "ads", "method": "get", "error": {"request_id": "1835877280924164492", "error_code": 4001, "error_detail": "В структуре SelectionCriteria должен быть указан хотя бы один из параметров: Ids, AdGroupIds, CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776550966.5305345, "service": "keywords", "method": "get", "error": {"request_id": "6322312293574575776", "error_code": 4001, "error_detail": "В структуре SelectionCriteria должен быть указан хотя бы один из параметров: Ids, AdGroupIds, CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776551706.1065218, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776551706.8844388, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776551707.5761065, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776551708.2432485, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776552323.5076888, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776552324.2219565, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776552324.941996, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776552325.6308875, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776552337.348105, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776552419.3016467, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776552458.5023413, "service": "changes", "method": "checkDictionaries", "error": {"request_id": "6301983480824277529", "error_code": 4000, "error_detail": "В параметре Timestamp должна быть указана дата в формате YYYY-MM-DDThh:mm:ssZ", "error_string": "Параметры запроса указаны неверно"}}

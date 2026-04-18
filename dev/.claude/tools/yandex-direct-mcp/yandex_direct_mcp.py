@@ -242,6 +242,36 @@ def _pack(items: list, tag: str, extra: dict | None = None) -> dict:
     }
 
 
+def _wrap_dict(result: dict, tag: str) -> dict:
+    """Для сервисов, где result — dict с несколькими массивами (dictionaries, changes).
+
+    Если ответ большой — пишем в cache/ и возвращаем превью.
+    """
+    raw = json.dumps(result, ensure_ascii=False, default=str)
+    if len(raw) <= LARGE_RESPONSE_CHARS:
+        return {"_units": _units.snapshot(), **result}
+    digest = _hash(result)[:8]
+    fname = CACHE_DIR / f"{tag}_{int(time.time())}_{digest}.json"
+    fname.write_text(raw, encoding="utf-8")
+    preview: dict = {}
+    for k, v in result.items():
+        if isinstance(v, list):
+            preview[f"{k}_count"] = len(v)
+            preview[f"{k}_top3"] = v[:3]
+        elif isinstance(v, dict):
+            preview[k] = {"keys_sample": list(v.keys())[:10]}
+        else:
+            preview[k] = v
+    return {
+        "_units": _units.snapshot(),
+        "cached_to": str(fname),
+        "size_chars": len(raw),
+        "preview": preview,
+        "hint": "Используй read_cached(path, key=<имя_массива>, offset, limit) "
+                "чтобы прочитать конкретный справочник.",
+    }
+
+
 # ─── default field sets (cheap minimums) ────────────────────────────────────
 
 
@@ -787,9 +817,12 @@ def direct_dictionaries_get(names: list[str]) -> dict:
     """Справочники. Доступные names:
     GeoRegions, Currencies, TimeZones, AdCategories, Constants, Interests,
     OperationSystemVersions, ProductivityTargetCategories, SupplySidePlatforms.
+
+    Большие ответы (>15k символов) автоматически кешируются; используй
+    read_cached(path, key='Currencies', offset, limit) для чанков.
     """
     data = _call("dictionaries", "get", {"DictionaryNames": names})
-    return {"_units": _units.snapshot(), **data.get("result", {})}
+    return _wrap_dict(data.get("result", {}), "dictionaries")
 
 
 @mcp.tool()
@@ -1035,15 +1068,25 @@ def _inside_cache(p: pathlib.Path) -> bool:
 
 
 @mcp.tool()
-def read_cached(path: str, offset: int = 0, limit: int = 50) -> dict:
-    """Прочитать закешированный JSON-результат чанком (items/results/slice)."""
+def read_cached(path: str, offset: int = 0, limit: int = 50,
+                key: str | None = None) -> dict:
+    """Прочитать закешированный JSON-результат чанком.
+
+    key: имя массива в JSON (для dictionaries — 'Currencies', 'GeoRegions' и т.п.).
+    Без key — ищет 'results'/'items' автоматически.
+    """
     p = pathlib.Path(path).resolve()
     if not _inside_cache(p):
         raise RuntimeError("Путь вне cache-директории")
     if not p.is_file():
         raise RuntimeError(f"Нет файла: {p}")
     data = json.loads(p.read_text(encoding="utf-8"))
-    items = data.get("results") or data.get("items") or []
+    if key:
+        items = data.get(key, [])
+        if not isinstance(items, list):
+            raise RuntimeError(f"Ключ '{key}' не является массивом")
+    else:
+        items = data.get("results") or data.get("items") or []
     end = offset + limit
     return {
         "slice": items[offset:end],
@@ -1051,6 +1094,7 @@ def read_cached(path: str, offset: int = 0, limit: int = 50) -> dict:
         "returned": len(items[offset:end]),
         "total": len(items),
         "has_more": end < len(items),
+        "available_keys": [k for k, v in data.items() if isinstance(v, list)],
     }
 
 
@@ -1097,10 +1141,22 @@ def find_campaign(query: str) -> dict:
             "total_matches": len(matches)}
 
 
+def _all_campaign_ids() -> list[int]:
+    items = _generic_get("campaigns", "Campaigns", fields=["Id"],
+                         max_results=DEFAULT_MAX_RESULTS)
+    return [c["Id"] for c in items]
+
+
 @mcp.tool()
 def find_adgroup(query: str, campaign_id: int | None = None) -> dict:
-    """Поиск группы объявлений."""
-    selection = {"CampaignIds": [campaign_id]} if campaign_id else {}
+    """Поиск группы объявлений. Без campaign_id сначала подгружаются все кампании."""
+    if campaign_id:
+        selection = {"CampaignIds": [campaign_id]}
+    else:
+        camp_ids = _all_campaign_ids()
+        if not camp_ids:
+            return {"_units": _units.snapshot(), "matches": [], "total_matches": 0}
+        selection = {"CampaignIds": camp_ids}
     items = _generic_get("adgroups", "AdGroups",
                          selection=selection,
                          fields=["Id", "Name", "CampaignId", "Type", "Status"],
@@ -1115,10 +1171,17 @@ def find_adgroup(query: str, campaign_id: int | None = None) -> dict:
 @mcp.tool()
 def find_keyword(query: str, adgroup_id: int | None = None,
                  campaign_id: int | None = None) -> dict:
-    """Поиск ключа по подстроке."""
+    """Поиск ключа. Без фильтров — подгружаются все кампании."""
     selection: dict = {}
-    if adgroup_id: selection["AdGroupIds"] = [adgroup_id]
-    if campaign_id: selection["CampaignIds"] = [campaign_id]
+    if adgroup_id:
+        selection["AdGroupIds"] = [adgroup_id]
+    elif campaign_id:
+        selection["CampaignIds"] = [campaign_id]
+    else:
+        camp_ids = _all_campaign_ids()
+        if not camp_ids:
+            return {"_units": _units.snapshot(), "matches": [], "total_matches": 0}
+        selection["CampaignIds"] = camp_ids
     items = _generic_get("keywords", "Keywords",
                          selection=selection,
                          fields=["Id", "Keyword", "AdGroupId", "CampaignId",
@@ -1142,38 +1205,44 @@ def direct_units_status() -> dict:
 
 @mcp.tool()
 def account_summary(lightweight: bool = True) -> dict:
-    """Быстрая сводка по аккаунту: counts активных сущностей.
+    """Быстрая сводка по аккаунту.
 
-    lightweight=True — только счётчики с FieldNames=['Id'], Limit=1 (LimitedBy даёт total).
-    lightweight=False — ПОЛНАЯ выборка всех объектов (дорого, может быть 100+ units).
+    lightweight=True — только счётчики (campaigns сначала, потом по их ID adgroups/ads/keywords).
+    lightweight=False — возвращает полные списки всех сущностей (дорого).
+
+    Direct API требует фильтры (CampaignIds/AdGroupIds) для adgroups/ads/keywords,
+    поэтому они считаются через preload кампаний.
     """
     summary: dict = {"_units_before": _units.snapshot()}
 
-    def _count(service: str, key: str) -> int:
-        data = _call(service, "get", {
-            "SelectionCriteria": {}, "FieldNames": ["Id"],
-            "Page": {"Limit": 1, "Offset": 0},
-        })
-        total = data.get("result", {}).get("LimitedBy")
-        chunk = data.get("result", {}).get(key, [])
-        return total if total is not None else len(chunk)
+    campaigns = _generic_get("campaigns", "Campaigns",
+                             fields=["Id", "Name", "State", "Status", "Type"],
+                             max_results=DEFAULT_MAX_RESULTS)
+    summary["campaigns_count"] = len(campaigns)
+    if not lightweight:
+        summary["campaigns"] = campaigns
 
-    if lightweight:
-        for service, key in [
-            ("campaigns", "Campaigns"),
-            ("adgroups", "AdGroups"),
-            ("ads", "Ads"),
-            ("keywords", "Keywords"),
-        ]:
-            try:
-                summary[f"{service}_count"] = _count(service, key)
-            except RuntimeError as e:
-                summary[f"{service}_count"] = f"error: {e}"
-    else:
-        summary["campaigns"] = _generic_get("campaigns", "Campaigns",
-                                            fields=DEFAULT_FIELDS["campaigns"])
-        summary["adgroups"] = _generic_get("adgroups", "AdGroups",
-                                           fields=DEFAULT_FIELDS["adgroups"])
+    if not campaigns:
+        summary["_units_after"] = _units.snapshot()
+        return summary
+
+    camp_ids = [c["Id"] for c in campaigns]
+
+    def _count_by_campaigns(service: str, key: str, selection_key: str = "CampaignIds") -> int:
+        items = _generic_get(service, key,
+                             selection={selection_key: camp_ids},
+                             fields=["Id"], max_results=DEFAULT_MAX_RESULTS)
+        return len(items)
+
+    for service, key, sel in [
+        ("adgroups", "AdGroups", "CampaignIds"),
+        ("ads", "Ads", "CampaignIds"),
+        ("keywords", "Keywords", "CampaignIds"),
+    ]:
+        try:
+            summary[f"{service}_count"] = _count_by_campaigns(service, key, sel)
+        except RuntimeError as e:
+            summary[f"{service}_count"] = f"error: {e}"
 
     summary["_units_after"] = _units.snapshot()
     return summary

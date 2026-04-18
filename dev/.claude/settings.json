@@ -46,7 +46,13 @@
       "WebFetch(domain:yard.yandex.ru)",
       "WebFetch(domain:yandex.cloud)",
       "WebFetch(domain:webmaster.yandex.ru)",
-      "WebFetch(domain:timeweb.com)"
+      "WebFetch(domain:timeweb.com)",
+      "mcp__yandex-direct__direct_client_get",
+      "mcp__yandex-direct__direct_campaigns_get",
+      "mcp__yandex-direct__account_summary",
+      "mcp__yandex-direct__direct_dictionaries_get",
+      "mcp__yandex-direct__estimate_cost",
+      "mcp__yandex-direct__direct_audit_changes_since"
     ]
   }
 }
