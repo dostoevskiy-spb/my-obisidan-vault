@@ -41,7 +41,9 @@
       "mcp__yandex-wordstat__read_cached",
       "mcp__yandex-wordstat__find_region",
       "WebFetch(domain:yandex.com)",
-      "WebFetch(domain:tech.yandex.com)"
+      "WebFetch(domain:tech.yandex.com)",
+      "WebFetch(domain:direct.yandex.ru)",
+      "WebFetch(domain:yard.yandex.ru)"
     ]
   }
 }
