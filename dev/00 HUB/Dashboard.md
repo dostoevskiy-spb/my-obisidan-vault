@@ -22,6 +22,31 @@ not done
 sort by priority
 ```
 
+## Задачи на эту неделю
+
+```tasks
+not done
+due before in 7 days
+due after yesterday
+sort by due
+```
+
+## AZT — активные задачи
+
+```tasks
+not done
+description includes AZT
+sort by due
+```
+
+## Просроченные задачи
+
+```tasks
+not done
+due before today
+sort by due
+```
+
 ## Inbox (не разобрано)
 
 ```dataview
