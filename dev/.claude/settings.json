@@ -37,7 +37,8 @@
       "Bash(curl -sS -X POST -H 'Authorization: Api-Key AQVN0FGU7zXNyYk82vSvTeLy3Cr-r-IYQZkT0dev' -H 'Content-Type: application/json' -d '{\"phrase\":\"теплица\",\"period\":\"MONTHLY\",\"fromDate\":\"2025-01-01T00:00:00Z\",\"toDate\":\"2026-01-01T00:00:00Z\"}' https://searchapi.api.cloud.yandex.net/v2/wordstat/dynamics)",
       "mcp__yandex-wordstat__regions_distribution",
       "mcp__yandex-wordstat__dynamics",
-      "mcp__yandex-wordstat__top_requests"
+      "mcp__yandex-wordstat__top_requests",
+      "mcp__yandex-wordstat__read_cached"
     ]
   }
 }
