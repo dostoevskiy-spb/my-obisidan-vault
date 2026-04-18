@@ -136,3 +136,5 @@ nohup: ввод игнорируется, вывод добавляется в '
 [27654:0418/114453.630778:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 4194304 times!
 [27654:0418/115412.957976:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 4259840 times!
 [27654:0418/115412.957976:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 4259840 times!
+[27654:0418/120331.419732:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 4325376 times!
+[27654:0418/120331.419732:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 4325376 times!
