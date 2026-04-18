@@ -43,7 +43,10 @@
       "WebFetch(domain:yandex.com)",
       "WebFetch(domain:tech.yandex.com)",
       "WebFetch(domain:direct.yandex.ru)",
-      "WebFetch(domain:yard.yandex.ru)"
+      "WebFetch(domain:yard.yandex.ru)",
+      "WebFetch(domain:yandex.cloud)",
+      "WebFetch(domain:webmaster.yandex.ru)",
+      "WebFetch(domain:timeweb.com)"
     ]
   }
 }

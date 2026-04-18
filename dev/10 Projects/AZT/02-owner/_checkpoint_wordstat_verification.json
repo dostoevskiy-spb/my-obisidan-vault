@@ -1,0 +1,3343 @@
+{
+  "total": 417,
+  "processed": 0,
+  "phrases": [
+    {
+      "row": 5,
+      "group": "Главная",
+      "phrase": "купить теплицу",
+      "w_base": 284266.0,
+      "w_exact_raw": "8886.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 6,
+      "group": "Главная",
+      "phrase": "теплицы в перми",
+      "w_base": 2595.0,
+      "w_exact_raw": "148.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 7,
+      "group": "Главная",
+      "phrase": "теплицы в екатеринбурге",
+      "w_base": 1252.0,
+      "w_exact_raw": "126.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 8,
+      "group": "Главная",
+      "phrase": "теплицы в тюмени",
+      "w_base": 875.0,
+      "w_exact_raw": "84.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 9,
+      "group": "Главная",
+      "phrase": "теплицы в ижевске",
+      "w_base": 654.0,
+      "w_exact_raw": "77.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 10,
+      "group": "Главная",
+      "phrase": "теплицы от производителя",
+      "w_base": 30615.0,
+      "w_exact_raw": "226.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 11,
+      "group": "Главная",
+      "phrase": "теплицы под ключ в перми",
+      "w_base": 7.0,
+      "w_exact_raw": "3.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 12,
+      "group": "Главная",
+      "phrase": "теплицы с установкой в перми",
+      "w_base": 5.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 13,
+      "group": "Главная",
+      "phrase": "купить теплицу в перми",
+      "w_base": 1703.0,
+      "w_exact_raw": "434.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 14,
+      "group": "Главная",
+      "phrase": "готовые теплицы из поликарбоната купить",
+      "w_base": 131.0,
+      "w_exact_raw": "58.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 15,
+      "group": "Главная",
+      "phrase": "завод теплиц",
+      "w_base": 24215.0,
+      "w_exact_raw": "1929.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 16,
+      "group": "Главная",
+      "phrase": "теплицу купить",
+      "w_base": 284266.0,
+      "w_exact_raw": "8886.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 17,
+      "group": "Главная",
+      "phrase": "завод теплиц в перми",
+      "w_base": 18.0,
+      "w_exact_raw": "9.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 18,
+      "group": "Главная",
+      "phrase": "заказать теплицу в перми",
+      "w_base": 9.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 19,
+      "group": "Главная",
+      "phrase": "купить теплицу в перми недорого от производителя",
+      "w_base": 153.0,
+      "w_exact_raw": "41.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 20,
+      "group": "Главная",
+      "phrase": "купить теплицу из поликарбоната в перми",
+      "w_base": 347.0,
+      "w_exact_raw": "148.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 21,
+      "group": "Главная",
+      "phrase": "купить теплицу из поликарбоната недорого",
+      "w_base": 8167.0,
+      "w_exact_raw": "99.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 22,
+      "group": "Главная",
+      "phrase": "продажа теплиц",
+      "w_base": 7326.0,
+      "w_exact_raw": "76.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 23,
+      "group": "Главная",
+      "phrase": "сколько стоит теплица из поликарбоната",
+      "w_base": 1543.0,
+      "w_exact_raw": "129.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 24,
+      "group": "Главная",
+      "phrase": "теплица из поликарбоната",
+      "w_base": 144969.0,
+      "w_exact_raw": "4630.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 25,
+      "group": "Главная",
+      "phrase": "теплица под ключ",
+      "w_base": 2952.0,
+      "w_exact_raw": "202.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 26,
+      "group": "Главная",
+      "phrase": "теплица цена в пермском крае",
+      "w_base": 36.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 27,
+      "group": "Главная",
+      "phrase": "где можно купить теплицу из поликарбоната недорого",
+      "w_base": 231.0,
+      "w_exact_raw": "75.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 28,
+      "group": "Главная",
+      "phrase": "заказ теплицы из поликарбоната",
+      "w_base": 95.0,
+      "w_exact_raw": "11.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 30,
+      "group": "Главная",
+      "phrase": "купить теплицу цена",
+      "w_base": 517.0,
+      "w_exact_raw": "15.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 32,
+      "group": "Главная",
+      "phrase": "стоимость теплицы из поликарбоната цена",
+      "w_base": 3.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 34,
+      "group": "Главная",
+      "phrase": "теплица под ключ тюмень",
+      "w_base": 41.0,
+      "w_exact_raw": "2.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 35,
+      "group": "Главная",
+      "phrase": "теплица под ключ екб",
+      "w_base": 63.0,
+      "w_exact_raw": "4.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 36,
+      "group": "Главная",
+      "phrase": "теплица под ключ ижевск",
+      "w_base": 24.0,
+      "w_exact_raw": "2.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 37,
+      "group": "Главная",
+      "phrase": "теплица под ключ пермь",
+      "w_base": 47.0,
+      "w_exact_raw": "2.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 38,
+      "group": "Главная",
+      "phrase": "теплица под ключ купить пермь",
+      "w_base": 19.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 39,
+      "group": "Главная",
+      "phrase": "теплица под ключ под ключ пермь",
+      "w_base": 63.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 40,
+      "group": "Главная",
+      "phrase": "теплица заказать пермь",
+      "w_base": 35072.0,
+      "w_exact_raw": "51.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 41,
+      "group": "Главная",
+      "phrase": "теплица стоимость пермь",
+      "w_base": 968.0,
+      "w_exact_raw": "34.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 42,
+      "group": "Главная",
+      "phrase": "теплица цена пермский край",
+      "w_base": 6156.0,
+      "w_exact_raw": "768.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 43,
+      "group": "Главная",
+      "phrase": "производители теплиц",
+      "w_base": 1403.0,
+      "w_exact_raw": "16.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 44,
+      "group": "Главная",
+      "phrase": "стоимость теплицы из поликарбоната",
+      "w_base": 943.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/"
+    },
+    {
+      "row": 45,
+      "group": "парник",
+      "phrase": "купить парники в перми",
+      "w_base": 133.0,
+      "w_exact_raw": "26.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 46,
+      "group": "парник",
+      "phrase": "купить парники в ижевске",
+      "w_base": 50.0,
+      "w_exact_raw": "7.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 47,
+      "group": "парник",
+      "phrase": "купить парники в екатеринбурге",
+      "w_base": 167.0,
+      "w_exact_raw": "20.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 48,
+      "group": "парник",
+      "phrase": "купить парники в тюмени",
+      "w_base": 53.0,
+      "w_exact_raw": "20.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 49,
+      "group": "парник",
+      "phrase": "парник купить",
+      "w_base": 30664.0,
+      "w_exact_raw": "1803.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 50,
+      "group": "парник",
+      "phrase": "парник из поликарбоната купить",
+      "w_base": 108.0,
+      "w_exact_raw": "2.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 51,
+      "group": "парник",
+      "phrase": "парник из поликарбоната цена",
+      "w_base": 56.0,
+      "w_exact_raw": "25.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 52,
+      "group": "парник",
+      "phrase": "парник из поликарбоната с доставкой",
+      "w_base": 46.0,
+      "w_exact_raw": "25.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 53,
+      "group": "парник",
+      "phrase": "парник из поликарбоната заказать",
+      "w_base": 182.0,
+      "w_exact_raw": "17.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 54,
+      "group": "парник",
+      "phrase": "парник из поликарбоната стоимость",
+      "w_base": 18.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/"
+    },
+    {
+      "row": 55,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянная теплица под ключ",
+      "w_base": 24.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 56,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло купить",
+      "w_base": 29.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 57,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла под ключ",
+      "w_base": 73.0,
+      "w_exact_raw": "14.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 58,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло цена",
+      "w_base": 620.0,
+      "w_exact_raw": "193.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 59,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла стоимость",
+      "w_base": 15.0,
+      "w_exact_raw": "5.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 60,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянная теплица цена",
+      "w_base": 19.0,
+      "w_exact_raw": "6.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 61,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла купить",
+      "w_base": 239.0,
+      "w_exact_raw": "11.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 62,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянная теплица стоимость",
+      "w_base": 26.0,
+      "w_exact_raw": "2.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 63,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло от производителя",
+      "w_base": 4820.0,
+      "w_exact_raw": "952.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 64,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла цена",
+      "w_base": 11.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 65,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянные парники и теплицы",
+      "w_base": 270.0,
+      "w_exact_raw": "54.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 66,
+      "group": "стеклянная теплица",
+      "phrase": "теплицы стеклянные",
+      "w_base": 1153.0,
+      "w_exact_raw": "428.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 67,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло стоимость",
+      "w_base": 5.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 68,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянная теплица от производителя",
+      "w_base": 0.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 69,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянная теплица купить",
+      "w_base": 1.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 70,
+      "group": "стеклянная теплица",
+      "phrase": "теплица с доставкой стеклянная",
+      "w_base": 7.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 71,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло с доставкой",
+      "w_base": 3.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 72,
+      "group": "стеклянная теплица",
+      "phrase": "теплица с установкой стеклянная",
+      "w_base": 5.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 73,
+      "group": "стеклянная теплица",
+      "phrase": "стеклянные теплицы купить пермь",
+      "w_base": 7.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 74,
+      "group": "стеклянная теплица",
+      "phrase": "теплица под стекло заказать",
+      "w_base": 1.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 75,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла с доставкой",
+      "w_base": 12331.0,
+      "w_exact_raw": "2165.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 76,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла заказать",
+      "w_base": 95.0,
+      "w_exact_raw": "76.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 77,
+      "group": "стеклянная теплица",
+      "phrase": "теплица из стекла купить в перми",
+      "w_base": 3738.0,
+      "w_exact_raw": "659.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/steklyannye/"
+    },
+    {
+      "row": 78,
+      "group": "теплицы капля",
+      "phrase": "капелька теплица",
+      "w_base": 255.0,
+      "w_exact_raw": "112.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 79,
+      "group": "теплицы капля",
+      "phrase": "теплица капелька купить в перми",
+      "w_base": 35.0,
+      "w_exact_raw": "30.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 80,
+      "group": "теплицы капля",
+      "phrase": "теплицы капля",
+      "w_base": 640.0,
+      "w_exact_raw": "141.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 81,
+      "group": "теплицы капля",
+      "phrase": "теплица капля из поликарбоната купить",
+      "w_base": 4198.0,
+      "w_exact_raw": "457.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 82,
+      "group": "теплицы капля",
+      "phrase": "теплица каплевидная из поликарбоната размеры и цены",
+      "w_base": 2914.0,
+      "w_exact_raw": "254.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 83,
+      "group": "теплицы капля",
+      "phrase": "теплица капля из поликарбоната",
+      "w_base": 368.0,
+      "w_exact_raw": "36.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 84,
+      "group": "теплицы капля",
+      "phrase": "теплица каплевидная",
+      "w_base": 967.0,
+      "w_exact_raw": "116.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 85,
+      "group": "теплицы капля",
+      "phrase": "купить теплицу капельку",
+      "w_base": 135.0,
+      "w_exact_raw": "76.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 86,
+      "group": "теплицы капля",
+      "phrase": "теплица капелька размеры",
+      "w_base": 741.0,
+      "w_exact_raw": "80.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 87,
+      "group": "теплицы капля",
+      "phrase": "теплица из поликарбоната каплевидная",
+      "w_base": 48.0,
+      "w_exact_raw": "45.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 88,
+      "group": "теплицы капля",
+      "phrase": "теплица капля фото",
+      "w_base": 191.0,
+      "w_exact_raw": "7.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 89,
+      "group": "теплицы капля",
+      "phrase": "теплица капля купить",
+      "w_base": 1938.0,
+      "w_exact_raw": "117.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 90,
+      "group": "теплицы капля",
+      "phrase": "теплица капля из поликарбоната размеры и цены",
+      "w_base": 116.0,
+      "w_exact_raw": "50.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 91,
+      "group": "теплицы капля",
+      "phrase": "каплевидные теплицы цена",
+      "w_base": 1.0,
+      "w_exact_raw": "1.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 92,
+      "group": "теплицы капля",
+      "phrase": "теплицы капелька из поликарбоната",
+      "w_base": 59.0,
+      "w_exact_raw": "12.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 93,
+      "group": "теплицы капля",
+      "phrase": "парник капля из поликарбоната",
+      "w_base": 172.0,
+      "w_exact_raw": "37.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 94,
+      "group": "теплицы капля",
+      "phrase": "теплица капелька усиленная купить в перми",
+      "w_base": 869.0,
+      "w_exact_raw": "121.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 95,
+      "group": "теплицы капля",
+      "phrase": "теплица каплевидной формы",
+      "w_base": 49.0,
+      "w_exact_raw": "23.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 96,
+      "group": "теплицы капля",
+      "phrase": "теплица из поликарбоната купить каплевидная",
+      "w_base": 792.0,
+      "w_exact_raw": "187.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 97,
+      "group": "теплицы капля",
+      "phrase": "купить теплицу каплевидную",
+      "w_base": 53.0,
+      "w_exact_raw": "37.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 98,
+      "group": "теплицы капля",
+      "phrase": "теплица в форме капли",
+      "w_base": 10223.0,
+      "w_exact_raw": "1694.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 99,
+      "group": "теплицы капля",
+      "phrase": "парник капелька",
+      "w_base": 35.0,
+      "w_exact_raw": "30.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 100,
+      "group": "теплицы капля",
+      "phrase": "теплицы капелька из поликарбоната цены и размеры",
+      "w_base": 61.0,
+      "w_exact_raw": "3.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/kaplevidnye/"
+    },
+    {
+      "row": 101,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница",
+      "w_base": 94.0,
+      "w_exact_raw": "11.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 102,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница купить в перми",
+      "w_base": 80.0,
+      "w_exact_raw": "35.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 103,
+      "group": "парник хлебница",
+      "phrase": "парники хлебницы пермь",
+      "w_base": 25.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 104,
+      "group": "парник хлебница",
+      "phrase": "теплица парник хлебница",
+      "w_base": 45.0,
+      "w_exact_raw": "11.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 105,
+      "group": "парник хлебница",
+      "phrase": "парник для огурцов хлебница",
+      "w_base": 377.0,
+      "w_exact_raw": "39.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 106,
+      "group": "парник хлебница",
+      "phrase": "парник типа хлебница",
+      "w_base": 128.0,
+      "w_exact_raw": "49.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 107,
+      "group": "парник хлебница",
+      "phrase": "сколько стоит парник хлебница",
+      "w_base": 49.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 108,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница цена",
+      "w_base": 0.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 109,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница фото",
+      "w_base": 133.0,
+      "w_exact_raw": "94.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 110,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница цена фото из поликарбоната",
+      "w_base": 6400.0,
+      "w_exact_raw": "1131.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 111,
+      "group": "парник хлебница",
+      "phrase": "парник хлебница из поликарбоната купить в перми недорого от производителя",
+      "w_base": 2317.0,
+      "w_exact_raw": "260.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-khlebnitsa/"
+    },
+    {
+      "row": 112,
+      "group": "теплицы 3 на 6",
+      "phrase": "стоимость теплицы 3х6 из поликарбоната цена без установки",
+      "w_base": 258.0,
+      "w_exact_raw": "188.0",
+      "url": "нет"
+    },
+    {
+      "row": 113,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица из поликарбоната 6х3",
+      "w_base": 242.0,
+      "w_exact_raw": "130.0",
+      "url": "нет"
+    },
+    {
+      "row": 114,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица 3х6 поликарбонат цена",
+      "w_base": 1104.0,
+      "w_exact_raw": "224.0",
+      "url": "нет"
+    },
+    {
+      "row": 115,
+      "group": "теплицы 3 на 6",
+      "phrase": "сколько стоит теплица 6 на 3 из поликарбоната цена",
+      "w_base": 2245.0,
+      "w_exact_raw": "673.0",
+      "url": "нет"
+    },
+    {
+      "row": 116,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу 3 на 6 из поликарбоната цена",
+      "w_base": 3802.0,
+      "w_exact_raw": "134.0",
+      "url": "нет"
+    },
+    {
+      "row": 117,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица 3 на 6 из поликарбоната цена",
+      "w_base": 3165.0,
+      "w_exact_raw": "459.0",
+      "url": "нет"
+    },
+    {
+      "row": 118,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица из поликарбоната 6х3 цена",
+      "w_base": 14066.0,
+      "w_exact_raw": "429.0",
+      "url": "нет"
+    },
+    {
+      "row": 119,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица поликарбонат 3х6 купить",
+      "w_base": 638.0,
+      "w_exact_raw": "77.0",
+      "url": "нет"
+    },
+    {
+      "row": 120,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу из поликарбоната 3х6",
+      "w_base": 85.0,
+      "w_exact_raw": "40.0",
+      "url": "нет"
+    },
+    {
+      "row": 121,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплицы 3 на 6",
+      "w_base": 85.0,
+      "w_exact_raw": "60.0",
+      "url": "нет"
+    },
+    {
+      "row": 122,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу 3 на 6 из поликарбоната",
+      "w_base": 2727.0,
+      "w_exact_raw": "202.0",
+      "url": "нет"
+    },
+    {
+      "row": 123,
+      "group": "теплицы 3 на 6",
+      "phrase": "парник из поликарбоната купить 6х3",
+      "w_base": 195.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 124,
+      "group": "теплицы 3 на 6",
+      "phrase": "сколько стоит парник из поликарбоната 3 на 6 метров цена",
+      "w_base": 944.0,
+      "w_exact_raw": "70.0",
+      "url": "нет"
+    },
+    {
+      "row": 125,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица купить 3 на 6",
+      "w_base": 406.0,
+      "w_exact_raw": "66.0",
+      "url": "нет"
+    },
+    {
+      "row": 126,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу из поликарбоната 3х6 недорого",
+      "w_base": 1292.0,
+      "w_exact_raw": "23.0",
+      "url": "нет"
+    },
+    {
+      "row": 127,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу 3 6 из поликарбоната",
+      "w_base": 136.0,
+      "w_exact_raw": "39.0",
+      "url": "нет"
+    },
+    {
+      "row": 128,
+      "group": "теплицы 3 на 6",
+      "phrase": "парник из поликарбоната 6х3",
+      "w_base": 7101.0,
+      "w_exact_raw": "269.0",
+      "url": "нет"
+    },
+    {
+      "row": 129,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплицы из поликарбоната 3х6 цена",
+      "w_base": 1845.0,
+      "w_exact_raw": "93.0",
+      "url": "нет"
+    },
+    {
+      "row": 130,
+      "group": "теплицы 3 на 6",
+      "phrase": "парник 6 на 3 из поликарбоната цена",
+      "w_base": 243.0,
+      "w_exact_raw": "5.0",
+      "url": "нет"
+    },
+    {
+      "row": 131,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплицы из поликарбоната 3х6",
+      "w_base": 512.0,
+      "w_exact_raw": "18.0",
+      "url": "нет"
+    },
+    {
+      "row": 132,
+      "group": "теплицы 3 на 6",
+      "phrase": "цена теплицы 3 на 6",
+      "w_base": 372.0,
+      "w_exact_raw": "42.0",
+      "url": "нет"
+    },
+    {
+      "row": 133,
+      "group": "теплицы 3 на 6",
+      "phrase": "купить теплицу 3х6 м",
+      "w_base": 183.0,
+      "w_exact_raw": "81.0",
+      "url": "нет"
+    },
+    {
+      "row": 134,
+      "group": "теплицы 3 на 6",
+      "phrase": "стоимость теплицы из поликарбоната 3х6",
+      "w_base": 179.0,
+      "w_exact_raw": "110.0",
+      "url": "нет"
+    },
+    {
+      "row": 135,
+      "group": "теплицы 3 на 6",
+      "phrase": "сколько стоит теплица из поликарбоната 3 на 6",
+      "w_base": 452.0,
+      "w_exact_raw": "104.0",
+      "url": "нет"
+    },
+    {
+      "row": 136,
+      "group": "теплицы 3 на 6",
+      "phrase": "парник из поликарбоната 6х3 цена",
+      "w_base": 1872.0,
+      "w_exact_raw": "7.0",
+      "url": "нет"
+    },
+    {
+      "row": 137,
+      "group": "теплицы 3 на 6",
+      "phrase": "цена теплицы из поликарбоната 6 на 3 метра",
+      "w_base": 258.0,
+      "w_exact_raw": "26.0",
+      "url": "нет"
+    },
+    {
+      "row": 138,
+      "group": "теплицы 3 на 6",
+      "phrase": "стоимость теплицы 3х6 из поликарбоната цена",
+      "w_base": 9.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 139,
+      "group": "теплицы 3 на 6",
+      "phrase": "теплица 3 на 6 метров",
+      "w_base": 794.0,
+      "w_exact_raw": "140.0",
+      "url": "нет"
+    },
+    {
+      "row": 140,
+      "group": "арочные теплицы",
+      "phrase": "размеры арочных теплиц",
+      "w_base": 128.0,
+      "w_exact_raw": "5.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 141,
+      "group": "арочные теплицы",
+      "phrase": "теплицы арочные пермь",
+      "w_base": 40.0,
+      "w_exact_raw": "11.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 142,
+      "group": "арочные теплицы",
+      "phrase": "арочные теплицы из поликарбоната",
+      "w_base": 47.0,
+      "w_exact_raw": "3.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 143,
+      "group": "арочные теплицы",
+      "phrase": "цена арочной теплицы",
+      "w_base": 7160.0,
+      "w_exact_raw": "243.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 144,
+      "group": "арочные теплицы",
+      "phrase": "арочные теплицы с двойной дугой",
+      "w_base": 602.0,
+      "w_exact_raw": "38.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 145,
+      "group": "арочные теплицы",
+      "phrase": "размеры арочных теплиц из поликарбоната",
+      "w_base": 5306.0,
+      "w_exact_raw": "579.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 146,
+      "group": "арочные теплицы",
+      "phrase": "теплицы арочные",
+      "w_base": 7189.0,
+      "w_exact_raw": "238.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 147,
+      "group": "арочные теплицы",
+      "phrase": "арочная теплица купить",
+      "w_base": 1053.0,
+      "w_exact_raw": "178.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/arochnye/"
+    },
+    {
+      "row": 148,
+      "group": "теплицы 3 4",
+      "phrase": "теплицы из поликарбоната 3х4",
+      "w_base": 245.0,
+      "w_exact_raw": "73.0",
+      "url": "нет"
+    },
+    {
+      "row": 149,
+      "group": "теплицы 3 4",
+      "phrase": "теплицы 4 на 3",
+      "w_base": 312.0,
+      "w_exact_raw": "53.0",
+      "url": "нет"
+    },
+    {
+      "row": 150,
+      "group": "теплицы 3 4",
+      "phrase": "цена теплицы из поликарбоната 3х4",
+      "w_base": 117.0,
+      "w_exact_raw": "77.0",
+      "url": "нет"
+    },
+    {
+      "row": 151,
+      "group": "теплицы 3 4",
+      "phrase": "сколько стоит теплица 3 на 4 из поликарбоната",
+      "w_base": 1998.0,
+      "w_exact_raw": "333.0",
+      "url": "нет"
+    },
+    {
+      "row": 152,
+      "group": "теплицы 3 4",
+      "phrase": "теплица 3 на 4 из поликарбоната цена",
+      "w_base": 662.0,
+      "w_exact_raw": "25.0",
+      "url": "нет"
+    },
+    {
+      "row": 153,
+      "group": "теплицы 3 4",
+      "phrase": "сколько стоит теплица из поликарбоната 4 на 3 цена",
+      "w_base": 11774.0,
+      "w_exact_raw": "165.0",
+      "url": "нет"
+    },
+    {
+      "row": 154,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 3х4 из поликарбоната",
+      "w_base": 209.0,
+      "w_exact_raw": "135.0",
+      "url": "нет"
+    },
+    {
+      "row": 155,
+      "group": "теплицы 3 4",
+      "phrase": "теплица 3 на 4 цена",
+      "w_base": 196.0,
+      "w_exact_raw": "13.0",
+      "url": "нет"
+    },
+    {
+      "row": 156,
+      "group": "теплицы 3 4",
+      "phrase": "теплицы 3 4",
+      "w_base": 924.0,
+      "w_exact_raw": "34.0",
+      "url": "нет"
+    },
+    {
+      "row": 157,
+      "group": "теплицы 3 4",
+      "phrase": "теплицы 3х4 из поликарбоната цена с жестким каркасом",
+      "w_base": 1411.0,
+      "w_exact_raw": "21.0",
+      "url": "нет"
+    },
+    {
+      "row": 158,
+      "group": "теплицы 3 4",
+      "phrase": "теплица из поликарбоната купить 3х4 цена",
+      "w_base": 735.0,
+      "w_exact_raw": "50.0",
+      "url": "нет"
+    },
+    {
+      "row": 159,
+      "group": "теплицы 3 4",
+      "phrase": "теплица из поликарбоната 4 на 3",
+      "w_base": 1628.0,
+      "w_exact_raw": "4.0",
+      "url": "нет"
+    },
+    {
+      "row": 160,
+      "group": "теплицы 3 4",
+      "phrase": "парник 3 4",
+      "w_base": 236.0,
+      "w_exact_raw": "79.0",
+      "url": "нет"
+    },
+    {
+      "row": 161,
+      "group": "теплицы 3 4",
+      "phrase": "парник 4 на 3",
+      "w_base": 1317.0,
+      "w_exact_raw": "44.0",
+      "url": "нет"
+    },
+    {
+      "row": 162,
+      "group": "теплицы 3 4",
+      "phrase": "теплица поликарбонат 3 на 4",
+      "w_base": 1141.0,
+      "w_exact_raw": "61.0",
+      "url": "нет"
+    },
+    {
+      "row": 163,
+      "group": "теплицы 3 4",
+      "phrase": "теплица 3 на 4 из поликарбоната купить",
+      "w_base": 6.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 164,
+      "group": "теплицы 3 4",
+      "phrase": "теплица поликарбонат 3х4 цена",
+      "w_base": 1896.0,
+      "w_exact_raw": "51.0",
+      "url": "нет"
+    },
+    {
+      "row": 165,
+      "group": "теплицы 3 4",
+      "phrase": "теплица 3 на 4 купить",
+      "w_base": 86.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 166,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 4 метра длиной и 3 шириной из поликарбоната",
+      "w_base": 57.0,
+      "w_exact_raw": "22.0",
+      "url": "нет"
+    },
+    {
+      "row": 167,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 3 4",
+      "w_base": 48.0,
+      "w_exact_raw": "35.0",
+      "url": "нет"
+    },
+    {
+      "row": 168,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 3 на 4 метра",
+      "w_base": 429.0,
+      "w_exact_raw": "23.0",
+      "url": "нет"
+    },
+    {
+      "row": 169,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 3 на 4 из поликарбоната цена",
+      "w_base": 3232.0,
+      "w_exact_raw": "130.0",
+      "url": "нет"
+    },
+    {
+      "row": 170,
+      "group": "теплицы 3 4",
+      "phrase": "парник 3 на 4 из поликарбоната цена",
+      "w_base": 26.0,
+      "w_exact_raw": "12.0",
+      "url": "нет"
+    },
+    {
+      "row": 171,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу из поликарбоната 3х4 недорого",
+      "w_base": 191.0,
+      "w_exact_raw": "61.0",
+      "url": "нет"
+    },
+    {
+      "row": 172,
+      "group": "теплицы 3 4",
+      "phrase": "купить теплицу 3х4",
+      "w_base": 5.0,
+      "w_exact_raw": "5.0",
+      "url": "нет"
+    },
+    {
+      "row": 173,
+      "group": "теплицы 3 4",
+      "phrase": "парник из поликарбоната 3х4 цена",
+      "w_base": 65.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 174,
+      "group": "теплицы 3 4",
+      "phrase": "парник из поликарбоната 3х4",
+      "w_base": 18.0,
+      "w_exact_raw": "17.0",
+      "url": "нет"
+    },
+    {
+      "row": 175,
+      "group": "теплица прямостенная",
+      "phrase": "прямостенная теплица производство в перми",
+      "w_base": 15.0,
+      "w_exact_raw": "4.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 176,
+      "group": "теплица прямостенная",
+      "phrase": "теплица с прямыми стенками купить",
+      "w_base": 204.0,
+      "w_exact_raw": "28.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 177,
+      "group": "теплица прямостенная",
+      "phrase": "прямостенная теплица из поликарбоната размеры и цены",
+      "w_base": 1712.0,
+      "w_exact_raw": "188.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 178,
+      "group": "теплица прямостенная",
+      "phrase": "теплица прямостенная в перми",
+      "w_base": 14.0,
+      "w_exact_raw": "9.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 179,
+      "group": "теплица прямостенная",
+      "phrase": "теплица прямостенная размеры",
+      "w_base": 1304.0,
+      "w_exact_raw": "153.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 180,
+      "group": "теплица прямостенная",
+      "phrase": "теплица прямостенная купить",
+      "w_base": 15.0,
+      "w_exact_raw": "13.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 181,
+      "group": "теплица прямостенная",
+      "phrase": "купить теплицу прямостенную из поликарбоната недорого от производителя",
+      "w_base": 107.0,
+      "w_exact_raw": "14.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 182,
+      "group": "теплица прямостенная",
+      "phrase": "прямостенные теплицы из поликарбоната",
+      "w_base": 427.0,
+      "w_exact_raw": "112.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 183,
+      "group": "теплица прямостенная",
+      "phrase": "купить прямостенную теплицу по акции от производителя",
+      "w_base": 41.0,
+      "w_exact_raw": "5.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 184,
+      "group": "теплица прямостенная",
+      "phrase": "парник прямостенный",
+      "w_base": 7140.0,
+      "w_exact_raw": "612.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 185,
+      "group": "теплица прямостенная",
+      "phrase": "теплица прямостенная из поликарбоната купить",
+      "w_base": 1176.0,
+      "w_exact_raw": "305.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 186,
+      "group": "теплица прямостенная",
+      "phrase": "теплица из поликарбоната прямостенная размеры",
+      "w_base": 1932.0,
+      "w_exact_raw": "480.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 187,
+      "group": "теплица прямостенная",
+      "phrase": "теплицы прямостенные",
+      "w_base": 9843.0,
+      "w_exact_raw": "111.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/pryamostennye/"
+    },
+    {
+      "row": 188,
+      "group": "теплица поликарбонат 3х6",
+      "phrase": "теплица из поликарбоната 3х6 усиленная купить",
+      "w_base": 222.0,
+      "w_exact_raw": "109.0",
+      "url": "нет"
+    },
+    {
+      "row": 189,
+      "group": "теплица поликарбонат 3х6",
+      "phrase": "теплица из поликарбоната 6х3 усиленная",
+      "w_base": 20.0,
+      "w_exact_raw": "9.0",
+      "url": "нет"
+    },
+    {
+      "row": 190,
+      "group": "теплица поликарбонат 3х6",
+      "phrase": "теплица поликарбонат 3х6",
+      "w_base": 16.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 191,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплицы фермерские купить",
+      "w_base": 735.0,
+      "w_exact_raw": "198.0",
+      "url": "нет"
+    },
+    {
+      "row": 192,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплица фермерская прямостенная",
+      "w_base": 65.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 193,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "производственная теплица для зимнего выращивания",
+      "w_base": 30.0,
+      "w_exact_raw": "25.0",
+      "url": "нет"
+    },
+    {
+      "row": 194,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплица промышленная купить",
+      "w_base": 10.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 195,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "фермерские и промышленные теплицы",
+      "w_base": 73.0,
+      "w_exact_raw": "15.0",
+      "url": "нет"
+    },
+    {
+      "row": 196,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплица профессиональная фермерская",
+      "w_base": 287.0,
+      "w_exact_raw": "83.0",
+      "url": "нет"
+    },
+    {
+      "row": 197,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "профессиональная теплица для фермера с отоплением цена",
+      "w_base": 109.0,
+      "w_exact_raw": "20.0",
+      "url": "нет"
+    },
+    {
+      "row": 198,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленные теплицы под ключ цена с отоплением",
+      "w_base": 4.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 199,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленная теплица под ключ",
+      "w_base": 744.0,
+      "w_exact_raw": "30.0",
+      "url": "нет"
+    },
+    {
+      "row": 200,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленные теплицы под ключ цена",
+      "w_base": 15.0,
+      "w_exact_raw": "13.0",
+      "url": "нет"
+    },
+    {
+      "row": 201,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплицы промышленные от 200 кв м",
+      "w_base": 10.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 202,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "профессиональные теплицы",
+      "w_base": 247.0,
+      "w_exact_raw": "51.0",
+      "url": "нет"
+    },
+    {
+      "row": 203,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплица 100 кв м цена",
+      "w_base": 37.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 204,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленная теплица из поликарбоната купить",
+      "w_base": 31.0,
+      "w_exact_raw": "15.0",
+      "url": "нет"
+    },
+    {
+      "row": 205,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленные теплицы цена",
+      "w_base": 59.0,
+      "w_exact_raw": "25.0",
+      "url": "нет"
+    },
+    {
+      "row": 206,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленные теплицы из поликарбоната",
+      "w_base": 30.0,
+      "w_exact_raw": "22.0",
+      "url": "нет"
+    },
+    {
+      "row": 207,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "теплицы большие производственные",
+      "w_base": 134.0,
+      "w_exact_raw": "13.0",
+      "url": "нет"
+    },
+    {
+      "row": 208,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленная теплица стоимость",
+      "w_base": 7776.0,
+      "w_exact_raw": "52.0",
+      "url": "нет"
+    },
+    {
+      "row": 209,
+      "group": "фермерские промышленные теплицы",
+      "phrase": "промышленные теплицы купить от производителя",
+      "w_base": 468.0,
+      "w_exact_raw": "27.0",
+      "url": "нет"
+    },
+    {
+      "row": 210,
+      "group": "теплица 2 3",
+      "phrase": "теплица 3х2",
+      "w_base": 261.0,
+      "w_exact_raw": "3.0",
+      "url": "нет"
+    },
+    {
+      "row": 211,
+      "group": "теплица 2 3",
+      "phrase": "теплица 2 3",
+      "w_base": 88.0,
+      "w_exact_raw": "51.0",
+      "url": "нет"
+    },
+    {
+      "row": 212,
+      "group": "теплица 2 3",
+      "phrase": "теплица из поликарбоната 2 3",
+      "w_base": 635.0,
+      "w_exact_raw": "27.0",
+      "url": "нет"
+    },
+    {
+      "row": 213,
+      "group": "теплица 2 3",
+      "phrase": "теплица 2 3 цена",
+      "w_base": 211.0,
+      "w_exact_raw": "28.0",
+      "url": "нет"
+    },
+    {
+      "row": 214,
+      "group": "теплица 2 3",
+      "phrase": "теплица 3 на 2 из поликарбоната цена",
+      "w_base": 157.0,
+      "w_exact_raw": "58.0",
+      "url": "нет"
+    },
+    {
+      "row": 215,
+      "group": "теплица 2 3",
+      "phrase": "парник 2 на 3",
+      "w_base": 16.0,
+      "w_exact_raw": "10.0",
+      "url": "нет"
+    },
+    {
+      "row": 216,
+      "group": "теплица 2 3",
+      "phrase": "теплица 2 3 метра купить",
+      "w_base": 289.0,
+      "w_exact_raw": "26.0",
+      "url": "нет"
+    },
+    {
+      "row": 217,
+      "group": "теплица 2 3",
+      "phrase": "теплица 2х3 из поликарбоната купить",
+      "w_base": 4069.0,
+      "w_exact_raw": "107.0",
+      "url": "нет"
+    },
+    {
+      "row": 218,
+      "group": "теплица 2 3",
+      "phrase": "купить теплицу 2х3 из поликарбоната недорого",
+      "w_base": 248.0,
+      "w_exact_raw": "41.0",
+      "url": "нет"
+    },
+    {
+      "row": 219,
+      "group": "теплица 2 3",
+      "phrase": "теплицы 2 на 3 из поликарбоната",
+      "w_base": 242.0,
+      "w_exact_raw": "12.0",
+      "url": "нет"
+    },
+    {
+      "row": 220,
+      "group": "теплица 2 3",
+      "phrase": "теплицы 3 на 2",
+      "w_base": 138.0,
+      "w_exact_raw": "35.0",
+      "url": "нет"
+    },
+    {
+      "row": 221,
+      "group": "теплица 2 3",
+      "phrase": "теплица из поликарбоната 2х3",
+      "w_base": 22.0,
+      "w_exact_raw": "17.0",
+      "url": "нет"
+    },
+    {
+      "row": 222,
+      "group": "теплица 2 3",
+      "phrase": "теплица 2х3 купить",
+      "w_base": 206.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 223,
+      "group": "теплица 2 3",
+      "phrase": "купить теплицу из поликарбоната 3 на 2",
+      "w_base": 6973.0,
+      "w_exact_raw": "203.0",
+      "url": "нет"
+    },
+    {
+      "row": 224,
+      "group": "теплица 2 3",
+      "phrase": "теплица из поликарбоната 2 на 3 метра купить",
+      "w_base": 624.0,
+      "w_exact_raw": "62.0",
+      "url": "нет"
+    },
+    {
+      "row": 225,
+      "group": "теплица 2 3",
+      "phrase": "купить теплицу 2 3 из поликарбоната",
+      "w_base": 2987.0,
+      "w_exact_raw": "137.0",
+      "url": "нет"
+    },
+    {
+      "row": 226,
+      "group": "прочные теплицы",
+      "phrase": "усиленные теплицы из поликарбоната",
+      "w_base": 5734.0,
+      "w_exact_raw": "156.0",
+      "url": "нет"
+    },
+    {
+      "row": 227,
+      "group": "прочные теплицы",
+      "phrase": "усиленные теплицы из поликарбоната от производителя",
+      "w_base": 447.0,
+      "w_exact_raw": "80.0",
+      "url": "нет"
+    },
+    {
+      "row": 228,
+      "group": "прочные теплицы",
+      "phrase": "теплица усиленная из поликарбоната купить",
+      "w_base": 2233.0,
+      "w_exact_raw": "55.0",
+      "url": "нет"
+    },
+    {
+      "row": 229,
+      "group": "прочные теплицы",
+      "phrase": "купить усиленную теплицу",
+      "w_base": 909.0,
+      "w_exact_raw": "19.0",
+      "url": "нет"
+    },
+    {
+      "row": 230,
+      "group": "прочные теплицы",
+      "phrase": "усиленные теплицы из поликарбоната от производителя купить",
+      "w_base": 48.0,
+      "w_exact_raw": "22.0",
+      "url": "нет"
+    },
+    {
+      "row": 231,
+      "group": "прочные теплицы",
+      "phrase": "прочные теплицы",
+      "w_base": 36.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 232,
+      "group": "прочные теплицы",
+      "phrase": "теплицы усиленные от производителя",
+      "w_base": 314.0,
+      "w_exact_raw": "81.0",
+      "url": "нет"
+    },
+    {
+      "row": 233,
+      "group": "прочные теплицы",
+      "phrase": "купить усиленную теплицу заводского изготовления",
+      "w_base": 72.0,
+      "w_exact_raw": "27.0",
+      "url": "нет"
+    },
+    {
+      "row": 234,
+      "group": "прочные теплицы",
+      "phrase": "теплица с усиленным каркасом из поликарбоната",
+      "w_base": 20.0,
+      "w_exact_raw": "20.0",
+      "url": "нет"
+    },
+    {
+      "row": 235,
+      "group": "теплица зимняя",
+      "phrase": "зимнюю теплицу купить",
+      "w_base": 121.0,
+      "w_exact_raw": "108.0",
+      "url": "нет"
+    },
+    {
+      "row": 236,
+      "group": "теплица зимняя",
+      "phrase": "круглогодичные теплицы под ключ цена с отоплением",
+      "w_base": 31.0,
+      "w_exact_raw": "28.0",
+      "url": "нет"
+    },
+    {
+      "row": 237,
+      "group": "теплица зимняя",
+      "phrase": "теплица зимняя обогреваемая под ключ цена",
+      "w_base": 33.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 238,
+      "group": "теплица зимняя",
+      "phrase": "зимняя теплица с отоплением под ключ цена",
+      "w_base": 45.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 239,
+      "group": "теплица зимняя",
+      "phrase": "круглогодичная теплица под ключ цена с отоплением и освещением",
+      "w_base": 392.0,
+      "w_exact_raw": "20.0",
+      "url": "нет"
+    },
+    {
+      "row": 240,
+      "group": "теплица зимняя",
+      "phrase": "теплица зимняя обогреваемая под ключ",
+      "w_base": 6.0,
+      "w_exact_raw": "6.0",
+      "url": "нет"
+    },
+    {
+      "row": 241,
+      "group": "теплица зимняя",
+      "phrase": "теплица отапливаемая под ключ",
+      "w_base": 292.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 242,
+      "group": "теплица зимняя",
+      "phrase": "теплица с отоплением под ключ",
+      "w_base": 142.0,
+      "w_exact_raw": "12.0",
+      "url": "нет"
+    },
+    {
+      "row": 243,
+      "group": "теплица зимняя",
+      "phrase": "отапливаемые теплицы под ключ цена с отоплением",
+      "w_base": 106.0,
+      "w_exact_raw": "32.0",
+      "url": "нет"
+    },
+    {
+      "row": 244,
+      "group": "теплица зимняя",
+      "phrase": "теплицы под ключ цена с отоплением",
+      "w_base": 8884.0,
+      "w_exact_raw": "532.0",
+      "url": "нет"
+    },
+    {
+      "row": 245,
+      "group": "теплица зимняя",
+      "phrase": "зимние теплицы с отоплением цена",
+      "w_base": 1930.0,
+      "w_exact_raw": "211.0",
+      "url": "нет"
+    },
+    {
+      "row": 246,
+      "group": "теплица зимняя",
+      "phrase": "купить теплицу круглогодичную",
+      "w_base": 308.0,
+      "w_exact_raw": "69.0",
+      "url": "нет"
+    },
+    {
+      "row": 247,
+      "group": "теплица каркасная",
+      "phrase": "каркас теплицы купить",
+      "w_base": 27888.0,
+      "w_exact_raw": "379.0",
+      "url": "нет"
+    },
+    {
+      "row": 248,
+      "group": "теплица каркасная",
+      "phrase": "теплица каркасная",
+      "w_base": 234.0,
+      "w_exact_raw": "113.0",
+      "url": "нет"
+    },
+    {
+      "row": 249,
+      "group": "теплица каркасная",
+      "phrase": "купить каркасную теплицу",
+      "w_base": 846.0,
+      "w_exact_raw": "72.0",
+      "url": "нет"
+    },
+    {
+      "row": 250,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2 2",
+      "w_base": 2098.0,
+      "w_exact_raw": "77.0",
+      "url": "нет"
+    },
+    {
+      "row": 251,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2 на 2 из поликарбоната цена",
+      "w_base": 3879.0,
+      "w_exact_raw": "72.0",
+      "url": "нет"
+    },
+    {
+      "row": 252,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2 на 2 из поликарбоната",
+      "w_base": 40.0,
+      "w_exact_raw": "5.0",
+      "url": "нет"
+    },
+    {
+      "row": 253,
+      "group": "теплица 2 2",
+      "phrase": "купить теплицу 2 на 2",
+      "w_base": 17.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 254,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2 2 купить",
+      "w_base": 48.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 255,
+      "group": "теплица 2 2",
+      "phrase": "теплица из поликарбоната 2х2",
+      "w_base": 8246.0,
+      "w_exact_raw": "928.0",
+      "url": "нет"
+    },
+    {
+      "row": 256,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2х2 из поликарбоната купить",
+      "w_base": 7.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 257,
+      "group": "теплица 2 2",
+      "phrase": "теплица 2х2 купить",
+      "w_base": 1388.0,
+      "w_exact_raw": "29.0",
+      "url": "нет"
+    },
+    {
+      "row": 258,
+      "group": "Беседки",
+      "phrase": "беседка для дачи купить",
+      "w_base": 449.0,
+      "w_exact_raw": "123.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/"
+    },
+    {
+      "row": 259,
+      "group": "Беседки",
+      "phrase": "беседки из оцинкованного профиля",
+      "w_base": 4857.0,
+      "w_exact_raw": "129.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/"
+    },
+    {
+      "row": 260,
+      "group": "Беседки",
+      "phrase": "беседка для дачи цена",
+      "w_base": 65.0,
+      "w_exact_raw": "16.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/"
+    },
+    {
+      "row": 261,
+      "group": "Беседки",
+      "phrase": "беседка для дачи под ключ",
+      "w_base": 18.0,
+      "w_exact_raw": "13.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/"
+    },
+    {
+      "row": 262,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплицы 2 на 4",
+      "w_base": 57.0,
+      "w_exact_raw": "6.0",
+      "url": "нет"
+    },
+    {
+      "row": 263,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплица из поликарбоната 2х4 усиленная",
+      "w_base": 530.0,
+      "w_exact_raw": "96.0",
+      "url": "нет"
+    },
+    {
+      "row": 264,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплица из поликарбоната 2х4 усиленная недорого",
+      "w_base": 60.0,
+      "w_exact_raw": "10.0",
+      "url": "нет"
+    },
+    {
+      "row": 265,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "парник из поликарбоната 2 на 4",
+      "w_base": 16.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 266,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплицы из поликарбоната 2х4",
+      "w_base": 74.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 267,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплица 2х4 из поликарбоната цена",
+      "w_base": 49.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 268,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплица из поликарбоната 4х2",
+      "w_base": 467.0,
+      "w_exact_raw": "19.0",
+      "url": "нет"
+    },
+    {
+      "row": 269,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "парник 2 4 купить",
+      "w_base": 274.0,
+      "w_exact_raw": "109.0",
+      "url": "нет"
+    },
+    {
+      "row": 270,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "купить парник 2 на 4",
+      "w_base": 32.0,
+      "w_exact_raw": "4.0",
+      "url": "нет"
+    },
+    {
+      "row": 271,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "парник 4 на 2",
+      "w_base": 218.0,
+      "w_exact_raw": "37.0",
+      "url": "нет"
+    },
+    {
+      "row": 272,
+      "group": "теплицы из поликарбоната 2х4",
+      "phrase": "теплицы 2х4 из поликарбоната купить",
+      "w_base": 348.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 273,
+      "group": "теплица двухскатная",
+      "phrase": "теплица с двускатной крышей купить",
+      "w_base": 222.0,
+      "w_exact_raw": "22.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 274,
+      "group": "теплица двухскатная",
+      "phrase": "теплица с двускатной крышей",
+      "w_base": 194.0,
+      "w_exact_raw": "37.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 275,
+      "group": "теплица двухскатная",
+      "phrase": "двускатная крыша теплицы",
+      "w_base": 39.0,
+      "w_exact_raw": "10.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 276,
+      "group": "теплица двухскатная",
+      "phrase": "теплица двускатная купить",
+      "w_base": 32.0,
+      "w_exact_raw": "12.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 277,
+      "group": "теплица двухскатная",
+      "phrase": "теплица двускатная из поликарбоната",
+      "w_base": 1455.0,
+      "w_exact_raw": "111.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 278,
+      "group": "теплица двухскатная",
+      "phrase": "размеры двускатной теплицы",
+      "w_base": 222.0,
+      "w_exact_raw": "22.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 279,
+      "group": "теплица двухскатная",
+      "phrase": "теплица двускатная из поликарбоната купить",
+      "w_base": 119.0,
+      "w_exact_raw": "58.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 280,
+      "group": "теплица двухскатная",
+      "phrase": "двускатные теплицы",
+      "w_base": 37.0,
+      "w_exact_raw": "30.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 281,
+      "group": "теплица двухскатная",
+      "phrase": "двускатная теплица купить",
+      "w_base": 207.0,
+      "w_exact_raw": "29.0",
+      "url": "https://azt-teplica.ru/catalog/catalog/teplicy/dvuskatnaya/"
+    },
+    {
+      "row": 282,
+      "group": "теплица 8 метров",
+      "phrase": "теплица 8 метров из поликарбоната цена",
+      "w_base": 374.0,
+      "w_exact_raw": "74.0",
+      "url": "нет"
+    },
+    {
+      "row": 283,
+      "group": "теплица 8 метров",
+      "phrase": "теплица 8 метров из поликарбоната цена усиленная",
+      "w_base": 383.0,
+      "w_exact_raw": "3.0",
+      "url": "нет"
+    },
+    {
+      "row": 284,
+      "group": "теплица 4 на 6",
+      "phrase": "парник 6 на 4",
+      "w_base": 41.0,
+      "w_exact_raw": "18.0",
+      "url": "нет"
+    },
+    {
+      "row": 285,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица 4 на 6 купить",
+      "w_base": 104.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 286,
+      "group": "теплица 4 на 6",
+      "phrase": "парник 4 6",
+      "w_base": 2037.0,
+      "w_exact_raw": "131.0",
+      "url": "нет"
+    },
+    {
+      "row": 287,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица 6х4 купить",
+      "w_base": 162.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 288,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица из поликарбоната 6х4",
+      "w_base": 91.0,
+      "w_exact_raw": "15.0",
+      "url": "нет"
+    },
+    {
+      "row": 289,
+      "group": "теплица 4 на 6",
+      "phrase": "теплицы 6 на 4",
+      "w_base": 33.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 290,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица из поликарбоната 4х6",
+      "w_base": 253.0,
+      "w_exact_raw": "18.0",
+      "url": "нет"
+    },
+    {
+      "row": 291,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица 4 6 из поликарбоната купить",
+      "w_base": 8591.0,
+      "w_exact_raw": "954.0",
+      "url": "нет"
+    },
+    {
+      "row": 292,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица домик 4 6",
+      "w_base": 1538.0,
+      "w_exact_raw": "208.0",
+      "url": "нет"
+    },
+    {
+      "row": 293,
+      "group": "теплица 4 на 6",
+      "phrase": "теплица 4 6 из поликарбоната",
+      "w_base": 1578.0,
+      "w_exact_raw": "219.0",
+      "url": "нет"
+    },
+    {
+      "row": 294,
+      "group": "парник домик",
+      "phrase": "теплицы домики",
+      "w_base": 53.0,
+      "w_exact_raw": "14.0",
+      "url": "нет"
+    },
+    {
+      "row": 295,
+      "group": "парник домик",
+      "phrase": "теплица из поликарбоната домик",
+      "w_base": 9.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 296,
+      "group": "парник домик",
+      "phrase": "теплица домик купить",
+      "w_base": 623.0,
+      "w_exact_raw": "79.0",
+      "url": "нет"
+    },
+    {
+      "row": 297,
+      "group": "парник домик",
+      "phrase": "парник из поликарбоната домиком",
+      "w_base": 80.0,
+      "w_exact_raw": "12.0",
+      "url": "нет"
+    },
+    {
+      "row": 298,
+      "group": "парник домик",
+      "phrase": "купить парник из поликарбоната домиком",
+      "w_base": 119.0,
+      "w_exact_raw": "19.0",
+      "url": "нет"
+    },
+    {
+      "row": 299,
+      "group": "парник домик",
+      "phrase": "парник домик",
+      "w_base": 399.0,
+      "w_exact_raw": "151.0",
+      "url": "нет"
+    },
+    {
+      "row": 300,
+      "group": "парник домик",
+      "phrase": "теплицы домиком из поликарбоната цена",
+      "w_base": 121.0,
+      "w_exact_raw": "46.0",
+      "url": "нет"
+    },
+    {
+      "row": 301,
+      "group": "парник домик",
+      "phrase": "теплицы домиком от производителей",
+      "w_base": 275.0,
+      "w_exact_raw": "62.0",
+      "url": "нет"
+    },
+    {
+      "row": 302,
+      "group": "парник домик",
+      "phrase": "купить теплицу домиком из поликарбоната",
+      "w_base": 103.0,
+      "w_exact_raw": "10.0",
+      "url": "нет"
+    },
+    {
+      "row": 303,
+      "group": "парник домик",
+      "phrase": "парник домиком купить",
+      "w_base": 15.0,
+      "w_exact_raw": "6.0",
+      "url": "нет"
+    },
+    {
+      "row": 304,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "маленькая теплица из поликарбоната",
+      "w_base": 8.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 305,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "теплица из поликарбоната небольшая",
+      "w_base": 31.0,
+      "w_exact_raw": "13.0",
+      "url": "нет"
+    },
+    {
+      "row": 306,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "маленькая теплица из поликарбоната размеры и цены",
+      "w_base": 39.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 307,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "самая маленькая теплица из поликарбоната размеры и цены",
+      "w_base": 118.0,
+      "w_exact_raw": "35.0",
+      "url": "нет"
+    },
+    {
+      "row": 308,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "купить небольшую теплицу из поликарбоната",
+      "w_base": 326.0,
+      "w_exact_raw": "73.0",
+      "url": "нет"
+    },
+    {
+      "row": 309,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "теплица низкая из поликарбоната",
+      "w_base": 12.0,
+      "w_exact_raw": "3.0",
+      "url": "нет"
+    },
+    {
+      "row": 310,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "теплица маленькая из поликарбоната купить",
+      "w_base": 202.0,
+      "w_exact_raw": "29.0",
+      "url": "нет"
+    },
+    {
+      "row": 311,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "мини теплица из поликарбоната",
+      "w_base": 110.0,
+      "w_exact_raw": "73.0",
+      "url": "нет"
+    },
+    {
+      "row": 312,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "мини теплица парник из поликарбоната",
+      "w_base": 171.0,
+      "w_exact_raw": "9.0",
+      "url": "нет"
+    },
+    {
+      "row": 313,
+      "group": "маленькая теплица из поликарбоната",
+      "phrase": "мини парник из поликарбоната",
+      "w_base": 4300.0,
+      "w_exact_raw": "130.0",
+      "url": "нет"
+    },
+    {
+      "row": 314,
+      "group": "теплица для дачи",
+      "phrase": "теплица для дачи современная",
+      "w_base": 3954.0,
+      "w_exact_raw": "181.0",
+      "url": "нет"
+    },
+    {
+      "row": 315,
+      "group": "теплица для дачи",
+      "phrase": "парник для дачи из поликарбоната",
+      "w_base": 916.0,
+      "w_exact_raw": "42.0",
+      "url": "нет"
+    },
+    {
+      "row": 316,
+      "group": "теплица для дачи",
+      "phrase": "теплицы для дачи",
+      "w_base": 787.0,
+      "w_exact_raw": "621.0",
+      "url": "нет"
+    },
+    {
+      "row": 317,
+      "group": "теплица для дачи",
+      "phrase": "теплица для грядки",
+      "w_base": 1877.0,
+      "w_exact_raw": "63.0",
+      "url": "нет"
+    },
+    {
+      "row": 318,
+      "group": "теплица для дачи",
+      "phrase": "парники на даче",
+      "w_base": 143.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 319,
+      "group": "теплица для дачи",
+      "phrase": "парники и теплицы для дачи распродажа цена",
+      "w_base": 370.0,
+      "w_exact_raw": "140.0",
+      "url": "нет"
+    },
+    {
+      "row": 320,
+      "group": "теплица раздвижная",
+      "phrase": "теплица раздвижная купить",
+      "w_base": 19157.0,
+      "w_exact_raw": "200.0",
+      "url": "нет"
+    },
+    {
+      "row": 321,
+      "group": "теплица раздвижная",
+      "phrase": "сдвижная теплица из поликарбоната",
+      "w_base": 28592.0,
+      "w_exact_raw": "1028.0",
+      "url": "нет"
+    },
+    {
+      "row": 322,
+      "group": "теплица раздвижная",
+      "phrase": "теплица раздвижная из поликарбоната купить",
+      "w_base": 4369.0,
+      "w_exact_raw": "184.0",
+      "url": "нет"
+    },
+    {
+      "row": 323,
+      "group": "теплица 5 5",
+      "phrase": "теплица 5 5",
+      "w_base": 39501.0,
+      "w_exact_raw": "619.0",
+      "url": "нет"
+    },
+    {
+      "row": 324,
+      "group": "теплица 3 на 3",
+      "phrase": "теплица 3 на 3",
+      "w_base": 1780.0,
+      "w_exact_raw": "117.0",
+      "url": "нет"
+    },
+    {
+      "row": 325,
+      "group": "теплица 3 на 3",
+      "phrase": "теплица 3 на 3 из поликарбоната",
+      "w_base": 3084.0,
+      "w_exact_raw": "228.0",
+      "url": "нет"
+    },
+    {
+      "row": 326,
+      "group": "теплица 4 4",
+      "phrase": "теплица 4 4",
+      "w_base": 2449.0,
+      "w_exact_raw": "152.0",
+      "url": "нет"
+    },
+    {
+      "row": 327,
+      "group": "теплица 4 4",
+      "phrase": "теплица 4 на 4 из поликарбоната",
+      "w_base": 6481.0,
+      "w_exact_raw": "158.0",
+      "url": "нет"
+    },
+    {
+      "row": 328,
+      "group": "теплица 4 4",
+      "phrase": "теплица 4 на 4 купить",
+      "w_base": 537.0,
+      "w_exact_raw": "125.0",
+      "url": "нет"
+    },
+    {
+      "row": 329,
+      "group": "теплица 10 10",
+      "phrase": "теплица 10 на 10",
+      "w_base": 93.0,
+      "w_exact_raw": "22.0",
+      "url": "нет"
+    },
+    {
+      "row": 330,
+      "group": "теплица 10 10",
+      "phrase": "теплица 10 10",
+      "w_base": 11117.0,
+      "w_exact_raw": "84.0",
+      "url": "нет"
+    },
+    {
+      "row": 331,
+      "group": "парник для огурцов",
+      "phrase": "парник для огурцов купить",
+      "w_base": 2221.0,
+      "w_exact_raw": "68.0",
+      "url": "нет"
+    },
+    {
+      "row": 332,
+      "group": "парник для огурцов",
+      "phrase": "огуречник теплица купить",
+      "w_base": 207.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 333,
+      "group": "теплица 6 метров",
+      "phrase": "теплица 6 метров",
+      "w_base": 69.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 334,
+      "group": "теплица 6 метров",
+      "phrase": "теплица 6 метров купить",
+      "w_base": 45.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 335,
+      "group": "парник хлебница 3",
+      "phrase": "парник хлебница 3",
+      "w_base": 151.0,
+      "w_exact_raw": "41.0",
+      "url": "нет"
+    },
+    {
+      "row": 336,
+      "group": "парник хлебница 3",
+      "phrase": "парник хлебница 3 купить",
+      "w_base": 64.0,
+      "w_exact_raw": "6.0",
+      "url": "нет"
+    },
+    {
+      "row": 337,
+      "group": "парник хлебница 3",
+      "phrase": "парник хлебница 3 метра купить",
+      "w_base": 341.0,
+      "w_exact_raw": "43.0",
+      "url": "нет"
+    },
+    {
+      "row": 338,
+      "group": "парник хлебница 3",
+      "phrase": "парник хлебница 3 метра",
+      "w_base": 1086.0,
+      "w_exact_raw": "115.0",
+      "url": "нет"
+    },
+    {
+      "row": 339,
+      "group": "парник хлебница 3",
+      "phrase": "парник хлебница 3 метра из поликарбоната",
+      "w_base": 553.0,
+      "w_exact_raw": "73.0",
+      "url": "нет"
+    },
+    {
+      "row": 340,
+      "group": "теплицы из оцинкованного профиля",
+      "phrase": "теплицы из оцинкованного профиля",
+      "w_base": 587.0,
+      "w_exact_raw": "189.0",
+      "url": "нет"
+    },
+    {
+      "row": 341,
+      "group": "теплица мини",
+      "phrase": "теплица мини купить",
+      "w_base": 1366.0,
+      "w_exact_raw": "154.0",
+      "url": "нет"
+    },
+    {
+      "row": 342,
+      "group": "теплица мини",
+      "phrase": "купить маленькую теплицу",
+      "w_base": 787.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 343,
+      "group": "теплица из поликарбоната 4х4",
+      "phrase": "теплица 4 на 4 из поликарбоната цена",
+      "w_base": 781.0,
+      "w_exact_raw": "60.0",
+      "url": "нет"
+    },
+    {
+      "row": 344,
+      "group": "теплица из поликарбоната 3х6",
+      "phrase": "теплица 6 3 из поликарбоната цена",
+      "w_base": 205.0,
+      "w_exact_raw": "38.0",
+      "url": "нет"
+    },
+    {
+      "row": 345,
+      "group": "теплица 4 м",
+      "phrase": "теплица 4 метра цена",
+      "w_base": 1019.0,
+      "w_exact_raw": "313.0",
+      "url": "нет"
+    },
+    {
+      "row": 346,
+      "group": "теплица 4 м",
+      "phrase": "теплицы ширина 4 метра",
+      "w_base": 6433.0,
+      "w_exact_raw": "65.0",
+      "url": "нет"
+    },
+    {
+      "row": 347,
+      "group": "теплица 4 м",
+      "phrase": "купить теплицу шириной 4 метра",
+      "w_base": 219.0,
+      "w_exact_raw": "146.0",
+      "url": "нет"
+    },
+    {
+      "row": 348,
+      "group": "теплица 3на 4",
+      "phrase": "теплица из поликарбоната 3х4 усиленная",
+      "w_base": 310.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 349,
+      "group": "теплица 3на 4",
+      "phrase": "теплица 3х4 поликарбонат",
+      "w_base": 852.0,
+      "w_exact_raw": "119.0",
+      "url": "нет"
+    },
+    {
+      "row": 350,
+      "group": "теплица 3 8",
+      "phrase": "теплица 8х3 из поликарбоната цена",
+      "w_base": 91.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 351,
+      "group": "теплица 3 8",
+      "phrase": "теплица 3 на 8 цена",
+      "w_base": 288.0,
+      "w_exact_raw": "94.0",
+      "url": "нет"
+    },
+    {
+      "row": 352,
+      "group": "прямостенная усиленная теплица",
+      "phrase": "прямостенная усиленная теплица",
+      "w_base": 91.0,
+      "w_exact_raw": "49.0",
+      "url": "нет"
+    },
+    {
+      "row": 353,
+      "group": "прямостенная усиленная теплица",
+      "phrase": "теплица прямостенная каркас купить",
+      "w_base": 38.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 354,
+      "group": "прямостенная усиленная теплица",
+      "phrase": "теплица прямостенная усиленная купить",
+      "w_base": 115.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 355,
+      "group": "прямостенная усиленная теплица",
+      "phrase": "теплицы прямостенные усиленные от производителя",
+      "w_base": 135.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 356,
+      "group": "парник хлебница 4",
+      "phrase": "парник хлебница 4 метра купить",
+      "w_base": 73.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 357,
+      "group": "парник хлебница 4",
+      "phrase": "парник хлебница 4 метра",
+      "w_base": 217.0,
+      "w_exact_raw": "14.0",
+      "url": "нет"
+    },
+    {
+      "row": 358,
+      "group": "парник хлебница 4",
+      "phrase": "парник хлебница 4",
+      "w_base": 13.0,
+      "w_exact_raw": "4.0",
+      "url": "нет"
+    },
+    {
+      "row": 359,
+      "group": "парник хлебница 4",
+      "phrase": "парник хлебница из поликарбоната 4 метра",
+      "w_base": 111.0,
+      "w_exact_raw": "43.0",
+      "url": "нет"
+    },
+    {
+      "row": 360,
+      "group": "беседка бочка",
+      "phrase": "беседка бочка",
+      "w_base": 10217.0,
+      "w_exact_raw": "76.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/besedka-azt-bochka/"
+    },
+    {
+      "row": 361,
+      "group": "беседка бочка",
+      "phrase": "беседка бочка из поликарбоната",
+      "w_base": 205.0,
+      "w_exact_raw": "32.0",
+      "url": "https://azt-teplica.ru/catalog/besedki/besedka-azt-bochka/"
+    },
+    {
+      "row": 362,
+      "group": "теплицы квадратные",
+      "phrase": "квадратная теплица из поликарбоната",
+      "w_base": 28.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 363,
+      "group": "теплицы квадратные",
+      "phrase": "теплицы квадратные",
+      "w_base": 7.0,
+      "w_exact_raw": "0.0",
+      "url": "нет"
+    },
+    {
+      "row": 364,
+      "group": "теплица каркасная из поликарбоната",
+      "phrase": "теплица каркасная из поликарбоната",
+      "w_base": 5321.0,
+      "w_exact_raw": "45.0",
+      "url": "нет"
+    },
+    {
+      "row": 365,
+      "group": "теплица каркасная из поликарбоната",
+      "phrase": "каркасные теплицы из поликарбоната цена",
+      "w_base": 4.0,
+      "w_exact_raw": "2.0",
+      "url": "нет"
+    },
+    {
+      "row": 366,
+      "group": "парник ласточка",
+      "phrase": "парник ласточка",
+      "w_base": 136.0,
+      "w_exact_raw": "16.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-lastochka/"
+    },
+    {
+      "row": 367,
+      "group": "теплицы оцинкованные",
+      "phrase": "теплицы оцинкованные",
+      "w_base": 26.0,
+      "w_exact_raw": "3.0",
+      "url": "нет"
+    },
+    {
+      "row": 368,
+      "group": "теплицы оцинкованные",
+      "phrase": "теплицы из оцинкованного профиля от производителя",
+      "w_base": 79.0,
+      "w_exact_raw": "8.0",
+      "url": "нет"
+    },
+    {
+      "row": 369,
+      "group": "теплица каплевидная 3 на 6",
+      "phrase": "теплица каплевидная 3 на 6",
+      "w_base": 19957.0,
+      "w_exact_raw": "185.0",
+      "url": "нет"
+    },
+    {
+      "row": 370,
+      "group": "теплица каплевидная 3 на 6",
+      "phrase": "теплица каплевидная 3 на 6 купить",
+      "w_base": 138.0,
+      "w_exact_raw": "56.0",
+      "url": "нет"
+    },
+    {
+      "row": 371,
+      "group": "теплица 5 на 10",
+      "phrase": "купить теплицу 5 на 10",
+      "w_base": 98.0,
+      "w_exact_raw": "29.0",
+      "url": "нет"
+    },
+    {
+      "row": 372,
+      "group": "теплица 3 6",
+      "phrase": "теплица 3 6",
+      "w_base": 152.0,
+      "w_exact_raw": "14.0",
+      "url": "нет"
+    },
+    {
+      "row": 373,
+      "group": "теплица 2х4",
+      "phrase": "купить теплицу 2 на 4 из поликарбоната",
+      "w_base": 11464.0,
+      "w_exact_raw": "180.0",
+      "url": "нет"
+    },
+    {
+      "row": 374,
+      "group": "теплица 2х4",
+      "phrase": "цена теплицы из поликарбоната 2 на 4",
+      "w_base": 157.0,
+      "w_exact_raw": "16.0",
+      "url": "нет"
+    },
+    {
+      "row": 375,
+      "group": "большая теплица",
+      "phrase": "теплица из поликарбоната большая",
+      "w_base": 19.0,
+      "w_exact_raw": "6.0",
+      "url": "нет"
+    },
+    {
+      "row": 376,
+      "group": "большая теплица",
+      "phrase": "теплицы большие",
+      "w_base": 2595.0,
+      "w_exact_raw": "293.0",
+      "url": "нет"
+    },
+    {
+      "row": 377,
+      "group": "теплицы прямостенные домиком",
+      "phrase": "теплицы прямостенные домиком",
+      "w_base": 332.0,
+      "w_exact_raw": "50.0",
+      "url": "нет"
+    },
+    {
+      "row": 378,
+      "group": "теплица прямостенная ширина 4 метра",
+      "phrase": "теплица прямостенная ширина 4 метра",
+      "w_base": 42.0,
+      "w_exact_raw": "11.0",
+      "url": "нет"
+    },
+    {
+      "row": 379,
+      "group": "теплица митлайдера",
+      "phrase": "теплица митлайдера",
+      "w_base": 141.0,
+      "w_exact_raw": "30.0",
+      "url": "нет"
+    },
+    {
+      "row": 380,
+      "group": "теплица карбонатная",
+      "phrase": "теплица карбонатная",
+      "w_base": 544.0,
+      "w_exact_raw": "50.0",
+      "url": "нет"
+    },
+    {
+      "row": 381,
+      "group": "теплица из поликарбоната 3х4 прямостенная",
+      "phrase": "теплица из поликарбоната 3х4 прямостенная",
+      "w_base": 4190.0,
+      "w_exact_raw": "49.0",
+      "url": "нет"
+    },
+    {
+      "row": 382,
+      "group": "теплица 8 на 4",
+      "phrase": "теплица 8 на 4 купить",
+      "w_base": 4155.0,
+      "w_exact_raw": "20.0",
+      "url": "нет"
+    },
+    {
+      "row": 383,
+      "group": "теплица 5м",
+      "phrase": "теплица 5 метров шириной",
+      "w_base": 7810.0,
+      "w_exact_raw": "63.0",
+      "url": "нет"
+    },
+    {
+      "row": 384,
+      "group": "теплица 5 на 2",
+      "phrase": "теплица 2 5 на 5",
+      "w_base": 15.0,
+      "w_exact_raw": "5.0",
+      "url": "нет"
+    },
+    {
+      "row": 385,
+      "group": "теплица 5 3",
+      "phrase": "теплица 5 3",
+      "w_base": 2.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 386,
+      "group": "теплица 2 4",
+      "phrase": "теплица 2 4",
+      "w_base": 1.0,
+      "w_exact_raw": "1.0",
+      "url": "нет"
+    },
+    {
+      "row": 387,
+      "group": "парник шалаш",
+      "phrase": "парник шалаш",
+      "w_base": 1.0,
+      "w_exact_raw": "0.0",
+      "url": "https://azt-teplica.ru/catalog/parniki/parnik-azt-shalash/"
+    },
+    {
+      "row": 388,
+      "group": "СПК | Polygal стандарт ГОСТ | 4 мм | 2100х6000 | плотн 0,8",
+      "phrase": "лист спк 4 мм 2100х6000",
+      "w_base": 19.0,
+      "w_exact_raw": "14.0",
+      "url": ""
+    },
+    {
+      "row": 389,
+      "group": "СПК | Polygal ГОСТ | 6 мм | 2100х6000 | плотн 1,3",
+      "phrase": "сотовый поликарбонат  плотность 1 3",
+      "w_base": 18.0,
+      "w_exact_raw": "17.0",
+      "url": ""
+    },
+    {
+      "row": 390,
+      "group": "СПК | Polygal ГОСТ | 6 мм | 2100х6000 | плотн 1,3",
+      "phrase": "поликарбонат спк 6 мм 2100х6000 купить",
+      "w_base": 34.0,
+      "w_exact_raw": "32.0",
+      "url": ""
+    },
+    {
+      "row": 391,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "сотовый поликарбонат томато плотность 0 5",
+      "w_base": 35.0,
+      "w_exact_raw": "27.0",
+      "url": ""
+    },
+    {
+      "row": 392,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "поликарбонат спк 4 мм",
+      "w_base": 24.0,
+      "w_exact_raw": "18.0",
+      "url": ""
+    },
+    {
+      "row": 393,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "поликарбонат спк  0 5",
+      "w_base": 31.0,
+      "w_exact_raw": "28.0",
+      "url": ""
+    },
+    {
+      "row": 394,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "лист спк 4 мм",
+      "w_base": 12.0,
+      "w_exact_raw": "10.0",
+      "url": ""
+    },
+    {
+      "row": 395,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "спк 4 мм 2100х6000",
+      "w_base": 28.0,
+      "w_exact_raw": "24.0",
+      "url": ""
+    },
+    {
+      "row": 396,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "спк 4 мм 2100х6000 прозрачный",
+      "w_base": 20.0,
+      "w_exact_raw": "15.0",
+      "url": ""
+    },
+    {
+      "row": 397,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "поликарбонат спк 4 мм 2100 6000",
+      "w_base": 13.0,
+      "w_exact_raw": "9.0",
+      "url": ""
+    },
+    {
+      "row": 399,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "поликарбонат сотовый томато 4 мм",
+      "w_base": 19.0,
+      "w_exact_raw": "13.0",
+      "url": ""
+    },
+    {
+      "row": 400,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "сотовый поликарбонат 4 мм 2100х6000",
+      "w_base": 8.0,
+      "w_exact_raw": "8.0",
+      "url": ""
+    },
+    {
+      "row": 401,
+      "group": "СПК | Томато | 4 мм | 2100х6000 | плотн 0,5",
+      "phrase": "спк 4 мм 2100х6000 стоимость",
+      "w_base": 6.0,
+      "w_exact_raw": "5.0",
+      "url": ""
+    },
+    {
+      "row": 402,
+      "group": "СПК | Полигаль ПРАКТИЧНЫЙ SMART | 4 мм | 2100х6000 | плотн 0,7",
+      "phrase": "поликарбонат практичный  4 мм 2100х6000",
+      "w_base": 14.0,
+      "w_exact_raw": "10.0",
+      "url": ""
+    },
+    {
+      "row": 403,
+      "group": "СПК | Полигаль ПРАКТИЧНЫЙ SMART | 4 мм | 2100х6000 | плотн 0,7",
+      "phrase": "сотовый поликарбонат smart 4 мм",
+      "w_base": 14.0,
+      "w_exact_raw": "13.0",
+      "url": ""
+    },
+    {
+      "row": 404,
+      "group": "СПК | Полигаль ПРАКТИЧНЫЙ | 4 мм | 2100х6000 | плотн 0,7",
+      "phrase": "практичный спк 4 мм",
+      "w_base": 2.0,
+      "w_exact_raw": "2.0",
+      "url": ""
+    },
+    {
+      "row": 405,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "сотовый поликарбонат колибри плотность 1,05 купить пермь",
+      "w_base": 25.0,
+      "w_exact_raw": "18.0",
+      "url": ""
+    },
+    {
+      "row": 406,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "поликарбонат сотовый колибри 6 мм",
+      "w_base": 14.0,
+      "w_exact_raw": "11.0",
+      "url": ""
+    },
+    {
+      "row": 407,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "сотовый поликарбонат колибри плотность 1,05 купить",
+      "w_base": 14.0,
+      "w_exact_raw": "11.0",
+      "url": ""
+    },
+    {
+      "row": 409,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "лист спк 6 мм 2100х6000 колибри цена в перми",
+      "w_base": 15.0,
+      "w_exact_raw": "13.0",
+      "url": ""
+    },
+    {
+      "row": 410,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "лист спк 6 мм 2100х6000",
+      "w_base": 16.0,
+      "w_exact_raw": "10.0",
+      "url": ""
+    },
+    {
+      "row": 411,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "спк колибри плотность 1,05 цена",
+      "w_base": 10.0,
+      "w_exact_raw": "7.0",
+      "url": ""
+    },
+    {
+      "row": 412,
+      "group": "СПК | Колибри | 6 мм | 2100х6000 | плотн 1,05",
+      "phrase": "спк колибри плотность 1,05 цена пермь",
+      "w_base": 9.0,
+      "w_exact_raw": "8.0",
+      "url": ""
+    },
+    {
+      "row": 413,
+      "group": "СПК | Колибри | 4 мм | 2100х6000 | плотн 0,61",
+      "phrase": "спк колибри 4 мм  цена",
+      "w_base": 18.0,
+      "w_exact_raw": "13.0",
+      "url": ""
+    },
+    {
+      "row": 414,
+      "group": "СПК | Колибри | 4 мм | 2100х6000 | плотн 0,61",
+      "phrase": "сотовый поликарбонат колибри 4 мм",
+      "w_base": 15.0,
+      "w_exact_raw": "14.0",
+      "url": ""
+    },
+    {
+      "row": 415,
+      "group": "СПК | Колибри | 4 мм | 2100х6000 | плотн 0,61",
+      "phrase": "сотовый поликарбонат колибри",
+      "w_base": 14.0,
+      "w_exact_raw": "10.0",
+      "url": ""
+    },
+    {
+      "row": 416,
+      "group": "СПК | Колибри | 4 мм | 2100х6000 | плотн 0,61",
+      "phrase": "колибри спк 4 мм",
+      "w_base": 1.0,
+      "w_exact_raw": "1.0",
+      "url": ""
+    },
+    {
+      "row": 417,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "спк киви плотность 0 75 цена",
+      "w_base": 18.0,
+      "w_exact_raw": "17.0",
+      "url": ""
+    },
+    {
+      "row": 418,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "спк 6 мм киви стоимость",
+      "w_base": 23.0,
+      "w_exact_raw": "19.0",
+      "url": ""
+    },
+    {
+      "row": 419,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "спк киви плотность 0,75 цена пермь",
+      "w_base": 23.0,
+      "w_exact_raw": "17.0",
+      "url": ""
+    },
+    {
+      "row": 420,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "киви спк 6 мм 2100 6000",
+      "w_base": 20.0,
+      "w_exact_raw": "13.0",
+      "url": ""
+    },
+    {
+      "row": 421,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "киви спк 6 мм 2100 6000 цена",
+      "w_base": 10.0,
+      "w_exact_raw": "8.0",
+      "url": ""
+    },
+    {
+      "row": 422,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "спк киви 6 мм 2100х6000 цена",
+      "w_base": 5.0,
+      "w_exact_raw": "4.0",
+      "url": ""
+    },
+    {
+      "row": 423,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "киви спк 6 мм",
+      "w_base": 4.0,
+      "w_exact_raw": "3.0",
+      "url": ""
+    },
+    {
+      "row": 424,
+      "group": "СПК | КИВИ | 6 мм | 2100х6000 | плотн 0,75",
+      "phrase": "поликарбонат сотовый киви 6 мм цена за лист",
+      "w_base": 5.0,
+      "w_exact_raw": "5.0",
+      "url": ""
+    },
+    {
+      "row": 425,
+      "group": "СПК | КИВИ | 4 мм | 2100х6000 | плотн 0,57",
+      "phrase": "спк киви плотность цена",
+      "w_base": 15.0,
+      "w_exact_raw": "14.0",
+      "url": ""
+    },
+    {
+      "row": 426,
+      "group": "СПК | КИВИ | 4 мм | 2100х6000 | плотн 0,57",
+      "phrase": "спк киви плотность",
+      "w_base": 10.0,
+      "w_exact_raw": "6.0",
+      "url": ""
+    }
+  ],
+  "results": []
+}
