@@ -39,7 +39,8 @@
       "mcp__yandex-wordstat__dynamics",
       "mcp__yandex-wordstat__top_requests",
       "mcp__yandex-wordstat__read_cached",
-      "mcp__yandex-wordstat__find_region"
+      "mcp__yandex-wordstat__find_region",
+      "WebFetch(domain:yandex.com)"
     ]
   }
 }
