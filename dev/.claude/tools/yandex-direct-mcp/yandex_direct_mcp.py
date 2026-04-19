@@ -866,41 +866,57 @@ def direct_agency_clients_get(
 # ─── changes ────────────────────────────────────────────────────────────────
 
 
+def _to_iso_utc(ts: int | str) -> str:
+    """Принимает ISO-строку или Unix seconds, возвращает YYYY-MM-DDThh:mm:ssZ."""
+    if isinstance(ts, str):
+        return ts if ts.endswith("Z") else ts + "Z"
+    from datetime import datetime, timezone
+    return datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 @mcp.tool()
-def direct_changes_dictionaries(timestamp: int | None = None) -> dict:
-    """changes.checkDictionaries — изменились ли справочники с момента X (Unix seconds)."""
-    params = {"Timestamp": timestamp} if timestamp else {}
+def direct_changes_dictionaries(timestamp: str | int | None = None) -> dict:
+    """changes.checkDictionaries — изменились ли справочники с момента X.
+
+    timestamp: ISO8601 (YYYY-MM-DDThh:mm:ssZ) или Unix seconds.
+    """
+    params: dict = {}
+    if timestamp is not None:
+        params["Timestamp"] = _to_iso_utc(timestamp)
     data = _call("changes", "checkDictionaries", params)
     return {"_units": _units.snapshot(), **data.get("result", {})}
 
 
 @mcp.tool()
-def direct_changes_campaigns(timestamp: int) -> dict:
-    """changes.checkCampaigns — ID кампаний, изменённых с Timestamp (Unix seconds).
+def direct_changes_campaigns(timestamp: str | int) -> dict:
+    """changes.checkCampaigns — ID кампаний, изменённых с Timestamp.
 
-    ⚠️ Окно ≤ 7 дней. Если нужно глубже — используй скользящее окно (см. direct_audit_changes_since).
+    timestamp: ISO8601 (YYYY-MM-DDThh:mm:ssZ) или Unix seconds.
+    ⚠️ Окно ≤ 7 дней (см. direct_audit_changes_since для скользящего).
     """
-    data = _call("changes", "checkCampaigns", {"Timestamp": timestamp})
+    data = _call("changes", "checkCampaigns",
+                 {"Timestamp": _to_iso_utc(timestamp)})
     return {"_units": _units.snapshot(), **data.get("result", {})}
 
 
 @mcp.tool()
 def direct_changes_check(
     campaign_ids: list[int],
-    timestamp: int,
+    timestamp: str | int,
     field_names: list[str] | None = None,
 ) -> dict:
     """changes.check — детальный дифф по указанным кампаниям.
 
+    timestamp: ISO8601 или Unix seconds.
     field_names: CampaignIds/AdGroupIds/AdIds/TargetIds/Statistics.
     """
     fields = field_names or ["CampaignIds", "AdGroupIds", "AdIds", "TargetIds"]
     data = _call("changes", "check", {
         "CampaignIds": campaign_ids,
-        "Timestamp": timestamp,
+        "Timestamp": _to_iso_utc(timestamp),
         "FieldNames": fields,
     })
-    return {"_units": _units.snapshot(), **data.get("result", {})}
+    return _wrap_dict(data.get("result", {}), "changes_check")
 
 
 @mcp.tool()
@@ -910,15 +926,15 @@ def direct_audit_changes_since(
 ) -> dict:
     """Composite аудит: какие кампании/группы/объявления изменялись за N часов.
 
-    ⚠️ Окно окно ограничено 7 днями (168ч). При больших значениях — только 168ч.
+    ⚠️ Окно ограничено 7 днями (168ч). При больших значениях — обрезается до 168ч.
     Связка: checkDictionaries → checkCampaigns → check (батчами по 1000).
     Стоимость: ~3 + N_batches вызовов.
     """
     hours = min(hours_back, 168)
-    ts = int(time.time()) - hours * 3600
+    iso = _to_iso_utc(int(time.time()) - hours * 3600)
 
-    dict_data = _call("changes", "checkDictionaries", {"Timestamp": ts})
-    camp_data = _call("changes", "checkCampaigns", {"Timestamp": ts})
+    dict_data = _call("changes", "checkDictionaries", {"Timestamp": iso})
+    camp_data = _call("changes", "checkCampaigns", {"Timestamp": iso})
     changed_camp_ids = camp_data.get("result", {}).get("Ids", [])
 
     diffs: list[dict] = []
@@ -928,14 +944,14 @@ def direct_audit_changes_since(
             batch = changed_camp_ids[i:i + 1000]
             _units.check_reserve()
             chunk = _call("changes", "check", {
-                "CampaignIds": batch, "Timestamp": ts, "FieldNames": fields,
+                "CampaignIds": batch, "Timestamp": iso, "FieldNames": fields,
             })
             diffs.append(chunk.get("result", {}))
 
     return {
         "_units": _units.snapshot(),
         "window_hours": hours,
-        "since_timestamp": ts,
+        "since": iso,
         "dictionaries": dict_data.get("result", {}),
         "changed_campaign_ids": changed_camp_ids,
         "changed_campaign_count": len(changed_camp_ids),
