@@ -53,7 +53,9 @@
       "mcp__yandex-direct__direct_dictionaries_get",
       "mcp__yandex-direct__estimate_cost",
       "mcp__yandex-direct__direct_audit_changes_since",
-      "mcp__yandex-direct__direct_report"
+      "mcp__yandex-direct__direct_report",
+      "mcp__yandex-direct__direct_units_status",
+      "mcp__yandex-direct__direct_negative_keywords_get"
     ]
   }
 }
