@@ -1246,9 +1246,18 @@ def _to_iso_utc(ts: int | str) -> str:
 
 @mcp.tool()
 def direct_changes_dictionaries(timestamp: str | int | None = None) -> dict:
-    """changes.checkDictionaries — изменились ли справочники с момента X.
+    """Проверка, менялись ли глобальные справочники (changes.checkDictionaries).
 
-    timestamp: ISO8601 (YYYY-MM-DDThh:mm:ssZ) или Unix seconds.
+    timestamp: момент, с которого проверяем.
+      Формат: ISO8601 UTC ('YYYY-MM-DDThh:mm:ssZ') или Unix seconds (int).
+      Если не указан — вернёт текущий Timestamp сервера (как точку отсчёта).
+    ⚠️ Timestamp не должен быть старше 7 суток назад.
+
+    Полезно вызывать ПЕРВЫМ в сценарии аудита — чтобы понять, не
+    пересчитались ли справочники регионов/валют.
+
+    Ответ: {"_units": {...}, "Timestamp": "...", "Regions": true/false,
+            "TimeTargeting": true/false}.
     """
     params: dict = {}
     if timestamp is not None:
@@ -1259,10 +1268,16 @@ def direct_changes_dictionaries(timestamp: str | int | None = None) -> dict:
 
 @mcp.tool()
 def direct_changes_campaigns(timestamp: str | int) -> dict:
-    """changes.checkCampaigns — ID кампаний, изменённых с Timestamp.
+    """Какие кампании изменились с момента X (changes.checkCampaigns).
 
-    timestamp: ISO8601 (YYYY-MM-DDThh:mm:ssZ) или Unix seconds.
-    ⚠️ Окно ≤ 7 дней (см. direct_audit_changes_since для скользящего).
+    timestamp (обязательно): ISO8601 UTC ('YYYY-MM-DDThh:mm:ssZ') или Unix seconds.
+    ⚠️ Timestamp не должен быть старше 7 суток назад (API вернёт ошибку).
+
+    Используй как шаг 2 в аудите: взял список изменённых Ids — потом
+    direct_changes_check(campaign_ids=...) для подробностей.
+
+    Ответ: {"_units": {...}, "Timestamp": "...", "Ids": [...campaign_ids...],
+            "ModifiedCampaigns": [...]}.
     """
     data = _call("changes", "checkCampaigns",
                  {"Timestamp": _to_iso_utc(timestamp)})
@@ -1275,10 +1290,20 @@ def direct_changes_check(
     timestamp: str | int,
     field_names: list[str] | None = None,
 ) -> dict:
-    """changes.check — детальный дифф по указанным кампаниям.
+    """Детальный дифф изменений в кампаниях (changes.check).
 
-    timestamp: ISO8601 или Unix seconds.
-    field_names: CampaignIds/AdGroupIds/AdIds/TargetIds/Statistics.
+    campaign_ids (обязательно): [int, ...] до 1000 штук. Обычно берутся
+      из direct_changes_campaigns().Ids.
+    timestamp    (обязательно): ISO8601 UTC или Unix seconds.
+      ⚠️ Не старше 7 суток назад.
+    field_names: подмножество ['CampaignIds','AdGroupIds','AdIds','TargetIds','Statistics'].
+      По умолчанию ['CampaignIds','AdGroupIds','AdIds','TargetIds'] — без Statistics,
+      т. к. это дороже и возвращает объёмные списки.
+
+    Ответ содержит массивы Ids изменённых сущностей каждого уровня.
+
+    Ответ: {"_units": {...}, "Timestamp": "...", "Campaigns":[...],
+            "AdGroups":[...], "Ads":[...], "Targets":[...]}.
     """
     fields = field_names or ["CampaignIds", "AdGroupIds", "AdIds", "TargetIds"]
     data = _call("changes", "check", {
@@ -1294,11 +1319,23 @@ def direct_audit_changes_since(
     hours_back: int = 24,
     field_names: list[str] | None = None,
 ) -> dict:
-    """Composite аудит: какие кампании/группы/объявления изменялись за N часов.
+    """Composite: «что изменилось за N часов» — готовая связка трёх вызовов.
 
-    ⚠️ Окно ограничено 7 днями (168ч). При больших значениях — обрезается до 168ч.
-    Связка: checkDictionaries → checkCampaigns → check (батчами по 1000).
-    Стоимость: ~3 + N_batches вызовов.
+    Что делает:
+      1) checkDictionaries(Timestamp = now − N ч)
+      2) checkCampaigns   — получить Ids изменившихся кампаний
+      3) check            — детальный дифф по каждой батчами до 1000 ID
+
+    Параметры:
+      hours_back — окно в часах (1..168). Больше 168 обрежется до 168
+        (ограничение API — 7 суток).
+      field_names — что включить в дифф (см. direct_changes_check).
+
+    Стоимость: ~3 вызова + по 1 на каждые 1000 изменённых кампаний.
+
+    Ответ: {"_units": {...}, "window_hours": N, "since": "ISO",
+            "dictionaries": {...}, "changed_campaign_ids": [...],
+            "changed_campaign_count": N, "diffs": [{...}, ...]}.
     """
     hours = min(hours_back, 168)
     iso = _to_iso_utc(int(time.time()) - hours * 3600)
@@ -1366,16 +1403,70 @@ def direct_report(
     include_discount: bool = True,
     max_wait_sec: int = 600,
 ) -> dict:
-    """Отчёт Direct. Async long-running, TSV сохраняется в cache/.
+    """Отчёт Direct API (async). TSV сохраняется в cache/, путь возвращается.
 
-    report_type: CAMPAIGN_PERFORMANCE_REPORT | ADGROUP_PERFORMANCE_REPORT |
-      AD_PERFORMANCE_REPORT | CRITERIA_PERFORMANCE_REPORT |
-      SEARCH_QUERY_PERFORMANCE_REPORT | CUSTOM_REPORT |
-      REACH_AND_FREQUENCY_PERFORMANCE_REPORT
-    date_range_type: CUSTOM_DATE | LAST_7_DAYS | LAST_30_DAYS | LAST_90_DAYS |
-      YESTERDAY | THIS_MONTH | LAST_MONTH | ALL_TIME | …
-    filters: [{"Field":"...","Operator":"EQUALS|IN|...","Values":["..."]}]
-    Стоимость — отдельная квота Reports, **не** тратит units get-операций.
+    Стоимость: отдельная квота Reports (до 5 отчётов в очереди), не тратит
+    обычные units get-операций.
+
+    ——— report_type (обязательно) ———
+      CAMPAIGN_PERFORMANCE_REPORT          — по кампаниям (показы, клики, расход)
+      ADGROUP_PERFORMANCE_REPORT           — по группам объявлений
+      AD_PERFORMANCE_REPORT                — по объявлениям
+      CRITERIA_PERFORMANCE_REPORT          — по ключевым фразам/таргетингам
+      SEARCH_QUERY_PERFORMANCE_REPORT      — реальные поисковые запросы (для минусовки)
+      CUSTOM_REPORT                        — произвольная агрегация
+      REACH_AND_FREQUENCY_PERFORMANCE_REPORT — охваты/частота (для CPM)
+
+    ——— field_names (обязательно) ———
+    Базовые измерения (для группировки):
+      Date, CampaignId, CampaignName, CampaignType,
+      AdGroupId, AdGroupName, AdId, AdFormat, AdNetworkType,
+      Criterion, CriterionId, CriterionType, MatchedKeyword, Keyword,
+      Query (только для SEARCH_QUERY_PERFORMANCE_REPORT),
+      Device, CarrierType, ClickType, Gender, Age, Placement,
+      LocationOfPresenceId, LocationOfPresenceName, TargetingLocationId,
+      TargetingLocationName.
+    Базовые метрики:
+      Impressions, Clicks, Cost, Ctr, AvgCpc, AvgImpressionPosition,
+      AvgClickPosition, AvgTrafficVolume, Bounces, BounceRate,
+      Conversions, ConversionRate, CostPerConversion, Revenue, GoalsRoi,
+      AvgPageviews, Sessions.
+    ⚠️ Разрешены не все комбинации полей и типов отчёта — свериться
+    с таблицей «поддерживаемые поля» в документации при выборе.
+
+    ——— date_range_type ———
+      CUSTOM_DATE — требует date_from+date_to в формате 'YYYY-MM-DD'.
+      TODAY, YESTERDAY, LAST_3_DAYS, LAST_5_DAYS, LAST_7_DAYS, LAST_14_DAYS,
+      LAST_30_DAYS, LAST_90_DAYS, LAST_365_DAYS, THIS_WEEK_MON_TODAY,
+      THIS_WEEK_SUN_TODAY, LAST_WEEK, LAST_BUSINESS_WEEK, LAST_WEEK_SUN_SAT,
+      THIS_MONTH, LAST_MONTH, ALL_TIME, AUTO.
+    Для этих значений date_from/date_to НЕ передаются.
+
+    ——— filters (опционально) ———
+      Список условий вида:
+        [{"Field":"CampaignId","Operator":"IN","Values":["12345","67890"]}]
+      Operator: EQUALS, NOT_EQUALS, IN, NOT_IN, LESS_THAN, GREATER_THAN,
+                STARTS_WITH_IGNORE_CASE, DOES_NOT_START_WITH_IGNORE_CASE.
+
+    ——— Остальное ———
+      goals              — [int, ...] ID целей Метрики для построения конверсий.
+      attribution_models — ['LSC','FC','LC','LYDC','MCSC','FCCD']
+                           (LastSignificantClick, First, Last, LastYandex…).
+      order_by           — [{"Field":"Clicks","SortOrder":"DESCENDING"}, ...]
+      include_vat, include_discount — True/False (по умолчанию True).
+      max_wait_sec       — таймаут polling'а (по умолчанию 600).
+
+    ——— Что возвращается ———
+      {"path": "cache/report_*.tsv", "rows": N, "size_bytes": B,
+       "preview_top10": [...], "hint": "read_cached_tsv(...)"}.
+    Полные строки — через read_cached_tsv(path, offset, limit).
+
+    Пример: отчёт по запросам за последние 30 дней, топ по кликам.
+      direct_report(
+        report_type="SEARCH_QUERY_PERFORMANCE_REPORT",
+        field_names=["Date","CampaignName","Query","Impressions","Clicks","Cost"],
+        date_range_type="LAST_30_DAYS",
+        order_by=[{"Field":"Clicks","SortOrder":"DESCENDING"}])
     """
     if report_type not in REPORT_TYPES:
         raise ValueError(f"Unknown report_type: {report_type}")
@@ -1456,10 +1547,20 @@ def _inside_cache(p: pathlib.Path) -> bool:
 @mcp.tool()
 def read_cached(path: str, offset: int = 0, limit: int = 50,
                 key: str | None = None) -> dict:
-    """Прочитать закешированный JSON-результат чанком.
+    """Чтение закешированного JSON-ответа чанками.
 
-    key: имя массива в JSON (для dictionaries — 'Currencies', 'GeoRegions' и т.п.).
-    Без key — ищет 'results'/'items' автоматически.
+    Кеш-файлы появляются автоматически, когда тул возвращает «cached_to:…».
+
+    Параметры:
+      path   (обязательно) — значение из поля `cached_to` предыдущего ответа.
+      offset — сколько элементов пропустить с начала (по умолч. 0).
+      limit  — сколько элементов вернуть (по умолч. 50, максимум разумно 500).
+      key    — имя конкретного массива в JSON. Нужно для dictionaries
+               (где в одном файле могут быть GeoRegions + Currencies + ...).
+               Без key тул автоматически ищет 'results' или 'items'.
+
+    Ответ: {"slice":[...N элементов], "offset":N, "returned":N, "total":N,
+            "has_more": true/false, "available_keys":[...имена массивов в файле...]}.
     """
     p = pathlib.Path(path).resolve()
     if not _inside_cache(p):
@@ -1486,7 +1587,22 @@ def read_cached(path: str, offset: int = 0, limit: int = 50,
 
 @mcp.tool()
 def read_cached_tsv(path: str, offset: int = 0, limit: int = 50) -> dict:
-    """Прочитать TSV-отчёт чанком."""
+    """Чтение TSV-отчёта Reports API чанками.
+
+    Путь берётся из ответа direct_report (поле `path`).
+
+    Параметры:
+      path   (обязательно) — путь к TSV-файлу в cache/.
+      offset — сколько строк пропустить (без заголовка).
+      limit  — сколько строк вернуть.
+
+    Каждая строка парсится по заголовкам TSV в dict {колонка: значение}.
+    Денежные значения приходят в минимальных единицах × 1 000 000 (микро)
+    только если в запросе `returnMoneyInMicros=true` — по умолчанию в обёртке false.
+
+    Ответ: {"slice":[{"Колонка":"значение",...}], "offset":N, "returned":N,
+            "total":N, "has_more":true/false}.
+    """
     p = pathlib.Path(path).resolve()
     if not _inside_cache(p):
         raise RuntimeError("Путь вне cache-директории")
@@ -1516,7 +1632,15 @@ def read_cached_tsv(path: str, offset: int = 0, limit: int = 50) -> dict:
 
 @mcp.tool()
 def find_campaign(query: str) -> dict:
-    """Поиск кампании по подстроке в имени или по точному ID."""
+    """Найти кампанию по подстроке в имени или точному ID.
+
+    Сначала внутри вызывает direct_campaigns_get (дешёвый минимум полей),
+    затем фильтрует локально. Возвращает до 30 совпадений.
+
+    query — строка. Если это число-строка — ищется ещё и точное совпадение по Id.
+
+    Ответ: {"_units": {...}, "matches":[{...}], "total_matches": N}.
+    """
     items = _generic_get("campaigns", "Campaigns",
                          fields=["Id", "Name", "State", "Status", "Type"],
                          max_results=DEFAULT_MAX_RESULTS)
@@ -1535,7 +1659,14 @@ def _all_campaign_ids() -> list[int]:
 
 @mcp.tool()
 def find_adgroup(query: str, campaign_id: int | None = None) -> dict:
-    """Поиск группы объявлений. Без campaign_id сначала подгружаются все кампании."""
+    """Найти группу объявлений по подстроке в имени.
+
+    campaign_id — если знаешь конкретную кампанию, передай её Id, это
+      дешевле (1 запрос вместо 2).
+    Без campaign_id — тул сам подгрузит все кампании и пройдёт по ним.
+
+    Ответ: {"_units": {...}, "matches":[{...}], "total_matches": N}.
+    """
     if campaign_id:
         selection = {"CampaignIds": [campaign_id]}
     else:
@@ -1557,7 +1688,13 @@ def find_adgroup(query: str, campaign_id: int | None = None) -> dict:
 @mcp.tool()
 def find_keyword(query: str, adgroup_id: int | None = None,
                  campaign_id: int | None = None) -> dict:
-    """Поиск ключа. Без фильтров — подгружаются все кампании."""
+    """Найти ключевую фразу по подстроке.
+
+    Приоритет фильтров: adgroup_id → campaign_id → всё. Чем уже скоуп,
+    тем дешевле вызов (ключей может быть тысячи).
+
+    Ответ: {"_units": {...}, "matches":[{...}], "total_matches": N}.
+    """
     selection: dict = {}
     if adgroup_id:
         selection["AdGroupIds"] = [adgroup_id]
@@ -1581,7 +1718,15 @@ def find_keyword(query: str, adgroup_id: int | None = None,
 
 @mcp.tool()
 def direct_units_status() -> dict:
-    """Текущий баланс units (дешёвый probe через campaigns.get Limit=1)."""
+    """Текущий остаток units (баллов) API-квоты.
+
+    Внутри делает самый дешёвый запрос — campaigns.get Limit=1 — и вытаскивает
+    значения из заголовка `units`. Рекомендуется вызывать ПЕРЕД большими
+    операциями (например, перед fetch_all=True или перед большим отчётом).
+
+    Ответ: {"rest": int, "daily_limit": int, "spent_this_call": int,
+            "spent_session": int}.
+    """
     _call("campaigns", "get", {
         "SelectionCriteria": {}, "FieldNames": ["Id"],
         "Page": {"Limit": 1, "Offset": 0},
@@ -1591,13 +1736,19 @@ def direct_units_status() -> dict:
 
 @mcp.tool()
 def account_summary(lightweight: bool = True) -> dict:
-    """Быстрая сводка по аккаунту.
+    """Быстрая сводка по кабинету: сколько кампаний, групп, объявлений, ключей.
 
-    lightweight=True — только счётчики (campaigns сначала, потом по их ID adgroups/ads/keywords).
-    lightweight=False — возвращает полные списки всех сущностей (дорого).
+    Логика: сначала выкачивает список кампаний, дальше запрашивает
+    остальные сущности с фильтром CampaignIds по всем кампаниям
+    (иначе API возвращает 8000).
 
-    Direct API требует фильтры (CampaignIds/AdGroupIds) для adgroups/ads/keywords,
-    поэтому они считаются через preload кампаний.
+    lightweight=True (по умолчанию) — возвращает только количества.
+    lightweight=False — дополнительно полный список кампаний (без остального).
+
+    Стоимость: при lightweight обычно 50-200 units (зависит от размера кабинета).
+
+    Ответ: {"_units_before": {...}, "campaigns_count": N, "adgroups_count": N,
+            "ads_count": N, "keywords_count": N, "_units_after": {...}}.
     """
     summary: dict = {"_units_before": _units.snapshot()}
 
@@ -1637,10 +1788,21 @@ def account_summary(lightweight: bool = True) -> dict:
 @mcp.tool()
 def estimate_cost(service: str, expected_objects: int,
                   expected_fields: int = 5) -> dict:
-    """Примерная оценка стоимости вызова в units.
+    """Грубая оценка стоимости планируемого вызова в units (без похода в API).
 
-    Эмпирика: ~0.5 units на объект при дешёвых полях + 1 за страницу.
-    Оценка консервативная — реальная стоимость зависит от поля (Productivity/Stat дороже).
+    Эмпирика:
+      - Фиксированная стоимость метода: 10-15 units за вызов (зависит от сервиса).
+      - ~0.5-1 unit на объект при дешёвых полях.
+      - Для полей Productivity / Statistics / Stat цена удорожается в 2-5 раз.
+      - Пагинация: +фиксированная стоимость за каждый дополнительный Page.get.
+
+    Параметры:
+      service          — имя сервиса (для логов, на расчёт не влияет).
+      expected_objects — сколько объектов ожидаешь вернуть.
+      expected_fields  — сколько полей в FieldNames (по умолч. 5).
+
+    Ответ: {"service":..., "expected_objects":..., "pages":..., "estimate_low":...,
+            "estimate_high":..., "current_rest":..., "daily_limit":..., "hint":"..."}.
     """
     pages = max(1, (expected_objects + PAGE_LIMIT - 1) // PAGE_LIMIT)
     est = max(1, int(expected_objects * 0.5 + pages))

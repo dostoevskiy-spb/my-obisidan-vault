@@ -145,3 +145,5 @@
 {"ts": 1776608201.7286122, "service": "reports", "status": 400, "body": "{\"error\":{\"error_code\":\"4000\",\"error_detail\":\"В параметре FieldNames указано значение CriteriaType, которое несовместимо со значениями CriterionType для типа отчета CUSTOM_REPORT\",\"error_string\":\"Параметры запроса указаны неверно\",\"request_id\":\"7837939203082492534\"}}"}
 {"ts": 1776608227.374384, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 4, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776608226_1bf7bb9c.tsv", "ok": true}
 {"ts": 1776608229.3469403, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 57, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776608228_be826a0c.tsv", "ok": true}
+{"ts": 1776611206.4538379, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776611317.7727919, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 172, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776611315_b8865e05.tsv", "ok": true}
