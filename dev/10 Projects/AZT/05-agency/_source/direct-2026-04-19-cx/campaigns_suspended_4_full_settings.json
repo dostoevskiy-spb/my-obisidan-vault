@@ -1,0 +1,90 @@
+{
+  "source": "direct_campaigns_get for SUSPENDED campaigns with full settings",
+  "retrieved_at": "2026-04-19T10:14:00Z",
+  "money_unit": "All amounts in micro-rubles (RUB × 10^6). Divide by 10^6 for rubles.",
+  "key_findings": [
+    "Все 4 кампании в статусе SUSPENDED (приостановлены агентством на 18-19.04)",
+    "Две счётчики Метрики: 87177110 (основной) и 96563160 (второй — требует уточнения)",
+    "AttributionModel = LSCCD (Last Significant Click Cross-Device) — классическая у Яндекса",
+    "Пермь РСЯ 700165892 оптимизировалась на GoalId=13 — ЭТО СТАНДАРТНАЯ ЦЕЛЬ ЯНДЕКСА 'Вовлечённые визиты' (встроенная). Поэтому кампания давала 10 конверсий 16.04 — у неё была правильная прокси-цель для обучения алгоритма",
+    "Тюмень РСЯ 707716223 использует AVERAGE_CPA_MULTIPLE_GOALS без явной цели — автоматическая мульти-целевая оптимизация с exploration budget"
+  ],
+  "campaigns": [
+    {
+      "Id": 700165888,
+      "Name": "Теплицы_Пермский Край_Поиск",
+      "StartDate": "2025-05-08",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "SUSPENDED",
+      "Spend_RUB_total": 289606.86,
+      "Channel": "Поиск",
+      "BiddingStrategy": {
+        "Search": "AVERAGE_CPC",
+        "AverageCpc_RUB": 100,
+        "WeeklySpendLimit_RUB": 12000,
+        "Network": "SERVING_OFF"
+      },
+      "CounterIds": [87177110, 96563160],
+      "AttributionModel": "LSCCD",
+      "NegativeKeywordSharedSetIds": []
+    },
+    {
+      "Id": 700165892,
+      "Name": "Теплицы_Пермский Край_РСЯ",
+      "StartDate": "2025-05-08",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "SUSPENDED",
+      "Spend_RUB_total": 183633.84,
+      "Channel": "РСЯ",
+      "BiddingStrategy": {
+        "Search": "SERVING_OFF",
+        "Network": "WB_MAXIMUM_CONVERSION_RATE",
+        "GoalId": 13,
+        "GoalName": "Вовлечённые визиты (стандартная цель Яндекс Метрики)",
+        "WeeklySpendLimit_RUB": 8000
+      },
+      "CounterIds": [87177110, 96563160],
+      "AttributionModel": "LSCCD",
+      "NegativeKeywordSharedSetIds": [],
+      "note": "Эта кампания давала 10 конверсий 16.04, 3 конверсии 17.04 — главный рабочий источник заявок"
+    },
+    {
+      "Id": 707716203,
+      "Name": "Теплицы_Тюмень_Поиск",
+      "StartDate": "2026-03-02",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "SUSPENDED",
+      "Spend_RUB_total": 58135.81,
+      "Channel": "Поиск",
+      "BiddingStrategy": {
+        "Search": "AVERAGE_CPC",
+        "AverageCpc_RUB": 90,
+        "WeeklySpendLimit_RUB": 12000,
+        "Network": "SERVING_OFF"
+      },
+      "CounterIds": [87177110, 96563160],
+      "AttributionModel": "LSCCD"
+    },
+    {
+      "Id": 707716223,
+      "Name": "Теплицы_Тюмень_РСЯ",
+      "StartDate": "2026-03-02",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "SUSPENDED",
+      "Spend_RUB_total": 34474.07,
+      "Channel": "РСЯ",
+      "BiddingStrategy": {
+        "Search": "SERVING_OFF",
+        "Network": "AVERAGE_CPA_MULTIPLE_GOALS",
+        "WeeklySpendLimit_RUB": 8000,
+        "MinimumExplorationBudget_RUB": 2800
+      },
+      "CounterIds": [87177110, 96563160],
+      "AttributionModel": "LSCCD"
+    }
+  ]
+}

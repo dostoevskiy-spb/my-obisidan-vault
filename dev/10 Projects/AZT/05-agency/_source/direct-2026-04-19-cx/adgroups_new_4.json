@@ -1,0 +1,61 @@
+{
+  "source": "direct_adgroups_get для 4 новых ЕПК кампаний",
+  "retrieved_at": "2026-04-19T10:12:00Z",
+  "total": 4,
+  "region_ids_reference": {
+    "55": "Тюменская область",
+    "11108": "Пермский край",
+    "-20237": "Березники (минус-регион, исключение из Пермского края)"
+  },
+  "key_findings": [
+    "По 1 группе в каждой кампании (имя 'Основная')",
+    "Две пермские группы исключают Березники (-20237). Причина агентству неизвестна — стоит уточнить",
+    "NegativeKeywords: null на всех группах — минус-слов на уровне группы НЕТ. Все минус-слова встроены прямо в текст ключевых фраз (через синтаксис 'фраза -минус')"
+  ],
+  "groups": [
+    {
+      "Id": 5743205991,
+      "Name": "Основная",
+      "CampaignId": 709131003,
+      "CampaignName": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "Status": "ACCEPTED",
+      "Type": "TEXT_AD_GROUP",
+      "RegionIds": [11108, -20237],
+      "RegionsDescription": "Пермский край БЕЗ Березников",
+      "NegativeKeywords": null
+    },
+    {
+      "Id": 5743422928,
+      "Name": "Основная",
+      "CampaignId": 709150485,
+      "CampaignName": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "Status": "ACCEPTED",
+      "Type": "TEXT_AD_GROUP",
+      "RegionIds": [55],
+      "RegionsDescription": "Тюменская область",
+      "NegativeKeywords": null
+    },
+    {
+      "Id": 5743206012,
+      "Name": "Основная",
+      "CampaignId": 709131007,
+      "CampaignName": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "Status": "ACCEPTED",
+      "Type": "TEXT_AD_GROUP",
+      "RegionIds": [55],
+      "RegionsDescription": "Тюменская область",
+      "NegativeKeywords": null
+    },
+    {
+      "Id": 5743424383,
+      "Name": "Основная",
+      "CampaignId": 709150634,
+      "CampaignName": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "Status": "ACCEPTED",
+      "Type": "TEXT_AD_GROUP",
+      "RegionIds": [11108, -20237],
+      "RegionsDescription": "Пермский край БЕЗ Березников",
+      "NegativeKeywords": null
+    }
+  ]
+}

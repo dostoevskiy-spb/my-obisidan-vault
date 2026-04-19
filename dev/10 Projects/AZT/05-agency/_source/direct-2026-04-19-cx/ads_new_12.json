@@ -1,0 +1,106 @@
+{
+  "source": "direct_ads_get для 4 новых ЕПК кампаний",
+  "retrieved_at": "2026-04-19T10:10:00Z",
+  "note": "Для МК_ПЕРМЬ/МК_ТЮМЕНЬ (709149630/709150108) объявления недоступны через API — они в формате Мастера Кампаний",
+  "total_ads": 12,
+  "key_findings": [
+    "3 одинаковых объявления тиражируются на 4 кампании (всего 12 экземпляров)",
+    "Тексты 3 вариантов: (1) 'Купить теплицу в Перми/Тюмени с установкой | Лучшая цена', (2) 'Теплицы напрямую с завода без посредников | Гарантия до 10 лет', (3) 'Теплицы из поликарбоната с гарантией качества | Лучшая цена'",
+    "Все посадочные ведут на ОБЩИЙ КАТАЛОГ: /catalog/teplicy/ или /tmn/catalog/teplicy/. Ни одного объявления с посадочной на товарную карточку",
+    "UTM в Href: utm_source=yandex&utm_medium=cpc&utm_campaign={yandex-poisk}&utm_content={ad_id}&utm_term={keyword}",
+    "{yandex-poisk} — макрос Яндекса: для поисковых показов подставит 'yandex-poisk', для РСЯ — 'direct_network', для МК — '{yandex-mk}'"
+  ],
+  "ads": [
+    {
+      "CampaignId": 709131003, "CampaignName": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721142, "AdGroupId": 5743205991,
+      "Title": "Купить теплицу в Перми с установкой",
+      "Title2": "Лучшая цена",
+      "Text": "Собственное производство, монтаж, доставка и гарантия до 10 лет. Оставляйте заявку!",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?utm_source=yandex&utm_medium=cpc&utm_campaign={yandex-poisk}&utm_content={ad_id}&utm_term={keyword}",
+      "DisplayUrlPath": "купить-теплицу"
+    },
+    {
+      "CampaignId": 709131003, "CampaignName": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721143, "AdGroupId": 5743205991,
+      "Title": "Теплицы напрямую с завода без посредников",
+      "Title2": "Гарантия до 10 лет",
+      "Text": "От 10 700 ₽. Найдёте дешевле - сделаем скидку. Доставка, монтаж. Быстро. Заказывайте!",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?utm_source=yandex&utm_medium=cpc&utm_campaign={yandex-poisk}&utm_content={ad_id}&utm_term={keyword}"
+    },
+    {
+      "CampaignId": 709131003, "CampaignName": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721144, "AdGroupId": 5743205991,
+      "Title": "Теплицы из поликарбоната с гарантией качества",
+      "Title2": "Лучшая цена",
+      "Text": "Теплицы из поликарбоната Полигаль — служат до 15 лет без замены. Обращайтесь!",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?utm_source=yandex&utm_medium=cpc&utm_campaign={yandex-poisk}&utm_content={ad_id}&utm_term={keyword}"
+    },
+    {
+      "CampaignId": 709131007, "CampaignName": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721235, "AdGroupId": 5743206012,
+      "Title": "Купить теплицу в Тюмени с установкой",
+      "Title2": "Лучшая цена",
+      "Text": "Собственное производство, монтаж, доставка и гарантия до 10 лет. Оставляйте заявку!",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709131007, "CampaignName": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721236, "AdGroupId": 5743206012,
+      "Title": "Теплицы напрямую с завода без посредников",
+      "Title2": "Гарантия до 10 лет",
+      "Text": "От 10 700 ₽. Найдёте дешевле - сделаем скидку. Доставка, монтаж. Быстро. Заказывайте!",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709131007, "CampaignName": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17691721237, "AdGroupId": 5743206012,
+      "Title": "Теплицы из поликарбоната с гарантией качества",
+      "Title2": "Лучшая цена",
+      "Text": "Теплицы из поликарбоната Полигаль — служат до 15 лет без замены. Обращайтесь!",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150485, "CampaignName": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692167918, "AdGroupId": 5743422928,
+      "Title": "Купить теплицу в Тюмени с установкой",
+      "Title2": "Лучшая цена",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150485, "CampaignName": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692167919, "AdGroupId": 5743422928,
+      "Title": "Теплицы напрямую с завода без посредников",
+      "Title2": "Гарантия до 10 лет",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150485, "CampaignName": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692167920, "AdGroupId": 5743422928,
+      "Title": "Теплицы из поликарбоната с гарантией качества",
+      "Title2": "Лучшая цена",
+      "Href": "https://azt-teplica.ru/tmn/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150634, "CampaignName": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692172254, "AdGroupId": 5743424383,
+      "Title": "Купить теплицу в Перми с установкой",
+      "Title2": "Лучшая цена",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150634, "CampaignName": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692172255, "AdGroupId": 5743424383,
+      "Title": "Теплицы напрямую с завода без посредников",
+      "Title2": "Гарантия до 10 лет",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?..."
+    },
+    {
+      "CampaignId": 709150634, "CampaignName": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "AdId": 17692172256, "AdGroupId": 5743424383,
+      "Title": "Теплицы из поликарбоната с гарантией качества",
+      "Title2": "Лучшая цена",
+      "Href": "https://azt-teplica.ru/catalog/teplicy/?..."
+    }
+  ]
+}
