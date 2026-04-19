@@ -1147,12 +1147,26 @@ def direct_leads_get(
 
 @mcp.tool()
 def direct_dictionaries_get(names: list[str]) -> dict:
-    """Справочники. Доступные names:
-    GeoRegions, Currencies, TimeZones, AdCategories, Constants, Interests,
-    OperationSystemVersions, ProductivityTargetCategories, SupplySidePlatforms.
+    """Справочники Direct API (глобальные, не зависят от клиента).
 
-    Большие ответы (>15k символов) автоматически кешируются; используй
-    read_cached(path, key='Currencies', offset, limit) для чанков.
+    names — список названий справочников, перечисли нужные:
+      GeoRegions                     — дерево регионов РФ и мира (большой).
+      Currencies                     — валюты с параметрами (мин/макс ставка и т.п.).
+      TimeZones                      — часовые пояса.
+      AdCategories                   — тематические категории объявлений.
+      Constants                      — служебные константы API.
+      Interests                      — категории интересов пользователей.
+      OperationSystemVersions        — версии ОС для таргетинга мобильных.
+      ProductivityTargetCategories   — категории для подбора видеообъявлений.
+      SupplySidePlatforms            — SSP-платформы.
+      VideoIABCategories             — IAB-категории видеообъявлений (если доступны).
+
+    GeoRegions возвращает порядка 30k строк — ответ автоматически
+    складывается в cache/. Читай чанками:
+      read_cached(path, key='GeoRegions', offset=0, limit=100)
+
+    Ответ: {"_units": {...}, <имя_справочника>: [...], ...} либо,
+    если большой: {"cached_to": "...", "preview": {...}}.
     """
     data = _call("dictionaries", "get", {"DictionaryNames": names})
     return _wrap_dict(data.get("result", {}), "dictionaries")
@@ -1160,10 +1174,20 @@ def direct_dictionaries_get(names: list[str]) -> dict:
 
 @mcp.tool()
 def direct_client_get(fields: list[str] | None = None) -> dict:
-    """Владелец текущего токена.
+    """Данные владельца токена (или клиента из CLIENT_LOGIN).
 
-    ⚠️ Баланс рекламного счёта в Direct API v5 недоступен — смотри balance.yandex.ru.
-    Косвенные сигналы: AccountQuality, Restrictions, Notification.
+    Возвращает: логин, ClientId, валюту, лимиты, настройки, уведомления.
+
+    ⚠️ Баланс рекламного счёта в Direct API v5 НЕ доступен —
+      смотри в balance.yandex.ru или в веб-кабинете Директа.
+      Косвенные сигналы есть в Restrictions (квоты) и AccountQuality.
+
+    fields — по умолчанию максимальный набор: AccountQuality, ClientId, ClientInfo,
+      CountryId, Currency, Grants, Login, Notification, Phone, Restrictions,
+      Settings, Type, VatRate.
+      Type — 'CLIENT' | 'AGENCY' | 'REPRESENTATIVE'.
+
+    Ответ: {"_units": {...}, "Clients": [{...}]}.
     """
     default = ["AccountQuality", "ClientId", "ClientInfo", "CountryId",
                "Currency", "Grants", "Login", "Notification", "Phone",
@@ -1181,7 +1205,20 @@ def direct_agency_clients_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Клиенты агентства (для агентского токена)."""
+    """Клиенты агентства. Работает только если токен выдан АГЕНТСТВОМ.
+
+    Для обычного клиентского токена вернёт 54 «Нет прав для доступа в агентский сервис».
+
+    Фильтры:
+      logins   — [str, ...] конкретные логины клиентов.
+      archived — bool, показать архивных (True) или активных (False).
+
+    fields — полный набор по клиенту: AccountQuality, ClientId, ClientInfo,
+      Currency, Grants, Login, Notification, Phone, Representatives,
+      Restrictions, Settings, Type, VatRate.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if logins: selection["Logins"] = logins
     if archived is not None:
