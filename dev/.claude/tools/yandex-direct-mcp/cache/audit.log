@@ -52,3 +52,4 @@
 {"ts": 1776606646.472157, "service": "campaigns", "method": "get", "error": {"request_id": "99846398494745537", "error_code": 8000, "error_detail": "Элемент массива TextCampaignFieldNames содержит неверное значение перечисления, ожидается одно из значений: CounterIds, RelevantKeywords, Settings, BiddingStrategy, PriorityGoals, TrackingParams, AttributionModel, PackageBiddingStrategy, CanBeUsedAsPackageBiddingStrategySource, NegativeKeywordSharedSetIds", "error_string": "Некорректный запрос"}}
 {"ts": 1776606649.3145058, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 1107, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776606646_41bf151f.tsv", "ok": true}
 {"ts": 1776606677.3845654, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606799.078136, "service": "campaigns", "method": "get", "units": null, "ok": true}

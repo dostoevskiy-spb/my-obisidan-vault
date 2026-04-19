@@ -1,0 +1,166 @@
+{
+  "source": "direct_campaigns_get (fetch_all=true, default TEXT_CAMPAIGN type)",
+  "retrieved_at": "2026-04-19T10:04:00Z",
+  "total_visible": 23,
+  "not_returned_through_api": [
+    {
+      "Id": 709149630,
+      "Name": "МК_ПЕРМЬ_СЕМАНТИКА_СРА",
+      "note": "Видна в отчётах (CAMPAIGN_PERFORMANCE_REPORT) с 18.04, но campaigns.get возвращает пусто для всех типов. Вероятно Мастер Кампаний с особым API — либо SMART_CAMPAIGN, либо токен не имеет прав чтения её настроек."
+    },
+    {
+      "Id": 709150108,
+      "Name": "МК_ТЮМЕНЬ_СЕМКНТИКА_СРА",
+      "note": "Видна в отчётах с 18.04. Ошибка опечатки в названии: 'СЕМКНТИКА' вместо 'СЕМАНТИКА'. Тот же статус недоступности через get."
+    }
+  ],
+  "money_unit": "Funds.Spend в микрорублях (₽ × 10^6). Делить на 10^6 для рублей.",
+  "campaigns": [
+    {
+      "Id": 71407894, "Name": "Теплицы | Пермь",
+      "StartDate": "2022-02-16", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 89011.17
+    },
+    {
+      "Id": 73915988, "Name": "Теплицы | Пермь | Приоритетные",
+      "StartDate": "2022-05-03", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 21488.70
+    },
+    {
+      "Id": 112155058, "Name": "Единая перфоманс-кампания №5 от 10-06-2024",
+      "StartDate": "2024-06-10", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 69490.71
+    },
+    {
+      "Id": 113712587, "Name": "Оптимизация РК 112155058 - Поиск - Единая перфоманс-кампания №5 от 10-06-2024",
+      "StartDate": "2024-08-19", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 113713550, "Name": "Оптимизация РК 112155058 - Сети - Единая перфоманс-кампания №5 от 10-06-2024",
+      "StartDate": "2024-08-19", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 113764721, "Name": "ЕПК от Яндекса - Поиск - Пермский край - Теплицы",
+      "StartDate": "2024-08-21", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 358355.12
+    },
+    {
+      "Id": 113765753, "Name": "ЕПК от Яндекса - Сети - Пермский край - Теплицы",
+      "StartDate": "2024-08-21", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 110453.68
+    },
+    {
+      "Id": 113766162, "Name": "ЕПК от Яндекса - Поиск - Екатеринбург - Теплицы",
+      "StartDate": "2024-08-21", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 113766168, "Name": "ЕПК от Яндекса - Сети - Екатеринбург - Теплицы",
+      "StartDate": "2024-08-21", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 700165888, "Name": "Теплицы_Пермский Край_Поиск",
+      "StartDate": "2025-05-08", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "SUSPENDED",
+      "Spend_RUB": 289606.86,
+      "note": "Пауза на 18-19.04, до этого работала"
+    },
+    {
+      "Id": 700165892, "Name": "Теплицы_Пермский Край_РСЯ",
+      "StartDate": "2025-05-08", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "SUSPENDED",
+      "Spend_RUB": 183633.84,
+      "note": "ГЛАВНАЯ рабочая кампания: давала 10 заявок 16.04. Пауза на 18-19.04"
+    },
+    {
+      "Id": 702303579, "Name": "Теплицы стекло_Пермский Край_Поиск",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 5400.04
+    },
+    {
+      "Id": 702303581, "Name": "Модульные дома_целевые_Пермский Край_Поиск",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 702303582, "Name": "Модульные дома_околоцелевые_Пермский Край_Поиск",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 702303585, "Name": "Модульные бани - бытовки_Пермский Край_Поиск",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 18254.22
+    },
+    {
+      "Id": 702303587, "Name": "Модульные дома_Пермский Край_РСЯ",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 0
+    },
+    {
+      "Id": 702303589, "Name": "Модульные бани - бытовки_Пермский Край_РСЯ",
+      "StartDate": "2025-07-29", "Type": "TEXT_CAMPAIGN",
+      "Status": "MODERATION", "State": "ARCHIVED",
+      "Spend_RUB": 7731.22
+    },
+    {
+      "Id": 707716203, "Name": "Теплицы_Тюмень_Поиск",
+      "StartDate": "2026-03-02", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "SUSPENDED",
+      "Spend_RUB": 58135.81,
+      "note": "Пауза на 18-19.04"
+    },
+    {
+      "Id": 707716223, "Name": "Теплицы_Тюмень_РСЯ",
+      "StartDate": "2026-03-02", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "SUSPENDED",
+      "Spend_RUB": 34474.07,
+      "note": "Пауза на 18-19.04"
+    },
+    {
+      "Id": 709131003, "Name": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-17", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "ON",
+      "Spend_RUB": 1473.77,
+      "note": "Новая, запущена 17.04. Поиск. Стратегия WB_MAXIMUM_CONVERSION_RATE (CPA) на GoalId=547431898 (Страница СПАСИБО)."
+    },
+    {
+      "Id": 709131007, "Name": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-17", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "ON",
+      "Spend_RUB": 1241.78,
+      "note": "Новая, запущена 17.04. Поиск. CPA на GoalId=547431898"
+    },
+    {
+      "Id": 709150485, "Name": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-18", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "ON",
+      "Spend_RUB": 316.39,
+      "note": "Новая, запущена 18.04. РСЯ. CPA на GoalId=547431898"
+    },
+    {
+      "Id": 709150634, "Name": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-18", "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED", "State": "ON",
+      "Spend_RUB": 250.10,
+      "note": "Новая, запущена 18.04. РСЯ. CPA на GoalId=547431898"
+    }
+  ]
+}

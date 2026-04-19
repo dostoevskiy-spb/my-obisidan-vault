@@ -1,0 +1,42 @@
+{
+  "source": "direct_client_get",
+  "retrieved_at": "2026-04-19T10:04:00Z",
+  "AccountQuality": 7.1,
+  "ClientId": 97187022,
+  "Login": "teplitsi-azt",
+  "Email": "teplitsi-azt@yandex.ru",
+  "SmsPhoneNumber": "+7908*****30",
+  "ClientInfo": "Клепцин Сергей",
+  "CountryId": 225,
+  "Currency": "RUB",
+  "VatRate": 22,
+  "Type": "CLIENT",
+  "Grants": {
+    "EDIT_CAMPAIGNS": "YES",
+    "IMPORT_XLS": "YES",
+    "TRANSFER_MONEY": "YES"
+  },
+  "Restrictions": {
+    "CAMPAIGNS_TOTAL_PER_CLIENT": 3000,
+    "CAMPAIGNS_UNARCHIVED_PER_CLIENT": 1000,
+    "ADGROUPS_TOTAL_PER_CAMPAIGN": 1000,
+    "ADS_TOTAL_PER_ADGROUP": 50,
+    "KEYWORDS_TOTAL_PER_ADGROUP": 200,
+    "API_POINTS": 1100000
+  },
+  "Settings": {
+    "DISPLAY_STORE_RATING": "YES",
+    "CORRECT_TYPOS_AUTOMATICALLY": "YES",
+    "SHARED_ACCOUNT_ENABLED": "YES"
+  },
+  "EmailSubscriptions": {
+    "RECEIVE_RECOMMENDATIONS": "NO",
+    "TRACK_MANAGED_CAMPAIGNS": "NO",
+    "TRACK_POSITION_CHANGES": "NO"
+  },
+  "notes": [
+    "AccountQuality = 7.1 — средне-хороший индекс качества (шкала 0-10)",
+    "Агентство имеет полные права: EDIT_CAMPAIGNS, TRANSFER_MONEY, IMPORT_XLS",
+    "Общий счёт включён (SHARED_ACCOUNT_ENABLED = YES) — бюджет един на все кампании"
+  ]
+}
