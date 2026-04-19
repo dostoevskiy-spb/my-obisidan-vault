@@ -1,0 +1,92 @@
+{
+  "source": "direct_campaigns_get with full TextCampaignFieldNames",
+  "retrieved_at": "2026-04-19T10:15:00Z",
+  "money_unit": "All amounts in micro-rubles (RUB × 10^6). Divide by 10^6 for rubles.",
+  "key_findings": [
+    "Все 4 новых ЕПК используют стратегию WB_MAXIMUM_CONVERSION_RATE (Максимум конверсий с оплатой за конверсии — CPA)",
+    "GoalId = 547431898 — цель 'Страница СПАСИБО' (thank.php), которая за весь апрель сработала всего 6 раз",
+    "Для автостратегии нужно 10+ конверсий/неделю — математически невозможно достичь на этой цели",
+    "PriorityGoals = null — приоритетных целей нет (только основная)",
+    "TrackingParams = null на уровне кампаний — UTM прописан в каждом объявлении",
+    "AttributionModel = AUTO (у старых SUSPENDED было LSCCD)",
+    "Один счётчик Метрики (87177110). У старых был второй: 96563160",
+    "NegativeKeywordSharedSetIds = [] — общих наборов минус-слов нет. Все минусы встроены в фразы или отсутствуют",
+    "CAMPAIGN_EXACT_PHRASE_MATCHING_ENABLED = NO — точное соответствие отключено, ключи работают в широком"
+  ],
+  "campaigns": [
+    {
+      "Id": 709131003,
+      "Name": "ЕПК_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-17",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "ON",
+      "Spend_RUB": 1592.96,
+      "Channel": "Поиск (Search)",
+      "BiddingStrategy": {
+        "Search": "WB_MAXIMUM_CONVERSION_RATE",
+        "GoalId": 547431898,
+        "WeeklySpendLimit_RUB": 6111,
+        "Network": "SERVING_OFF"
+      },
+      "CounterIds": [87177110],
+      "AttributionModel": "AUTO",
+      "NegativeKeywordSharedSetIds": []
+    },
+    {
+      "Id": 709131007,
+      "Name": "ЕПК_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-17",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "ON",
+      "Spend_RUB": 1398.66,
+      "Channel": "Поиск (Search)",
+      "BiddingStrategy": {
+        "Search": "WB_MAXIMUM_CONVERSION_RATE",
+        "GoalId": 547431898,
+        "WeeklySpendLimit_RUB": 6111,
+        "Network": "SERVING_OFF"
+      },
+      "CounterIds": [87177110],
+      "AttributionModel": "AUTO"
+    },
+    {
+      "Id": 709150485,
+      "Name": "ЕПК_РСЯ_ТЮМЕНЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-18",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "ON",
+      "Spend_RUB": 383.13,
+      "Channel": "РСЯ (Network)",
+      "BiddingStrategy": {
+        "Search": "SERVING_OFF",
+        "Network": "WB_MAXIMUM_CONVERSION_RATE",
+        "GoalId": 547431898,
+        "WeeklySpendLimit_RUB": 2111
+      },
+      "CounterIds": [87177110],
+      "AttributionModel": "AUTO"
+    },
+    {
+      "Id": 709150634,
+      "Name": "ЕПК_РСЯ_ПЕРМЬ_СЕМАНТИКА_КЛИКИ",
+      "StartDate": "2026-04-18",
+      "Type": "TEXT_CAMPAIGN",
+      "Status": "ACCEPTED",
+      "State": "ON",
+      "Spend_RUB": 338.07,
+      "Channel": "РСЯ (Network)",
+      "BiddingStrategy": {
+        "Search": "SERVING_OFF",
+        "Network": "WB_MAXIMUM_CONVERSION_RATE",
+        "GoalId": 547431898,
+        "WeeklySpendLimit_RUB": 2111
+      },
+      "CounterIds": [87177110],
+      "AttributionModel": "AUTO"
+    }
+  ],
+  "total_spend_3days_RUB": 3712.82
+}
