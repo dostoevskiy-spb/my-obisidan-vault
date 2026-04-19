@@ -326,10 +326,42 @@ def direct_campaigns_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Кампании. ~1 unit/объект, ~10 units/1000 объектов.
+    """Список кампаний. Фильтры опциональны — без них вернёт все.
 
-    states: ON/OFF/SUSPENDED/ENDED/CONVERTED/ARCHIVED
-    subfields: {"TextCampaignFieldNames": [...], "DynamicTextCampaignFieldNames": [...], ...}
+    Цена: ~10 units + 1 unit на объект.
+
+    Фильтры (все опциональны, можно комбинировать):
+      ids       — [int, ...] точные ID кампаний.
+      states    — подмножество ['ON','OFF','SUSPENDED','ENDED','CONVERTED','ARCHIVED'].
+      statuses  — подмножество ['DRAFT','MODERATION','ACCEPTED','REJECTED'].
+      types     — подмножество ['TEXT_CAMPAIGN','UNIFIED_CAMPAIGN',
+                   'DYNAMIC_TEXT_CAMPAIGN','MOBILE_APP_CAMPAIGN','SMART_CAMPAIGN',
+                   'MCBANNER_CAMPAIGN','CPM_BANNER_CAMPAIGN','CPM_VIDEO_CAMPAIGN',
+                   'CPM_PRICE_CAMPAIGN','CPM_OUTDOOR_CAMPAIGN','CPM_AUDIO_CAMPAIGN'].
+
+    fields — имена полей верхнего уровня. По умолчанию: Id, Name, State, Status,
+      Type, StartDate, EndDate, DailyBudget, Currency, SourceId.
+      Дополнительно доступны: ClientInfo, Funds, Notification, RepresentedBy,
+      TimeTargeting, TimeZone, BlockedIps, ExcludedSites, NegativeKeywords,
+      Statistics, PriorityGoals.
+
+    subfields — поля по типу кампании. Формат:
+      {"TextCampaignFieldNames":          [...],   # классическая текстовая
+       "UnifiedCampaignFieldNames":       [...],   # единая перфоманс-кампания (ЕПК)
+       "DynamicTextCampaignFieldNames":   [...],
+       "SmartCampaignFieldNames":         [...],
+       "MobileAppCampaignFieldNames":     [...],
+       "MCBannerCampaignFieldNames":      [...],
+       "CpmBannerCampaignFieldNames":     [...],
+       "CpmVideoCampaignFieldNames":      [...]}
+      Внутри типичные поля: BiddingStrategy, CounterIds, PriorityGoals,
+      RelevantKeywords, Settings, TrackingParams.
+      Пример получения стратегии назначения ставок:
+        subfields={"TextCampaignFieldNames":["BiddingStrategy"]}
+
+    max_results — потолок (по умолч. 2000). fetch_all=True — снять потолок (осторожно).
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
     selection = {}
     if ids: selection["Ids"] = ids
@@ -357,7 +389,32 @@ def direct_adgroups_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Группы объявлений."""
+    """Группы объявлений. ⚠️ Обязательно передать ids ИЛИ campaign_ids.
+
+    Без одного из этих фильтров API вернёт 8000 (нужен SelectionCriteria).
+    Типовой сценарий: сначала вызвать direct_campaigns_get, забрать Id кампаний,
+    передать их как campaign_ids.
+
+    Цена: ~15 units + 1 unit на объект.
+
+    Фильтры:
+      campaign_ids — [int, ...] ID родительских кампаний.
+      ids          — [int, ...] точные ID групп.
+      types        — подмножество ['TEXT_AD_GROUP','MOBILE_APP_AD_GROUP',
+                     'DYNAMIC_TEXT_AD_GROUP','CPM_BANNER_AD_GROUP',
+                     'CPM_VIDEO_AD_GROUP','SMART_AD_GROUP','CPM_BANNER_USER_PROFILE_AD_GROUP'].
+
+    fields по умолчанию: Id, Name, CampaignId, Status, Type, RegionIds,
+      NegativeKeywords, TrackingParams. Ещё доступны: ServingStatus,
+      RegionalAdjustments, RestrictedRegionIds, Subtype.
+
+    subfields (по типу группы): MobileAppAdGroupFieldNames,
+      DynamicTextAdGroupFieldNames, DynamicTextFeedAdGroupFieldNames,
+      CpmBannerAdGroupFieldNames, CpmVideoAdGroupFieldNames,
+      SmartAdGroupFieldNames.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if campaign_ids: selection["CampaignIds"] = campaign_ids
     if ids: selection["Ids"] = ids
@@ -386,10 +443,43 @@ def direct_ads_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Объявления.
+    """Объявления. ⚠️ Обязательно передать ids ИЛИ adgroup_ids ИЛИ campaign_ids.
 
-    Для получения текстов/картинок передай subfields, напр.:
-      {"TextAdFieldNames": ["Title","Title2","Text","Href","DisplayUrlPath"]}
+    Без одного из них API вернёт 8000. Типично: сначала direct_adgroups_get
+    по нужным кампаниям, потом сюда — adgroup_ids.
+
+    Цена: ~15 units + 1 unit на объект.
+
+    Фильтры:
+      campaign_ids — [int, ...] ID кампаний.
+      adgroup_ids  — [int, ...] ID групп.
+      ids          — [int, ...] точные ID объявлений.
+      states       — ['ON','OFF','SUSPENDED','OFF_BY_MONITORING','ARCHIVED'].
+      statuses     — ['DRAFT','MODERATION','PREACCEPTED','ACCEPTED','REJECTED'].
+      types        — ['TEXT_AD','MOBILE_APP_AD','DYNAMIC_TEXT_AD','IMAGE_AD',
+                      'CPM_BANNER_AD','CPM_VIDEO_AD','SMART_AD_BUILDER_AD',
+                      'MCBANNER_AD','CPM_PRICE_AD','CPM_OUTDOOR_AD','CPM_AUDIO_AD',
+                      'UNIFIED_AD','BILLBOARD_AD'].
+
+    fields по умолчанию: Id, AdGroupId, CampaignId, State, Status, Type, Subtype.
+      (без текстов/изображений — они тянутся через subfields).
+
+    subfields — чтобы получить тексты/креативы, выбери по типу:
+      TextAdFieldNames         = ['Title','Title2','Text','Href','DisplayUrlPath',
+                                  'VCardId','SitelinkSetId','AdImageHash',
+                                  'AdExtensions','Mobile','Business']
+      MobileAppAdFieldNames    = ['Title','Text','TrackingUrl','ActionLinks',
+                                  'Features','BundleId','AdImageHash']
+      DynamicTextAdFieldNames  = ['Text','VCardId','AdImageHash','Sitelinks']
+      TextImageAdFieldNames    = ['AdImageHash','Href','TrackingParams']
+      CpmBannerAdFieldNames    = ['CreativeId','Href','AdImageHash']
+      CpmVideoAdFieldNames     = ['CreativeId','Href','TrackingPixels']
+      SmartAdBuilderAdFieldNames = ['CreativeId','Href','TrackingParams']
+      TextAdBuilderAdFieldNames = ['CreativeId','Href','AdExtensions']
+      Пример:
+        subfields={"TextAdFieldNames":["Title","Title2","Text","Href"]}
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
     selection: dict = {}
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -420,7 +510,26 @@ def direct_keywords_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Ключевые фразы. Дорогая операция на больших аккаунтах — ставь фильтры."""
+    """Ключевые фразы. ⚠️ Обязательно передать ids ИЛИ adgroup_ids ИЛИ campaign_ids.
+
+    На большом аккаунте с 10+ тыс. ключей стоимость ощутимая —
+    ВСЕГДА фильтруй по кампании или группе, если не нужна вся семантика.
+
+    Цена: ~15 units + 1 unit на объект. Добавление полей Stat/Productivity
+    удорожает вызов в несколько раз — избегай без необходимости.
+
+    Фильтры:
+      campaign_ids, adgroup_ids, ids — [int, ...]
+      states     — ['ON','OFF','SUSPENDED']
+      statuses   — ['DRAFT','MODERATION','PREACCEPTED','ACCEPTED','REJECTED']
+
+    fields по умолчанию: Id, AdGroupId, CampaignId, Keyword, State, Status,
+      ServingStatus, Bid, ContextBid.
+      Дополнительно: StrategyPriority, UserParam1, UserParam2, ProductivityInfo,
+      Statistics.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if campaign_ids: selection["CampaignIds"] = campaign_ids
     if adgroup_ids: selection["AdGroupIds"] = adgroup_ids
@@ -446,7 +555,22 @@ def direct_keyword_bids_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Ставки по ключам + прогноз позиций."""
+    """Ставки по ключевым фразам + прогнозы позиций.
+
+    ⚠️ Обязательно передать keyword_ids ИЛИ campaign_ids ИЛИ adgroup_ids.
+
+    Цена: ~15 units + 1 unit на объект.
+
+    Фильтры:
+      keyword_ids, campaign_ids, adgroup_ids — [int, ...]
+
+    fields по умолчанию: KeywordId, AdGroupId, CampaignId, ServingStatus,
+      SearchPrices, NetworkPrices.
+      Вложенные поля SearchPrices / NetworkPrices содержат:
+        Position (POSITION_1, POSITION_2, POSITION_3, …), Price.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if keyword_ids: selection["KeywordIds"] = keyword_ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -473,7 +597,30 @@ def direct_bidmodifiers_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Корректировки ставок (устройства, пол/возраст, регионы, время, аудитории)."""
+    """Корректировки ставок. ⚠️ Обязательно campaign_ids ИЛИ adgroup_ids ИЛИ ids.
+
+    Корректировки — проценты, на которые меняется ставка в зависимости от
+    устройства, демографии, региона, времени, аудитории ретаргетинга.
+
+    Цена: ~15 units + 1 unit на объект.
+
+    Фильтры:
+      campaign_ids, adgroup_ids, ids — [int, ...]
+      types  — ['MOBILE_ADJUSTMENT','DEMOGRAPHICS_ADJUSTMENT',
+                'RETARGETING_ADJUSTMENT','REGIONAL_ADJUSTMENT',
+                'VIDEO_ADJUSTMENT','INCOME_ADJUSTMENT']
+      levels — ['CAMPAIGN','AD_GROUP'] — уровень применения корректировки.
+
+    fields по умолчанию: Id, CampaignId, AdGroupId, Type, Level.
+
+    subfields для получения самих коэффициентов по типу:
+      MobileAdjustmentFieldNames, DemographicsAdjustmentFieldNames,
+      RetargetingAdjustmentFieldNames, RegionalAdjustmentFieldNames,
+      VideoAdjustmentFieldNames, IncomeAdjustmentFieldNames.
+      Пример: subfields={"MobileAdjustmentFieldNames":["BidModifier","OsType"]}
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if campaign_ids: selection["CampaignIds"] = campaign_ids
     if adgroup_ids: selection["AdGroupIds"] = adgroup_ids
@@ -499,9 +646,21 @@ def direct_sitelinks_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Наборы быстрых ссылок.
+    """Наборы быстрых ссылок (sitelinks).
 
-    Для текстов ссылок передай subfields={'SitelinkFieldNames': ['Title','Href','Description']}.
+    Без фильтров вернёт все наборы пользователя.
+
+    Фильтры:
+      ids — [int, ...] ID наборов.
+
+    fields по умолчанию: Id. Ещё доступны: Sitelinks (массив ссылок).
+
+    subfields — для текстов ссылок:
+      {"SitelinkFieldNames": ['Title','Href','Description','TurboPageId']}
+      Пример:
+        subfields={"SitelinkFieldNames":["Title","Href","Description"]}
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
     selection = {"Ids": ids} if ids else {}
     items = _generic_get("sitelinks", "SitelinksSets",
@@ -526,9 +685,22 @@ def direct_adextensions_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Расширения (Callouts — уточнения).
+    """Расширения объявлений (Callouts — уточнения).
 
-    Для текстов: subfields={'CalloutFieldNames': ['CalloutText']}.
+    Без фильтров вернёт все расширения пользователя.
+
+    Фильтры:
+      ids      — [int, ...]
+      types    — ['CALLOUT'] (на момент 2026 v5 поддерживает только Callout через этот метод)
+      states   — ['ON','OFF']
+      statuses — ['ACCEPTED','DRAFT','MODERATION','REJECTED']
+
+    fields по умолчанию: Id, Type, State, Status.
+
+    subfields — для текстов:
+      {"CalloutFieldNames": ['CalloutText']}
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
     selection: dict = {}
     if ids: selection["Ids"] = ids
@@ -554,7 +726,19 @@ def direct_adimages_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Картинки для объявлений."""
+    """Картинки, загруженные в кабинет.
+
+    Без фильтров вернёт все картинки пользователя.
+
+    Фильтры:
+      hashes — [str, ...] хеши картинок (поле AdImageHash).
+      types  — ['REGULAR','TURBO'] — обычные или турбо-страниц.
+
+    fields по умолчанию: AdImageHash, Name, Type, Subtype, Associated.
+      Associated — используется ли картинка в объявлениях.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if hashes: selection["AdImageHashes"] = hashes
     if types: selection["Types"] = types
@@ -572,7 +756,17 @@ def direct_advideos_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Видео для объявлений."""
+    """Видео, загруженные в кабинет.
+
+    Без фильтров вернёт все видео пользователя.
+
+    Фильтры:
+      hashes — [str, ...] хеши видео (поле AdVideoHash).
+
+    fields по умолчанию: AdVideoHash, Name, Associated.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection = {"AdVideoHashes": hashes} if hashes else {}
     items = _generic_get("advideos", "AdVideos",
                          selection=selection,
@@ -592,7 +786,19 @@ def direct_vcards_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Визитки с контактами."""
+    """Визитки с контактами организации.
+
+    Без фильтров вернёт все визитки пользователя.
+
+    Фильтры:
+      ids, campaign_ids — [int, ...]
+
+    fields по умолчанию: Id, CampaignId, CompanyName, City, Country.
+      Дополнительно доступны: WorkTime, Phone, ExtraMessage, InstantMessenger,
+      MetroStationId, OgrnNumber, Email, Street, House, PointOnMap.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -615,7 +821,24 @@ def direct_creatives_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Креативы (смарт-баннеры)."""
+    """Креативы (шаблоны для смарт-баннеров, видео, текстовых баннеров).
+
+    Без фильтров вернёт все креативы пользователя.
+
+    Фильтры:
+      ids   — [int, ...]
+      types — ['SMART_CENTER','HTML5','VIDEO_EXTENSION',
+               'CPC_VIDEO_CREATIVE','CPM_VIDEO_CREATIVE','CUSTOM']
+
+    fields по умолчанию: Id, Name, Type.
+      Дополнительно: ThumbnailUrl, PreviewUrl, Size, LayoutId, CreativeId.
+
+    subfields по типу:
+      VideoExtensionCreativeFieldNames, Html5CreativeFieldNames,
+      CpcVideoCreativeFieldNames, CpmVideoCreativeFieldNames.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if types: selection["Types"] = types
@@ -637,7 +860,20 @@ def direct_negative_keywords_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Общие наборы минус-слов."""
+    """Общие наборы минус-слов/минус-фраз (shared).
+
+    Без фильтров вернёт все наборы пользователя.
+    (Для минус-слов уровня кампании используй поле NegativeKeywords
+     в direct_campaigns_get, для уровня группы — в direct_adgroups_get.)
+
+    Фильтры:
+      ids — [int, ...]
+
+    fields по умолчанию: Id, Name, NegativeKeywords.
+      NegativeKeywords — объект с подмассивом Items (до 4 096 слов).
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection = {"Ids": ids} if ids else {}
     items = _generic_get("negativekeywordsharedsets", "NegativeKeywordSharedSets",
                          selection=selection,
@@ -657,7 +893,18 @@ def direct_retargeting_lists_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Списки ретаргетинга/аудиторий."""
+    """Условия ретаргетинга и подбора аудиторий.
+
+    Без фильтров вернёт все условия пользователя.
+
+    Фильтры:
+      ids   — [int, ...]
+      types — ['RETARGETING_LIST','AUDIENCE_TARGET','LOOKALIKE','DYNAMIC']
+
+    fields по умолчанию: Id, Name, Type, Description, IsAvailable.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if types: selection["Types"] = types
@@ -678,7 +925,19 @@ def direct_audience_targets_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Привязка аудиторий к группам объявлений."""
+    """Привязки аудиторий/ретаргетинга к группам объявлений.
+
+    ⚠️ Обязательно передать ids ИЛИ campaign_ids ИЛИ adgroup_ids.
+
+    Фильтры:
+      ids, campaign_ids, adgroup_ids — [int, ...]
+      states — ['ON','OFF','SUSPENDED']
+
+    fields по умолчанию: Id, AdGroupId, CampaignId, State, RetargetingListId,
+      InterestId, ContextBid, ContextPriceCoefficient.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -704,7 +963,19 @@ def direct_smart_ad_targets_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Таргетинг умных баннеров."""
+    """Таргетинг умных баннеров (Smart Ads).
+
+    ⚠️ Обязательно передать ids ИЛИ campaign_ids ИЛИ adgroup_ids.
+
+    Фильтры:
+      ids, campaign_ids, adgroup_ids — [int, ...]
+      states — ['ON','OFF','SUSPENDED']
+
+    fields по умолчанию: Id, AdGroupId, CampaignId, State, Bid, ContextBid,
+      StrategyPriority.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -727,7 +998,20 @@ def direct_dynamic_targets_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Таргетинг динамических объявлений."""
+    """Таргетинги динамических текстовых объявлений (по страницам сайта).
+
+    ⚠️ Обязательно передать ids ИЛИ campaign_ids ИЛИ adgroup_ids.
+
+    Фильтры:
+      ids, campaign_ids, adgroup_ids — [int, ...]
+      states — ['ON','OFF','SUSPENDED']
+
+    fields по умолчанию: Id, AdGroupId, CampaignId, State, Condition, Bid,
+      StrategyPriority.
+      Condition — правило отбора страниц (список операций типа URL/TITLE EQUALS/CONTAINS).
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
@@ -750,7 +1034,19 @@ def direct_feeds_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Товарные фиды."""
+    """Товарные фиды (XML/CSV/YML), используемые в смарт-баннерах и динамических объявлениях.
+
+    Без фильтров вернёт все фиды пользователя.
+
+    Фильтры:
+      ids — [int, ...]
+
+    fields по умолчанию: Id, Name, BusinessType, SourceType.
+      BusinessType: RETAIL, AUTO, REALTY, TRAVEL, HOTEL, JOB_SEARCH, AVIATION, OTHER.
+      SourceType:   FILE, URL.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection = {"Ids": ids} if ids else {}
     items = _generic_get("feeds", "Feeds", selection=selection,
                          fields=fields or DEFAULT_FIELDS["feeds"],
@@ -765,7 +1061,17 @@ def direct_turbopages_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Турбо-страницы."""
+    """Турбо-страницы пользователя.
+
+    Без фильтров вернёт все Турбо-страницы пользователя.
+
+    Фильтры:
+      ids — [int, ...]
+
+    fields по умолчанию: Id, Name.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection = {"Ids": ids} if ids else {}
     items = _generic_get("turbopages", "TurboPages", selection=selection,
                          fields=fields or DEFAULT_FIELDS["turbopages"],
@@ -780,7 +1086,17 @@ def direct_businesses_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Бизнес-профили рекламодателя."""
+    """Бизнес-профили рекламодателя (связанные с Яндекс.Бизнесом).
+
+    Без фильтров вернёт все бизнес-профили.
+
+    Фильтры:
+      ids — [int, ...]
+
+    fields по умолчанию: Id, Name.
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection = {"Ids": ids} if ids else {}
     items = _generic_get("businesses", "Businesses", selection=selection,
                          fields=fields or DEFAULT_FIELDS["businesses"],
@@ -798,7 +1114,22 @@ def direct_leads_get(
     max_results: int = DEFAULT_MAX_RESULTS,
     fetch_all: bool = False,
 ) -> dict:
-    """Лиды (из форм на объявлениях)."""
+    """Лиды, полученные через формы в объявлениях.
+
+    ⚠️ Обязательно передать campaign_ids и DateRange (date_from+date_to).
+
+    Фильтры:
+      ids          — [int, ...] точные ID лидов.
+      campaign_ids — [int, ...] ID кампаний, из которых берём лиды.
+      date_from    — 'YYYY-MM-DD' начало диапазона.
+      date_to      — 'YYYY-MM-DD' конец диапазона (включительно).
+
+    fields по умолчанию: Id, AdId, CampaignId, Name.
+      Дополнительно: SubmissionDatetime, FieldValues (массив пар name/value
+      с данными из формы — телефон, email, имя и т.п.).
+
+    Ответ: {"items": [...], "count": N, "_units": {...}}.
+    """
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids

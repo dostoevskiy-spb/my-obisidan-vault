@@ -1,0 +1,46 @@
+Date	CampaignId	CampaignName	AdGroupId	AdGroupName	CriterionType	Criterion	CriterionId	TargetingCategory	MatchType	Impressions	Clicks	Cost	Conversions
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ACCESSORY	NONE	58	1	0.00	0
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ALTERNATIVE	NONE	32	0	0.00	0
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	BROADER	NONE	6	0	0.00	0
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	EXACT	NONE	13	1	0.00	0
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	NARROW	NONE	9	0	0.00	0
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	UNKNOWN	NONE	4419	356	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ACCESSORY	NONE	26	1	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ALTERNATIVE	NONE	12	0	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	BROADER	NONE	2	1	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	EXACT	NONE	6	1	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	NARROW	NONE	1	0	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	UNKNOWN	NONE	2186	183	0.00	0
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	заказать теплицу Тюмень	--	EXACT	SYNONYM	2	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ACCESSORY	NONE	194	8	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ALTERNATIVE	NONE	128	10	976.00	1
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	BROADER	NONE	18	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	EXACT	NONE	29	1	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	NARROW	NONE	64	3	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	UNKNOWN	NONE	666	77	0.00	1
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	заказать теплицу Пермь	--	BROADER	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	заказать теплицу Пермь	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	заказать теплицу Пермь	--	NARROW	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу -поликарбонат -недорого -цена -производитель -хороший -где -6 -усиленный -3х6 -капелька -3 -4 -3х4 -доставка -6х3 -адрес -домик -магазин -сайт -хлебница -прямостенный -пермь	--	EXACT	SYNONYM	3	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу адрес	--	ACCESSORY	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу адрес	--	ALTERNATIVE	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу магазины	--	ALTERNATIVE	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу от производителя цены -недорого	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	купить теплицу Пермь -поликарбонат -производитель -цена -усиленный -где -капелька	--	NARROW	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	сколько стоит теплица цены	--	NARROW	SYNONYM	1	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	теплица цена -купить -6 -размер -3х6 -усиленный -поликорбанатовый -пермь -метр	--	NARROW	SYNONYM	2	0	0.00	0
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	--	--	KEYWORD	теплицы поликорбанатовый цена	--	ACCESSORY	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ACCESSORY	NONE	118	3	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	ALTERNATIVE	NONE	71	1	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	BROADER	NONE	17	2	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	EXACT	NONE	15	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	NARROW	NONE	10	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	AUTOTARGETING	---autotargeting	--	UNKNOWN	NONE	379	46	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	заказать теплицу Тюмень	--	EXACT	SYNONYM	2	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	купить теплицу Тюмень	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	куплю теплицу из поликарбоната недорого цена	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	стоимость теплицы -тюмень	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	стоимость теплицы Тюмень	--	ALTERNATIVE	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	стоимость теплицы Тюмень	--	EXACT	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	теплица с раздвижной крышей купить	--	NARROW	SYNONYM	1	0	0.00	0
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	--	--	KEYWORD	теплицы из поликарбоната усиленная цена	--	ACCESSORY	SYNONYM	1	0	0.00	0

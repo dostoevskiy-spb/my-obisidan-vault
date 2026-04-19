@@ -1,0 +1,5 @@
+Date	CampaignId	CampaignName	CampaignType	Impressions	Clicks	Ctr	Cost	AvgCpc	BounceRate	AvgPageviews	Conversions	ConversionRate	CostPerConversion
+2026-04-18	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	TEXT_CAMPAIGN	4537	358	7.89	0.00	0.00	51.08	1.39	0	--	--
+2026-04-18	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	TEXT_CAMPAIGN	2235	186	8.32	0.00	0.00	66.44	1.03	0	--	--
+2026-04-19	709149630	МК_ПЕРМЬ_СЕМАНТИКА_СРА	TEXT_CAMPAIGN	1112	99	8.90	976.00	9.86	51.19	1.96	2	2.02	488.00
+2026-04-19	709150108	МК_ТЮМЕНЬ_СЕМКНТИКА_СРА	TEXT_CAMPAIGN	619	52	8.40	0.00	0.00	45.24	1.19	0	--	--
