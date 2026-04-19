@@ -40,3 +40,15 @@
 {"ts": 1776593256.3112307, "service": "campaigns", "method": "get", "error": {"request_id": "4728095438623691098", "error_code": 8000, "error_detail": "Элемент массива SelectionCriteria.Types содержит неверное значение перечисления, ожидается одно из значений: TEXT_CAMPAIGN, MOBILE_APP_CAMPAIGN, DYNAMIC_TEXT_CAMPAIGN, CPM_BANNER_CAMPAIGN, SMART_CAMPAIGN, UNIFIED_CAMPAIGN", "error_string": "Некорректный запрос"}}
 {"ts": 1776593258.7115085, "service": "reports", "report_type": "AD_PERFORMANCE_REPORT", "rows": 33, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776593257_5e429284.tsv", "ok": true}
 {"ts": 1776593268.7041554, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606539.0204532, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606539.9785216, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606541.1519012, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606541.8377142, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606554.2934268, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606557.540848, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776606581.5694113, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776606585.2484107, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776606613.516609, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776606646.472157, "service": "campaigns", "method": "get", "error": {"request_id": "99846398494745537", "error_code": 8000, "error_detail": "Элемент массива TextCampaignFieldNames содержит неверное значение перечисления, ожидается одно из значений: CounterIds, RelevantKeywords, Settings, BiddingStrategy, PriorityGoals, TrackingParams, AttributionModel, PackageBiddingStrategy, CanBeUsedAsPackageBiddingStrategySource, NegativeKeywordSharedSetIds", "error_string": "Некорректный запрос"}}
+{"ts": 1776606649.3145058, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 1107, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776606646_41bf151f.tsv", "ok": true}
+{"ts": 1776606677.3845654, "service": "campaigns", "method": "get", "units": null, "ok": true}

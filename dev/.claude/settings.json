@@ -57,7 +57,11 @@
       "mcp__yandex-direct__direct_units_status",
       "mcp__yandex-direct__direct_negative_keywords_get",
       "mcp__yandex-direct__read_cached_tsv",
-      "Bash(curl -sS -X POST https://api.direct.yandex.com/json/v5/campaigns -H 'Authorization: Bearer y0__xDejc1KGLHIQCD3n4GRF300DQYojkooF1XP5whPJhe-mO2r' -H 'Accept-Language: ru' -H 'Client-Login: teplitsi-azt' -d '{\"method\":\"get\",\"params\":{\"SelectionCriteria\":{},\"FieldNames\":[\"Id\",\"Name\",\"State\",\"Status\",\"Type\",\"StartDate\",\"EndDate\",\"DailyBudget\",\"Currency\",\"SourceId\"],\"Page\":{\"Limit\":1}}}')"
+      "Bash(curl -sS -X POST https://api.direct.yandex.com/json/v5/campaigns -H 'Authorization: Bearer y0__xDejc1KGLHIQCD3n4GRF300DQYojkooF1XP5whPJhe-mO2r' -H 'Accept-Language: ru' -H 'Client-Login: teplitsi-azt' -d '{\"method\":\"get\",\"params\":{\"SelectionCriteria\":{},\"FieldNames\":[\"Id\",\"Name\",\"State\",\"Status\",\"Type\",\"StartDate\",\"EndDate\",\"DailyBudget\",\"Currency\",\"SourceId\"],\"Page\":{\"Limit\":1}}}')",
+      "mcp__yandex-direct__find_campaign",
+      "mcp__yandex-direct__direct_ads_get",
+      "mcp__yandex-direct__direct_adgroups_get",
+      "mcp__yandex-direct__direct_keywords_get"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
