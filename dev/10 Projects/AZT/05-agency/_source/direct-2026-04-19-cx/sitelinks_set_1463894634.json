@@ -1,0 +1,17 @@
+{
+  "source": "direct_sitelinks_get ID=1463894634",
+  "retrieved_at": "2026-04-19T10:30:00Z",
+  "note": "Набор быстрых ссылок привязан ко всем объявлениям старых ТЮМЕНЬ-кампаний (в ads.TextAd.SitelinkSetId=1463894634). У новых ЕПК быстрых ссылок НЕТ (SitelinkSetId отсутствует).",
+  "set_id": 1463894634,
+  "sitelinks_count": 8,
+  "sitelinks": [
+    {"Title": "Каталог теплиц", "Href": "/tmn/catalog/teplicy/", "Description": "Качественные теплицы под любые цели и бюджет"},
+    {"Title": "Стеклянные теплицы", "Href": "/tmn/catalog/teplicy/steklyannye/", "Description": "Большой ассортимент теплиц из стекла"},
+    {"Title": "Поликарбонат для теплиц", "Href": "/tmn/catalog/teplicy/", "Description": "Сотовый, монолитный, профилированный поликарбонат"},
+    {"Title": "Срок службы 20+ лет", "Href": "/tmn/catalog/teplicy/", "Description": "Высококачественные теплицы прослужат долго"},
+    {"Title": "На рынке с 2014 года", "Href": "/tmn/catalog/teplicy/", "Description": "Многолетний опыт работы на рынке производства теплиц"},
+    {"Title": "Быстрая доставка", "Href": "/tmn/catalog/teplicy/", "Description": "Доставим вашу теплицу по указанному адресу"},
+    {"Title": "Грамотный монтаж", "Href": "/tmn/catalog/teplicy/", "Description": "Наши специалисты профессионально установят теплицу"},
+    {"Title": "Нам доверяют", "Href": "/tmn/catalog/teplicy/", "Description": "Нашу компанию рекомендуют друзьям, близким, коллегам"}
+  ]
+}

@@ -198,7 +198,9 @@ def _generic_get(
     fetch_all: bool = False,
     page_limit: int = PAGE_LIMIT,
 ) -> list[dict]:
-    params: dict = {"SelectionCriteria": selection or {}}
+    params: dict = {}
+    if selection:
+        params["SelectionCriteria"] = selection
     if fields:
         params["FieldNames"] = fields
     if subfields:

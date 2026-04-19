@@ -95,3 +95,11 @@
 {"ts": 1776607490.4507687, "service": "reports", "status": 400, "body": "{\"error\":{\"error_detail\":\"Элемент массива FieldNames содержит неверное значение перечисления\",\"error_string\":\"Некорректный запрос\",\"request_id\":\"2220710243266741557\",\"error_code\":\"8000\"}}"}
 {"ts": 1776607491.313223, "service": "smartadtargets", "method": "get", "units": null, "ok": true}
 {"ts": 1776607492.1869233, "service": "smartadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607493.5726533, "service": "dynamictextadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607510.2141893, "service": "vcards", "method": "get", "units": null, "ok": true}
+{"ts": 1776607513.7094297, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607518.7130284, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607521.3140345, "service": "reports", "report_type": "AD_PERFORMANCE_REPORT", "rows": 322, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776607518_06154ed1.tsv", "ok": true}
+{"ts": 1776607524.037445, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 578, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776607521_b3b75745.tsv", "ok": true}
+{"ts": 1776607524.7418613, "service": "dynamictextadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607527.051656, "service": "reports", "report_type": "CRITERIA_PERFORMANCE_REPORT", "rows": 439, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776607524_4e9063c9.tsv", "ok": true}
