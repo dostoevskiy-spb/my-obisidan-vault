@@ -54,3 +54,44 @@
 {"ts": 1776606677.3845654, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776606799.078136, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776607001.887017, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776607270.2914944, "service": "sitelinks", "method": "get", "error": {"request_id": "5110461464523797640", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Ids", "error_string": "Некорректный запрос"}}
+{"ts": 1776607272.6107607, "service": "adextensions", "method": "get", "error": {"request_id": "1629378772808046279", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: Id, Type, State, Status, StatusClarification, Associated", "error_string": "Некорректный запрос"}}
+{"ts": 1776607275.2070951, "service": "vcards", "method": "get", "error": {"request_id": "3454451234274098938", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Ids", "error_string": "Некорректный запрос"}}
+{"ts": 1776607278.5150993, "service": "feeds", "method": "get", "error": {"request_id": "379875732472867203", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Ids", "error_string": "Некорректный запрос"}}
+{"ts": 1776607280.9070277, "service": "businesses", "method": "get", "error": {"request_id": "8772724876908653359", "error_code": 4001, "error_detail": "В структуре SelectionCriteria должен быть указан хотя бы один из параметров: Ids, Name, Url", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776607284.5511825, "service": "turbopages", "method": "get", "units": null, "ok": true}
+{"ts": 1776607286.9863102, "service": "retargetinglists", "method": "get", "units": null, "ok": true}
+{"ts": 1776607289.497803, "service": "audiencetargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607291.7701712, "service": "leads", "method": "get", "error": {"request_id": "4968847622420200929", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр TurboPageIds", "error_string": "Некорректный запрос"}}
+{"ts": 1776607294.353659, "service": "agencyclients", "method": "get", "error": {"request_id": "6021983294807987990", "error_code": 54, "error_detail": "Нет прав для доступа в агентский сервис", "error_string": "Нет прав"}}
+{"ts": 1776607311.660411, "service": "adextensions", "method": "get", "units": null, "ok": true}
+{"ts": 1776607313.7064807, "service": "ads", "method": "get", "error": {"request_id": "6437755053178214704", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: AdCategories, AgeLabel, AdGroupId, CampaignId, Id, State, Status, StatusClarification, Type, Subtype", "error_string": "Некорректный запрос"}}
+{"ts": 1776607334.083933, "service": "smartadtargets", "method": "get", "error": {"request_id": "5989046997430371663", "error_code": 4001, "error_detail": "Разрeшено задавать не более 2 элементов в запросе", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776607342.24491, "service": "dynamictextadtargets", "method": "get", "error": {"request_id": "3748072342666568506", "error_code": 4001, "error_detail": "Массив SelectionCriteria.CampaignIds не может содержать более 2 элементов", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776607345.7594793, "service": "keywordbids", "method": "get", "error": {"request_id": "2786311096914733061", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: KeywordId, AdGroupId, CampaignId, ServingStatus, StrategyPriority", "error_string": "Некорректный запрос"}}
+{"ts": 1776607346.68067, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776607347.6042938, "service": "ads", "method": "get", "error": {"request_id": "2277176751802425359", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: AdCategories, AgeLabel, AdGroupId, CampaignId, Id, State, Status, StatusClarification, Type, Subtype", "error_string": "Некорректный запрос"}}
+{"ts": 1776607349.6057324, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776607376.5962734, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776607378.3664901, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776607380.2655494, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776607381.4973476, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776607382.2825334, "service": "adextensions", "method": "get", "error": {"request_id": "3176322331495727810", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: Id, Type, State, Status, StatusClarification, Associated", "error_string": "Некорректный запрос"}}
+{"ts": 1776607383.6184442, "service": "keywordbids", "method": "get", "units": null, "ok": true}
+{"ts": 1776607384.4503162, "service": "smartadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607385.183105, "service": "dynamictextadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607388.0511084, "service": "bidmodifiers", "method": "get", "error": {"request_id": "1653641290497496757", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Levels", "error_string": "Некорректный запрос"}}
+{"ts": 1776607433.2647972, "service": "adextensions", "method": "get", "units": null, "ok": true}
+{"ts": 1776607434.2502651, "service": "sitelinks", "method": "get", "units": null, "ok": true}
+{"ts": 1776607435.256542, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607436.5605135, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607437.4071631, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607438.4975069, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776607439.8669276, "service": "reports", "report_type": "ADGROUP_PERFORMANCE_REPORT", "rows": 94, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776607438_8543e4b8.tsv", "ok": true}
+{"ts": 1776607479.2939541, "service": "keywordbids", "method": "get", "error": {"request_id": "7620126055163490174", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: KeywordId, AdGroupId, CampaignId, ServingStatus, StrategyPriority", "error_string": "Некорректный запрос"}}
+{"ts": 1776607483.0473697, "service": "bidmodifiers", "method": "get", "error": {"request_id": "319686131884376083", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: Id, CampaignId, AdGroupId, Level, Type", "error_string": "Некорректный запрос"}}
+{"ts": 1776607486.1975288, "service": "bidmodifiers", "method": "get", "error": {"request_id": "6302258728225410733", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: Id, CampaignId, AdGroupId, Level, Type", "error_string": "Некорректный запрос"}}
+{"ts": 1776607486.9486477, "service": "vcards", "method": "get", "error": {"request_id": "5922599481461817895", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: Id, Country, City, Street, House, Building, Apartment, CompanyName, ExtraMessage, ContactPerson, ContactEmail, MetroStationId, CampaignId, Ogrn, WorkTime, InstantMessenger, Phone, PointOnMap", "error_string": "Некорректный запрос"}}
+{"ts": 1776607490.4507687, "service": "reports", "status": 400, "body": "{\"error\":{\"error_detail\":\"Элемент массива FieldNames содержит неверное значение перечисления\",\"error_string\":\"Некорректный запрос\",\"request_id\":\"2220710243266741557\",\"error_code\":\"8000\"}}"}
+{"ts": 1776607491.313223, "service": "smartadtargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776607492.1869233, "service": "smartadtargets", "method": "get", "units": null, "ok": true}

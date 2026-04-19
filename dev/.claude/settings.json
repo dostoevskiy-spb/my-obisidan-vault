@@ -61,7 +61,24 @@
       "mcp__yandex-direct__find_campaign",
       "mcp__yandex-direct__direct_ads_get",
       "mcp__yandex-direct__direct_adgroups_get",
-      "mcp__yandex-direct__direct_keywords_get"
+      "mcp__yandex-direct__direct_keywords_get",
+      "mcp__yandex-direct__direct_sitelinks_get",
+      "mcp__yandex-direct__direct_adextensions_get",
+      "mcp__yandex-direct__direct_vcards_get",
+      "mcp__yandex-direct__direct_feeds_get",
+      "mcp__yandex-direct__direct_businesses_get",
+      "mcp__yandex-direct__direct_turbopages_get",
+      "mcp__yandex-direct__direct_retargeting_lists_get",
+      "mcp__yandex-direct__direct_audience_targets_get",
+      "mcp__yandex-direct__direct_leads_get",
+      "mcp__yandex-direct__direct_agency_clients_get",
+      "mcp__yandex-direct__direct_smart_ad_targets_get",
+      "mcp__yandex-direct__direct_dynamic_targets_get",
+      "mcp__yandex-direct__direct_keyword_bids_get",
+      "mcp__yandex-direct__direct_bidmodifiers_get",
+      "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/ads_1776607376_292f57c6.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/ads_suspended_208.json')",
+      "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/keywords_1776607381_a225df6c.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/keywords_suspended_2076.json')",
+      "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/keywordbids_1776607383_ceedf92a.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/keyword_bids_new_278.json')"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
