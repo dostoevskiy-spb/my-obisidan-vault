@@ -16,3 +16,4 @@
 {"ts": 1776552337.348105, "service": "dictionaries", "method": "get", "units": null, "ok": true}
 {"ts": 1776552419.3016467, "service": "dictionaries", "method": "get", "units": null, "ok": true}
 {"ts": 1776552458.5023413, "service": "changes", "method": "checkDictionaries", "error": {"request_id": "6301983480824277529", "error_code": 4000, "error_detail": "В параметре Timestamp должна быть указана дата в формате YYYY-MM-DDThh:mm:ssZ", "error_string": "Параметры запроса указаны неверно"}}
+{"ts": 1776584768.6184638, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 0, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776584767_04ab692a.tsv", "ok": true}
