@@ -53,3 +53,4 @@
 {"ts": 1776606649.3145058, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 1107, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776606646_41bf151f.tsv", "ok": true}
 {"ts": 1776606677.3845654, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776606799.078136, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776607001.887017, "service": "campaigns", "method": "get", "units": null, "ok": true}
