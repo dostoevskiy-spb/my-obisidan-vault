@@ -1,0 +1,3 @@
+Date	CampaignId	CampaignName	CampaignType	Impressions	Clicks	Cost	Conversions	Bounces	BounceRate	AvgPageviews	Sessions	ConversionRate
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	TEXT_CAMPAIGN	550	31	0.00	0	4	14.81	2.00	27	--
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	TEXT_CAMPAIGN	172	20	0.00	1	3	30.00	1.20	10	5.00

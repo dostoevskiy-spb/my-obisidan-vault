@@ -297,11 +297,11 @@ DEFAULT_FIELDS: dict[str, list[str]] = {
     "negativekeywordsharedsets": ["Id", "Name", "NegativeKeywords"],
     "retargetinglists": ["Id", "Name", "Type", "Description", "IsAvailable"],
     "audiencetargets": ["Id", "AdGroupId", "CampaignId", "State", "RetargetingListId",
-                        "InterestId", "ContextBid", "ContextPriceCoefficient"],
-    "smartadtargets": ["Id", "AdGroupId", "CampaignId", "State", "Bid",
-                       "ContextBid", "StrategyPriority"],
-    "dynamictextadtargets": ["Id", "AdGroupId", "CampaignId", "State",
-                             "Condition", "Bid", "StrategyPriority"],
+                        "InterestId", "ContextBid", "StrategyPriority"],
+    "smartadtargets": ["Id", "AdGroupId", "CampaignId", "Name", "State",
+                       "AverageCpc", "AverageCpa", "StrategyPriority"],
+    "dynamictextadtargets": ["Id", "AdGroupId", "CampaignId", "Name", "State",
+                             "Conditions", "ConditionType", "Bid", "StrategyPriority"],
     "feeds": ["Id", "Name", "BusinessType", "SourceType"],
     "turbopages": ["Id", "Name"],
     "businesses": ["Id", "Name"],
@@ -610,6 +610,7 @@ def direct_bidmodifiers_get(
                 'RETARGETING_ADJUSTMENT','REGIONAL_ADJUSTMENT',
                 'VIDEO_ADJUSTMENT','INCOME_ADJUSTMENT']
       levels — ['CAMPAIGN','AD_GROUP'] — уровень применения корректировки.
+        Если не передан, инструмент запросит оба уровня.
 
     fields по умолчанию: Id, CampaignId, AdGroupId, Type, Level.
 
@@ -626,7 +627,7 @@ def direct_bidmodifiers_get(
     if adgroup_ids: selection["AdGroupIds"] = adgroup_ids
     if ids: selection["Ids"] = ids
     if types: selection["Types"] = types
-    if levels: selection["Levels"] = levels
+    selection["Levels"] = levels or ["CAMPAIGN", "AD_GROUP"]
     items = _generic_get("bidmodifiers", "BidModifiers",
                          selection=selection,
                          fields=fields or DEFAULT_FIELDS["bidmodifiers"],
@@ -934,7 +935,7 @@ def direct_audience_targets_get(
       states — ['ON','OFF','SUSPENDED']
 
     fields по умолчанию: Id, AdGroupId, CampaignId, State, RetargetingListId,
-      InterestId, ContextBid, ContextPriceCoefficient.
+      InterestId, ContextBid, StrategyPriority.
 
     Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
@@ -971,8 +972,8 @@ def direct_smart_ad_targets_get(
       ids, campaign_ids, adgroup_ids — [int, ...]
       states — ['ON','OFF','SUSPENDED']
 
-    fields по умолчанию: Id, AdGroupId, CampaignId, State, Bid, ContextBid,
-      StrategyPriority.
+    fields по умолчанию: Id, AdGroupId, CampaignId, Name, State,
+      AverageCpc, AverageCpa, StrategyPriority.
 
     Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
@@ -1006,9 +1007,9 @@ def direct_dynamic_targets_get(
       ids, campaign_ids, adgroup_ids — [int, ...]
       states — ['ON','OFF','SUSPENDED']
 
-    fields по умолчанию: Id, AdGroupId, CampaignId, State, Condition, Bid,
-      StrategyPriority.
-      Condition — правило отбора страниц (список операций типа URL/TITLE EQUALS/CONTAINS).
+    fields по умолчанию: Id, AdGroupId, CampaignId, Name, State,
+      Conditions, ConditionType, Bid, StrategyPriority.
+      Conditions — правило отбора страниц (список операций типа URL/TITLE EQUALS/CONTAINS).
 
     Ответ: {"items": [...], "count": N, "_units": {...}}.
     """
@@ -1108,6 +1109,7 @@ def direct_businesses_get(
 def direct_leads_get(
     ids: list[int] | None = None,
     campaign_ids: list[int] | None = None,
+    turbo_page_ids: list[int] | None = None,
     date_from: str | None = None,
     date_to: str | None = None,
     fields: list[str] | None = None,
@@ -1116,11 +1118,14 @@ def direct_leads_get(
 ) -> dict:
     """Лиды, полученные через формы в объявлениях.
 
-    ⚠️ Обязательно передать campaign_ids и DateRange (date_from+date_to).
+    ⚠️ Обязательно передать DateRange (date_from+date_to) и фильтр.
+    В текущем Direct API для лидов может требоваться TurboPageIds; если
+    CampaignIds недостаточно, передай turbo_page_ids.
 
     Фильтры:
       ids          — [int, ...] точные ID лидов.
       campaign_ids — [int, ...] ID кампаний, из которых берём лиды.
+      turbo_page_ids — [int, ...] ID турбо-страниц/форм.
       date_from    — 'YYYY-MM-DD' начало диапазона.
       date_to      — 'YYYY-MM-DD' конец диапазона (включительно).
 
@@ -1133,6 +1138,7 @@ def direct_leads_get(
     selection: dict = {}
     if ids: selection["Ids"] = ids
     if campaign_ids: selection["CampaignIds"] = campaign_ids
+    if turbo_page_ids: selection["TurboPageIds"] = turbo_page_ids
     if date_from or date_to:
         selection["DateRange"] = {k: v for k, v in
                                   {"DateFrom": date_from, "DateTo": date_to}.items() if v}

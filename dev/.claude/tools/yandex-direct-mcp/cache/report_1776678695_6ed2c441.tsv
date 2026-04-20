@@ -1,0 +1,10 @@
+Date	CampaignId	CampaignName	CarrierType	Device	Impressions	Clicks	Cost	Conversions
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	STATIONARY	MOBILE	410	28	0.00	0
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	STATIONARY	MOBILE	139	15	0.00	1
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	STATIONARY	TABLET	5	3	0.00	0
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	STATIONARY	DESKTOP	100	2	0.00	0
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	STATIONARY	TABLET	8	1	0.00	0
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	CELLULAR	DESKTOP	1	0	0.00	0
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	CELLULAR	MOBILE	7	0	0.00	0
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	CELLULAR	MOBILE	2	0	0.00	0
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	STATIONARY	DESKTOP	14	0	0.00	0
