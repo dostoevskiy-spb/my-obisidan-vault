@@ -1887,5 +1887,237 @@ def estimate_cost(service: str, expected_objects: int,
     }
 
 
+# ─── wordstat & forecasts (через legacy API v4 Live) ────────────────────────
+#
+# В Direct API v5 сервисы wordstatreports и forecasts отсутствуют,
+# поэтому используется устаревший, но рабочий endpoint v4 Live:
+#   https://api.direct.yandex.ru/live/v4/json/
+# Квота v4 своя — на скрине «Осталось баллов (API версии 4 и Live 4): 32 000».
+
+
+BASE_V4_LIVE = "https://api.direct.yandex.ru/live/v4/json/"
+
+
+def _v4_call(method: str, param: Any = None) -> Any:
+    """Вызов legacy v4 Live endpoint. Возвращает поле `data` при успехе."""
+    token = os.getenv("YANDEX_DIRECT_OAUTH")
+    if not token:
+        raise RuntimeError("Задай YANDEX_DIRECT_OAUTH")
+    body: dict = {"method": method, "token": token, "locale": "ru"}
+    if param is not None:
+        body["param"] = param
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json; charset=utf-8",
+    }
+    if login := os.getenv("YANDEX_DIRECT_CLIENT_LOGIN"):
+        headers["Client-Login"] = login
+
+    raw = json.dumps(body, ensure_ascii=False).encode("utf-8")
+    last_err: Exception | None = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = httpx.post(BASE_V4_LIVE, content=raw, headers=headers, timeout=HTTP_TIMEOUT)
+        except httpx.HTTPError as e:
+            last_err = e
+            time.sleep(_backoff(attempt))
+            continue
+        if r.status_code in RETRY_STATUS:
+            last_err = RuntimeError(f"HTTP {r.status_code}")
+            time.sleep(_backoff(attempt, r.headers.get("Retry-After")))
+            continue
+        if r.status_code != 200:
+            _log_audit({"api": "v4", "method": method, "status": r.status_code,
+                        "body": r.text[:500]})
+            r.raise_for_status()
+        data = r.json()
+        if "error_code" in data:
+            code = data.get("error_code")
+            if code in RETRY_ERROR_CODES:
+                last_err = RuntimeError(f"v4 error {code}")
+                time.sleep(_backoff(attempt))
+                continue
+            _log_audit({"api": "v4", "method": method, "error": data})
+            raise RuntimeError(
+                f"Direct v4 error {code}: {data.get('error_str')} — "
+                f"{data.get('error_detail', '')}"
+            )
+        _log_audit({"api": "v4", "method": method, "ok": True})
+        return data.get("data")
+    raise RuntimeError(f"Retries exhausted for v4 {method}: {last_err}")
+
+
+def _v4_wait_done(list_method: str, report_id: int,
+                  max_wait_sec: int, poll_interval: int = 5) -> None:
+    """Ждём StatusReport=Done в ответе list-метода."""
+    start = time.time()
+    while True:
+        lst = _v4_call(list_method) or []
+        mine = next((r for r in lst if r.get("ReportID") == report_id), None)
+        if mine:
+            status = mine.get("StatusReport")
+            if status == "Done":
+                return
+            if status == "Failed":
+                raise RuntimeError(f"v4 отчёт {list_method}#{report_id} упал с ошибкой")
+        if time.time() - start > max_wait_sec:
+            raise TimeoutError(
+                f"v4 отчёт {list_method}#{report_id} не готов за {max_wait_sec}s"
+            )
+        time.sleep(poll_interval)
+
+
+def _v4_safe_delete(delete_method: str, report_id: int) -> None:
+    try:
+        _v4_call(delete_method, report_id)
+    except Exception:
+        pass
+
+
+@mcp.tool()
+def direct_wordstat_report(
+    phrases: list[str],
+    geo_ids: list[int] | None = None,
+    max_wait_sec: int = 300,
+    keep_report: bool = False,
+) -> dict:
+    """Частотность фраз через legacy Direct API v4 Live.
+
+    Использует отдельную квоту v4 (на скрине «Осталось баллов v4 = 32 000»),
+    не пересекается с Cloud Wordstat API (Search API). Удобно, когда там
+    закончилась суточная квота.
+
+    Параметры:
+      phrases — [str, ...] до 10 фраз за один запрос.
+        Синтаксис: "купить теплицу" (широкое),
+        '"купить теплицу"' (фразовое), '!купить !теплицу' (точное),
+        'купить -дёшево' (исключение).
+      geo_ids — [int, ...] до 7 регионов. Без параметра — вся Россия.
+        ID регионов: Пермь=50, Екатеринбург=54, Ижевск=44, Тюмень=55,
+        Москва=213, Санкт-Петербург=2.
+      max_wait_sec — таймаут polling'а (по умолч. 300).
+      keep_report — True: не удалять отчёт, освобождение слота не произойдёт.
+
+    Что возвращает:
+      Items[] — по одному элементу на каждую фразу. Внутри:
+        Phrase — исходная фраза.
+        GeoID  — регионы.
+        SearchedWith — массив {Phrase, Shows} — основная колонка Wordstat.
+        SearchedAlso — массив {Phrase, Shows} — правая колонка (связанные).
+
+    Пример:
+      direct_wordstat_report(
+        phrases=["теплица пермь","купить теплицу в перми"],
+        geo_ids=[50])
+
+    ⚠️ Ограничения: 10 фраз и 7 регионов за вызов, 5 отчётов одновременно в очереди.
+    """
+    if len(phrases) > 10:
+        raise ValueError("Максимум 10 фраз за один отчёт")
+    if geo_ids and len(geo_ids) > 7:
+        raise ValueError("Максимум 7 регионов за один отчёт")
+
+    param: dict = {"Phrases": phrases}
+    if geo_ids:
+        param["GeoID"] = geo_ids
+
+    report_id = _v4_call("CreateNewWordstatReport", param)
+    if not isinstance(report_id, int):
+        raise RuntimeError(f"Ожидался ReportID (int), получено: {report_id!r}")
+
+    try:
+        _v4_wait_done("GetWordstatReportList", report_id, max_wait_sec)
+        items = _v4_call("GetWordstatReport", report_id) or []
+    finally:
+        if not keep_report:
+            _v4_safe_delete("DeleteWordstatReport", report_id)
+
+    return _wrap_dict({"ReportID": report_id, "Items": items}, "wordstat_report")
+
+
+@mcp.tool()
+def direct_forecast(
+    phrases: list[str],
+    geo_ids: list[int] | None = None,
+    max_wait_sec: int = 300,
+    keep_report: bool = False,
+) -> dict:
+    """Прогноз показов/кликов/расходов по фразам (Direct v4 Live Forecast API).
+
+    Использует legacy v4 (в v5 forecasts нет). Квота v4 отдельная.
+
+    Параметры:
+      phrases — [str, ...] до 10 фраз (v4-лимит).
+      geo_ids — [int, ...] регионы. Без параметра — вся Россия.
+      max_wait_sec — таймаут polling'а.
+      keep_report — True: не удалять после получения.
+
+    Что возвращает:
+      Phrases[] — по элементу на фразу. Внутри:
+        Phrase, IsRubric (bool), Min/Max (диапазон позиций),
+        PremiumMin, PremiumMax, Shows, Clicks,
+        FirstPlaceClicks, PremiumClicks, CTR, FirstPlaceCTR, PremiumCTR.
+
+    Пример:
+      direct_forecast(
+        phrases=["теплица пермь","купить теплицу в перми"],
+        geo_ids=[50])
+
+    ⚠️ Ограничения: до 10 фраз за вызов, 5 прогнозов в очереди, хранятся 5 часов.
+    """
+    if len(phrases) > 10:
+        raise ValueError("Максимум 10 фраз за один прогноз")
+
+    param: dict = {"Phrases": phrases}
+    if geo_ids:
+        param["GeoID"] = geo_ids
+
+    report_id = _v4_call("CreateNewForecast", param)
+    if not isinstance(report_id, int):
+        raise RuntimeError(f"Ожидался ForecastID (int), получено: {report_id!r}")
+
+    try:
+        _v4_wait_done("GetForecastList", report_id, max_wait_sec)
+        data = _v4_call("GetForecast", report_id)
+    finally:
+        if not keep_report:
+            _v4_safe_delete("DeleteForecastReport", report_id)
+
+    return _wrap_dict({"ForecastID": report_id, **(data or {})}, "forecast")
+
+
+@mcp.tool()
+def direct_async_queue_status(kind: str) -> dict:
+    """Очередь async-отчётов v4 (когда слоты "5 в очереди" забиты).
+
+    kind: 'wordstat' | 'forecast'.
+
+    Ответ: {"kind":..., "count":N, "reports":[{"ReportID":..., "StatusReport":...}, ...]}.
+    """
+    if kind == "wordstat":
+        lst = _v4_call("GetWordstatReportList") or []
+    elif kind == "forecast":
+        lst = _v4_call("GetForecastList") or []
+    else:
+        raise ValueError("kind: 'wordstat' | 'forecast'")
+    return {"kind": kind, "count": len(lst), "reports": lst}
+
+
+@mcp.tool()
+def direct_async_delete(kind: str, report_id: int) -> dict:
+    """Удалить async-отчёт v4 вручную (освободить слот в очереди из 5).
+
+    kind: 'wordstat' | 'forecast'.
+    report_id: ReportID из direct_async_queue_status.
+    """
+    if kind == "wordstat":
+        res = _v4_call("DeleteWordstatReport", report_id)
+    elif kind == "forecast":
+        res = _v4_call("DeleteForecastReport", report_id)
+    else:
+        raise ValueError("kind: 'wordstat' | 'forecast'")
+    return {"kind": kind, "deleted_id": report_id, "result": res}
+
+
 if __name__ == "__main__":
     mcp.run()

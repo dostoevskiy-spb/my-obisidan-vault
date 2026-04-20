@@ -251,3 +251,9 @@
 {"ts": 1776686718.9625688, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
 {"ts": 1776686719.8102136, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
 {"ts": 1776686720.5576339, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776706979.7971616, "service": "wordstatreports", "method": "create", "status": 404, "body": ""}
+{"ts": 1776707078.6668377, "service": "wordstatreports", "method": "list", "status": 404, "body": ""}
+{"ts": 1776707432.4605355, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776707433.4331002, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776707434.3125668, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776707434.8368454, "api": "v4", "method": "CreateNewWordstatReport", "error": {"error_str": "Invalid request", "error_detail": "Request encoding is not UTF8", "error_code": 501}}

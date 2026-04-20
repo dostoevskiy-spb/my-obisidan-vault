@@ -103,7 +103,10 @@
       "Bash(curl -sS 'https://azt-teplica.ru/404.php?_=__TRACKED_VAR__')",
       "Bash(curl -sS 'https://azt-teplica.ru/privacy/?_=__TRACKED_VAR__')",
       "mcp__chrome-devtools__lighthouse_audit",
-      "mcp__chrome-devtools__close_page"
+      "mcp__chrome-devtools__close_page",
+      "mcp__yandex-direct__direct_async_queue_status",
+      "Bash(curl -sS -o /tmp/d.json -w '%{http_code}' -X POST https://api.direct.yandex.com/json/v5/forecasts -H 'Authorization: Bearer y0__xDejc1KGLHIQCD3n4GRF300DQYojkooF1XP5whPJhe-mO2r' -H 'Accept-Language: ru' -H 'Client-Login: teplitsi-azt' -d '{\"method\":\"__TRACKED_VAR__\",\"params\":{\"Phrases\":[\"теплица пермь\"],\"GeoID\":[50]}}')",
+      "Read(//tmp/**)"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache",
