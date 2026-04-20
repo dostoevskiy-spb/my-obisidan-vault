@@ -106,7 +106,8 @@
       "mcp__chrome-devtools__close_page"
     ],
     "additionalDirectories": [
-      "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
+      "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache",
+      "/home/pavel/dev/obsidian/dev/.claude/sessions/plans"
     ]
   }
 }
