@@ -85,7 +85,8 @@
       "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/thank.php)",
       "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/catalog/teplicy/arochnye/teplitsa-azt-premium/)",
       "Bash(curl -sS -o /dev/null -w \"tyumen: %{http_code}\\\\n\" -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)",
-      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)"
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/)"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
