@@ -102,7 +102,8 @@
       "Bash(curl -sS -o /dev/null -w '404.php: HTTP=%{http_code}\\\\n' 'https://azt-teplica.ru/404.php?_=__TRACKED_VAR__')",
       "Bash(curl -sS 'https://azt-teplica.ru/404.php?_=__TRACKED_VAR__')",
       "Bash(curl -sS 'https://azt-teplica.ru/privacy/?_=__TRACKED_VAR__')",
-      "mcp__chrome-devtools__lighthouse_audit"
+      "mcp__chrome-devtools__lighthouse_audit",
+      "mcp__chrome-devtools__close_page"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
