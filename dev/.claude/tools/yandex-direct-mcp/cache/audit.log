@@ -373,3 +373,8 @@
 {"ts": 1776711340.0720983, "api": "v4", "method": "GetWordstatReportList", "ok": true}
 {"ts": 1776711341.098491, "api": "v4", "method": "GetWordstatReport", "ok": true}
 {"ts": 1776711341.978951, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776718707.484871, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776718708.4376574, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776718714.2769277, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776718715.9584267, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776718716.8452184, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
