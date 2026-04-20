@@ -108,7 +108,10 @@
       "Bash(curl -sS -o /tmp/d.json -w '%{http_code}' -X POST https://api.direct.yandex.com/json/v5/forecasts -H 'Authorization: Bearer y0__xDejc1KGLHIQCD3n4GRF300DQYojkooF1XP5whPJhe-mO2r' -H 'Accept-Language: ru' -H 'Client-Login: teplitsi-azt' -d '{\"method\":\"__TRACKED_VAR__\",\"params\":{\"Phrases\":[\"теплица пермь\"],\"GeoID\":[50]}}')",
       "Read(//tmp/**)",
       "mcp__yandex-direct__direct_wordstat_report",
-      "mcp__yandex-direct__read_cached"
+      "mcp__yandex-direct__read_cached",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(110, 120\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(140, 150\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(170, 180\\)]\")"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache",
