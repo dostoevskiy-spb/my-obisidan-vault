@@ -78,7 +78,14 @@
       "mcp__yandex-direct__direct_bidmodifiers_get",
       "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/ads_1776607376_292f57c6.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/ads_suspended_208.json')",
       "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/keywords_1776607381_a225df6c.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/keywords_suspended_2076.json')",
-      "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/keywordbids_1776607383_ceedf92a.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/keyword_bids_new_278.json')"
+      "Bash(cp /home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/keywordbids_1776607383_ceedf92a.json '/home/pavel/dev/obsidian/dev/10 Projects/AZT/05-agency/_source/direct-2026-04-19-cx/keyword_bids_new_278.json')",
+      "Bash(curl -sS -o /dev/null -w \"404.php: %{http_code}\\\\n\" -A \"Mozilla/5.0\" https://azt-teplica.ru/404.php)",
+      "Bash(curl -sS -o /dev/null -w \"thank.php: %{http_code}\\\\n\" -A \"Mozilla/5.0\" https://azt-teplica.ru/thank.php)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/404.php)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/thank.php)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/catalog/teplicy/arochnye/teplitsa-azt-premium/)",
+      "Bash(curl -sS -o /dev/null -w \"tyumen: %{http_code}\\\\n\" -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
