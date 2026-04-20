@@ -84,8 +84,8 @@
 ### Сценарий B. Мониторинг изменений агентства (ежедневно по запросу пользователя)
 
 1. `Changes.checkDictionaries(Timestamp=T)` — проверка справочников.
-2. `Changes.checkCampaigns(Timestamp=T)` — список изменённых `CampaignIds`.
-3. Если на шаге 2 список непустой, вызывается `Changes.check(CampaignIds=[...], Timestamp=T, FieldNames=[CampaignIds, AdGroupIds, AdIds, TargetIds])` батчами по 1000 ID. Timestamp не дальше 7 дней в прошлое.
+2. `Changes.checkCampaigns(Timestamp=T)` — список изменённых кампаний. Текущий API возвращает `Campaigns=[{"CampaignId":..., "ChangesIn":[...]}]`; обёртка нормализует это в `Ids=[...]` для обратной совместимости инструментов.
+3. Если на шаге 2 список непустой, вызывается `Changes.check(CampaignIds=[...], Timestamp=T, FieldNames=[CampaignIds, AdGroupIds, AdIds])` батчами по 1000 ID. При необходимости статистики используется поле `CampaignsStat`. Timestamp не дальше 7 дней в прошлое.
 
 ### Сценарий C. Отчёт по статистике (1–3 раза в неделю)
 

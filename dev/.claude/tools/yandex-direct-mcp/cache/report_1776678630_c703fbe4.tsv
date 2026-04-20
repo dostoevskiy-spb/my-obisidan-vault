@@ -1,0 +1,5 @@
+Date	CampaignId	CampaignName	AdGroupId	AdGroupName	AdId	AdFormat	Impressions	Clicks	Cost	Conversions	ConversionRate
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	--	--	--	IMAGE	518	31	0.00	0	--
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	--	--	--	IMAGE	146	15	0.00	0	--
+2026-04-20	709179711	МК_ТЮМЕНЬ_КОНКУРЕНТЫ_СРА	--	--	--	TEXT	12	3	0.00	1	33.33
+2026-04-20	709179545	МК_ПЕРМЬ_КОНКУРЕНТЫ_СРА	--	--	--	TEXT	6	0	0.00	0	--

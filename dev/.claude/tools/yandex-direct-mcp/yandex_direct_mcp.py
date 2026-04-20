@@ -1244,6 +1244,53 @@ def _to_iso_utc(ts: int | str) -> str:
     return datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+CHANGE_CHECK_FIELDS = {"CampaignIds", "AdGroupIds", "AdIds", "CampaignsStat"}
+CHANGE_CHECK_FIELD_ALIASES = {"Statistics": "CampaignsStat"}
+
+
+def _changed_campaign_ids(result: dict) -> list[int]:
+    """Normalize old/new checkCampaigns response shapes to plain campaign IDs."""
+    raw = result.get("Ids")
+    if raw is None:
+        raw = result.get("Campaigns", [])
+
+    ids: list[int] = []
+    for item in raw or []:
+        if isinstance(item, int):
+            ids.append(item)
+        elif isinstance(item, dict):
+            cid = item.get("CampaignId") or item.get("Id")
+            if cid is not None:
+                ids.append(int(cid))
+    return ids
+
+
+def _change_check_fields(field_names: list[str] | None) -> tuple[list[str], list[str]]:
+    """Normalize deprecated field aliases from earlier tool descriptions."""
+    requested = field_names or ["CampaignIds", "AdGroupIds", "AdIds"]
+    fields: list[str] = []
+    warnings: list[str] = []
+    for name in requested:
+        if name in CHANGE_CHECK_FIELD_ALIASES:
+            replacement = CHANGE_CHECK_FIELD_ALIASES[name]
+            warnings.append(f"{name} устарело; использую {replacement}")
+            name = replacement
+        if name == "TargetIds":
+            warnings.append("TargetIds больше не поддерживается changes.check и пропущен")
+            continue
+        if name not in CHANGE_CHECK_FIELDS:
+            warnings.append(f"{name} не поддерживается changes.check и пропущен")
+            continue
+        if name not in fields:
+            fields.append(name)
+    if not fields:
+        raise RuntimeError(
+            "Нет валидных FieldNames для changes.check. "
+            "Доступны: CampaignIds, AdGroupIds, AdIds, CampaignsStat"
+        )
+    return fields, warnings
+
+
 @mcp.tool()
 def direct_changes_dictionaries(timestamp: str | int | None = None) -> dict:
     """Проверка, менялись ли глобальные справочники (changes.checkDictionaries).
@@ -1276,12 +1323,16 @@ def direct_changes_campaigns(timestamp: str | int) -> dict:
     Используй как шаг 2 в аудите: взял список изменённых Ids — потом
     direct_changes_check(campaign_ids=...) для подробностей.
 
-    Ответ: {"_units": {...}, "Timestamp": "...", "Ids": [...campaign_ids...],
-            "ModifiedCampaigns": [...]}.
+    API может вернуть кампании как Campaigns=[{"CampaignId":..., "ChangesIn":[...]}].
+    Инструмент нормализует это в Ids=[...], сохраняя исходные поля ответа.
+
+    Ответ: {"_units": {...}, "Timestamp": "...", "Campaigns": [...],
+            "Ids": [...campaign_ids...]}.
     """
     data = _call("changes", "checkCampaigns",
                  {"Timestamp": _to_iso_utc(timestamp)})
-    return {"_units": _units.snapshot(), **data.get("result", {})}
+    result = data.get("result", {})
+    return {"_units": _units.snapshot(), **result, "Ids": _changed_campaign_ids(result)}
 
 
 @mcp.tool()
@@ -1296,22 +1347,26 @@ def direct_changes_check(
       из direct_changes_campaigns().Ids.
     timestamp    (обязательно): ISO8601 UTC или Unix seconds.
       ⚠️ Не старше 7 суток назад.
-    field_names: подмножество ['CampaignIds','AdGroupIds','AdIds','TargetIds','Statistics'].
-      По умолчанию ['CampaignIds','AdGroupIds','AdIds','TargetIds'] — без Statistics,
-      т. к. это дороже и возвращает объёмные списки.
+    field_names: подмножество ['CampaignIds','AdGroupIds','AdIds','CampaignsStat'].
+      По умолчанию ['CampaignIds','AdGroupIds','AdIds'].
+      Старое имя Statistics автоматически заменяется на CampaignsStat,
+      старое TargetIds пропускается, потому что API его больше не принимает.
 
     Ответ содержит массивы Ids изменённых сущностей каждого уровня.
 
     Ответ: {"_units": {...}, "Timestamp": "...", "Campaigns":[...],
-            "AdGroups":[...], "Ads":[...], "Targets":[...]}.
+            "AdGroups":[...], "Ads":[...], "CampaignsStat":[...]}.
     """
-    fields = field_names or ["CampaignIds", "AdGroupIds", "AdIds", "TargetIds"]
+    fields, warnings = _change_check_fields(field_names)
     data = _call("changes", "check", {
         "CampaignIds": campaign_ids,
         "Timestamp": _to_iso_utc(timestamp),
         "FieldNames": fields,
     })
-    return _wrap_dict(data.get("result", {}), "changes_check")
+    result = _wrap_dict(data.get("result", {}), "changes_check")
+    if warnings:
+        result["_warnings"] = warnings
+    return result
 
 
 @mcp.tool()
@@ -1342,11 +1397,12 @@ def direct_audit_changes_since(
 
     dict_data = _call("changes", "checkDictionaries", {"Timestamp": iso})
     camp_data = _call("changes", "checkCampaigns", {"Timestamp": iso})
-    changed_camp_ids = camp_data.get("result", {}).get("Ids", [])
+    camp_result = camp_data.get("result", {})
+    changed_camp_ids = _changed_campaign_ids(camp_result)
+    fields, warnings = _change_check_fields(field_names)
 
     diffs: list[dict] = []
     if changed_camp_ids:
-        fields = field_names or ["CampaignIds", "AdGroupIds", "AdIds", "TargetIds"]
         for i in range(0, len(changed_camp_ids), 1000):
             batch = changed_camp_ids[i:i + 1000]
             _units.check_reserve()
@@ -1362,6 +1418,9 @@ def direct_audit_changes_since(
         "dictionaries": dict_data.get("result", {}),
         "changed_campaign_ids": changed_camp_ids,
         "changed_campaign_count": len(changed_camp_ids),
+        "changed_campaigns": camp_result.get("Campaigns", []),
+        "field_names_used": fields,
+        "warnings": warnings,
         "diffs": diffs,
     }
 

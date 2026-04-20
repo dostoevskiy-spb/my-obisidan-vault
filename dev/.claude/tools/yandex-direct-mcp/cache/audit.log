@@ -155,3 +155,57 @@
 {"ts": 1776675703.0889385, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776675716.875926, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 565, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776675703_886e0c2b.tsv", "ok": true}
 {"ts": 1776675730.8539686, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 635, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776675716_1b35fb99.tsv", "ok": true}
+{"ts": 1776677644.8727446, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776677652.2286205, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 12, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776677650_47fc1a91.tsv", "ok": true}
+{"ts": 1776677677.538234, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677678.62013, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776677758.8402433, "service": "changes", "method": "check", "error": {"request_id": "4240267474051081044", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: CampaignIds, AdGroupIds, AdIds, CampaignsStat", "error_string": "Некорректный запрос"}}
+{"ts": 1776677759.6607544, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776677760.36544, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677771.969912, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776677772.9618955, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776677774.1333265, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677786.6966894, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677787.3371506, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677788.2745492, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677789.0879872, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677795.033699, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677795.7066634, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677796.6257432, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776677797.4221742, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677807.5197458, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677808.3350196, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677809.0453176, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677809.9646354, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677816.2912343, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677817.055104, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677817.7803962, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677818.5559602, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677827.747355, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677829.2938805, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677829.9771824, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677830.768615, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677837.3511763, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677838.1962588, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677838.9882085, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677839.8471615, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677850.7917519, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677851.8159535, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677852.7372308, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776677853.6588666, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776678574.9193714, "service": "campaigns", "method": "get", "error": {"request_id": "7638676878308287340", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: BlockedIps, ExcludedSites, Currency, DailyBudget, Notification, EndDate, Funds, ClientInfo, Id, Name, NegativeKeywords, RepresentedBy, StartDate, CreateTime, Statistics, State, Status, StatusPayment, StatusClarification, SourceId, TimeTargeting, TimeZone, Type", "error_string": "Некорректный запрос"}}
+{"ts": 1776678575.6559727, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776678586.3378081, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776678587.2607555, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776678588.69119, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 2, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678587_b36b040f.tsv", "ok": true}
+{"ts": 1776678606.068123, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776678607.0224617, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776678608.1202042, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776678608.8750484, "service": "bidmodifiers", "method": "get", "error": {"request_id": "8767595127690062898", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Levels", "error_string": "Некорректный запрос"}}
+{"ts": 1776678630.4950907, "service": "reports", "report_type": "ADGROUP_PERFORMANCE_REPORT", "rows": 2, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678629_8ebea8dd.tsv", "ok": true}
+{"ts": 1776678631.9673378, "service": "reports", "report_type": "AD_PERFORMANCE_REPORT", "rows": 4, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678630_c703fbe4.tsv", "ok": true}
+{"ts": 1776678633.485341, "service": "reports", "report_type": "CRITERIA_PERFORMANCE_REPORT", "rows": 4, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678631_4a936910.tsv", "ok": true}
+{"ts": 1776678636.2447457, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 28, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678633_7e1092ff.tsv", "ok": true}
+{"ts": 1776678656.0559812, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 11, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678654_378678cc.tsv", "ok": true}
+{"ts": 1776678657.5051904, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 118, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678656_6c6e5b85.tsv", "ok": true}
+{"ts": 1776678658.937905, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 134, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776678657_6dc2763d.tsv", "ok": true}
