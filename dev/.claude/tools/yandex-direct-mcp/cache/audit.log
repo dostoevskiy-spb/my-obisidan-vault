@@ -233,3 +233,16 @@
 {"ts": 1776679748.2978425, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 38, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776679734_87265c7f.tsv", "ok": true}
 {"ts": 1776679762.5277698, "service": "reports", "report_type": "CRITERIA_PERFORMANCE_REPORT", "rows": 800, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776679748_14ecbac4.tsv", "ok": true}
 {"ts": 1776679776.2051642, "service": "reports", "report_type": "CUSTOM_REPORT", "rows": 2732, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776679762_e97f75bf.tsv", "ok": true}
+{"ts": 1776683030.3221242, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683031.14345, "service": "adgroups", "method": "get", "error": {"request_id": "4142212155022285390", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776683031.8598566, "service": "ads", "method": "get", "error": {"request_id": "1607312769380984051", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776683032.5909593, "service": "keywords", "method": "get", "error": {"request_id": "7418612408687091182", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776683033.407525, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776683034.0618186, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776683034.9671824, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683048.3754215, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683066.7995675, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683067.6647902, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683068.466581, "service": "campaigns", "method": "get", "error": {"request_id": "7932336334086769092", "error_code": 8000, "error_detail": "Элемент массива SelectionCriteria.Types содержит неверное значение перечисления, ожидается одно из значений: TEXT_CAMPAIGN, MOBILE_APP_CAMPAIGN, DYNAMIC_TEXT_CAMPAIGN, CPM_BANNER_CAMPAIGN, SMART_CAMPAIGN, UNIFIED_CAMPAIGN", "error_string": "Некорректный запрос"}}
+{"ts": 1776683076.5708852, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776683077.648852, "service": "campaigns", "method": "get", "units": null, "ok": true}
