@@ -86,7 +86,23 @@
       "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/catalog/teplicy/arochnye/teplitsa-azt-premium/)",
       "Bash(curl -sS -o /dev/null -w \"tyumen: %{http_code}\\\\n\" -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)",
       "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/tyumen/)",
-      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/)"
+      "Bash(curl -sS -A \"Mozilla/5.0\" https://azt-teplica.ru/)",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' -A 'Mozilla/5.0 \\(recheck\\)' 'https://azt-teplica.ru/ekb/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' -A 'Mozilla/5.0 \\(recheck\\)' 'https://azt-teplica.ru/izh/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -o /dev/null -w 'thank.php HTTP: %{http_code}\\\\n' -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/thank.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/thank.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -o /dev/null -w 'tyumen HTTP: %{http_code}\\\\n' -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/tyumen/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/tyumen/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/catalog/teplicy/arochnye/teplitsa-azt-premium/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/ekb/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -H 'Cache-Control: no-cache' 'https://azt-teplica.ru/sitemap-files.xml?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -o /dev/null -w 'thank.php: HTTP=%{http_code}\\\\n' 'https://azt-teplica.ru/thank.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS 'https://azt-teplica.ru/thank.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS -o /dev/null -w '404.php: HTTP=%{http_code}\\\\n' 'https://azt-teplica.ru/404.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS 'https://azt-teplica.ru/404.php?_=__TRACKED_VAR__')",
+      "Bash(curl -sS 'https://azt-teplica.ru/privacy/?_=__TRACKED_VAR__')",
+      "mcp__chrome-devtools__lighthouse_audit"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache"
