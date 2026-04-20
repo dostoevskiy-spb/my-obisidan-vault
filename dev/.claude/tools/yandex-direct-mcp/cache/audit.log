@@ -148,3 +148,10 @@
 {"ts": 1776611206.4538379, "service": "dictionaries", "method": "get", "units": null, "ok": true}
 {"ts": 1776611317.7727919, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 172, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776611315_b8865e05.tsv", "ok": true}
 {"ts": 1776626194.7480948, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 10, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776626186_a41cf91b.tsv", "ok": true}
+{"ts": 1776675299.589972, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776675306.4656482, "service": "clients", "method": "get", "units": null, "ok": true}
+{"ts": 1776675674.6929595, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 34, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776675672_764afa2f.tsv", "ok": true}
+{"ts": 1776675676.0156324, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776675703.0889385, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776675716.875926, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 565, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776675703_886e0c2b.tsv", "ok": true}
+{"ts": 1776675730.8539686, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 635, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776675716_1b35fb99.tsv", "ok": true}
