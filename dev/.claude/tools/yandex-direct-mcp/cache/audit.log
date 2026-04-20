@@ -246,3 +246,8 @@
 {"ts": 1776683068.466581, "service": "campaigns", "method": "get", "error": {"request_id": "7932336334086769092", "error_code": 8000, "error_detail": "Элемент массива SelectionCriteria.Types содержит неверное значение перечисления, ожидается одно из значений: TEXT_CAMPAIGN, MOBILE_APP_CAMPAIGN, DYNAMIC_TEXT_CAMPAIGN, CPM_BANNER_CAMPAIGN, SMART_CAMPAIGN, UNIFIED_CAMPAIGN", "error_string": "Некорректный запрос"}}
 {"ts": 1776683076.5708852, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776683077.648852, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776686713.3063452, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776686718.243152, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 8, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776686714_2714a7e7.tsv", "ok": true}
+{"ts": 1776686718.9625688, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776686719.8102136, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776686720.5576339, "service": "changes", "method": "check", "units": null, "ok": true}
