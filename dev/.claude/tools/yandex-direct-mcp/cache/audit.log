@@ -684,3 +684,6 @@
 {"ts": 1776772004.5851297, "service": "keywords", "method": "get", "units": null, "ok": true}
 {"ts": 1776772175.1428692, "service": "keywords", "method": "get", "units": null, "ok": true}
 {"ts": 1776772195.2686288, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776772472.4710882, "service": "campaigns", "method": "get", "error": {"request_id": "2306931890426479538", "error_code": 8000, "error_detail": "Элемент массива SmartCampaignFieldNames содержит неверное значение перечисления, ожидается одно из значений: CounterId, Settings, BiddingStrategy, PriorityGoals, TrackingParams, AttributionModel, PackageBiddingStrategy, CanBeUsedAsPackageBiddingStrategySource", "error_string": "Некорректный запрос"}}
+{"ts": 1776772477.1930575, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776772522.203342, "service": "adgroups", "method": "get", "units": null, "ok": true}
