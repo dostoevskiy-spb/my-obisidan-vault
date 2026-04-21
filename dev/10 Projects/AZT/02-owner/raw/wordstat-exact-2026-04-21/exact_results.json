@@ -2218,5 +2218,65 @@
     "exact": "!теплицы !прямостенные !домиком",
     "shows": 24,
     "source": "wordstat_report_1776758067_e41b3ca7.json"
+  },
+  "371": {
+    "phrase": "теплица прямостенная ширина 4 метра",
+    "exact": "!теплица !прямостенная !ширина !4 !метра",
+    "shows": 10,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "372": {
+    "phrase": "теплица митлайдера",
+    "exact": "!теплица !митлайдера",
+    "shows": 883,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "373": {
+    "phrase": "теплица карбонатная",
+    "exact": "!теплица !карбонатная",
+    "shows": 108,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "374": {
+    "phrase": "теплица из поликарбоната 3х4 прямостенная",
+    "exact": "!теплица !из !поликарбоната !3х4 !прямостенная",
+    "shows": 34,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "375": {
+    "phrase": "теплица 8 на 4 купить",
+    "exact": "!теплица !8 !на !4 !купить",
+    "shows": 48,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "376": {
+    "phrase": "теплица 5 метров шириной",
+    "exact": "!теплица !5 !метров !шириной",
+    "shows": 30,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "377": {
+    "phrase": "теплица 2 5 на 5",
+    "exact": "!теплица !2 !5 !на !5",
+    "shows": 1594,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "378": {
+    "phrase": "теплица 5 3",
+    "exact": "!теплица !5 !3",
+    "shows": 2649,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "379": {
+    "phrase": "теплица 2 4",
+    "exact": "!теплица !2 !4",
+    "shows": 5466,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
+  },
+  "380": {
+    "phrase": "парник шалаш",
+    "exact": "!парник !шалаш",
+    "shows": 39,
+    "source": "wordstat_report_1776758114_e34bf4c6.json"
   }
 }
