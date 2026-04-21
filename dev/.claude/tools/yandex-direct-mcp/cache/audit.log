@@ -688,3 +688,7 @@
 {"ts": 1776772477.1930575, "service": "campaigns", "method": "get", "units": null, "ok": true}
 {"ts": 1776772522.203342, "service": "adgroups", "method": "get", "units": null, "ok": true}
 {"ts": 1776782374.4311135, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776802139.3373828, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776802140.6436117, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776802141.657666, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776802142.8909867, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
