@@ -692,3 +692,285 @@
 {"ts": 1776802140.6436117, "api": "v4", "method": "GetWordstatReportList", "ok": true}
 {"ts": 1776802141.657666, "api": "v4", "method": "GetWordstatReport", "ok": true}
 {"ts": 1776802142.8909867, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776862583.3586721, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776862584.4140708, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776862587.8789883, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 25, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776862586_8096f453.tsv", "ok": true}
+{"ts": 1776862618.4520063, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776883140.8530185, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776883141.8743396, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883143.0507107, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776883144.4569983, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776883158.621047, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776883159.5992165, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883160.990839, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776883162.0313861, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776883174.8656952, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776883176.08846, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883182.3424163, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883183.9692857, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776883185.0339923, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776883245.9327798, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776883246.9298053, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883252.906533, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776883254.1011784, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776883255.1408439, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884570.995425, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884571.928903, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884573.2095852, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884574.27453, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884606.9368923, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884608.475528, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884614.6945474, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884615.959859, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884617.0249307, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884636.6283863, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884637.7586486, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884638.7822826, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884639.9181554, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884670.4767132, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884671.4881058, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884677.5976045, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884678.9219394, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884679.851595, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884743.6395586, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884744.5810478, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884750.6225648, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884751.9421496, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884753.168339, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884784.5017674, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884785.4848237, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884791.4616427, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884792.5926285, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884793.9233308, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884815.043103, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884816.141356, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884822.3474634, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884823.5336099, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884824.7532752, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884855.7678869, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884856.7893622, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884862.8389206, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884863.9841008, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884864.9964452, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884884.153047, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884885.153337, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884886.1092966, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884887.2678337, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884908.1418788, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884909.1282558, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884915.1541088, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884916.122983, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884917.105881, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884937.0778549, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884938.3067725, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884944.3398728, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884945.4132533, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884946.5973449, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884965.294741, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884966.3356657, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884972.5161712, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884973.789096, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884974.8023193, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776884990.517568, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776884991.6054513, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884997.7134323, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776884998.8294709, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776884999.9507034, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885015.8248022, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885016.9480975, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885023.197463, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885024.387294, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885025.2719088, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885045.4772637, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885046.5465329, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885052.553154, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885053.9174545, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885054.8943007, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885070.9178562, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885071.9377484, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885078.116538, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885079.194781, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885080.237381, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885096.546051, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885097.6382852, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885103.5902133, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885104.7277458, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885106.1504035, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885125.9273977, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885126.9195232, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885128.1548984, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885129.387105, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885145.8478665, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885147.0982897, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885148.3103366, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885149.485469, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776885220.9979036, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776885221.8955824, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885237.300765, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776885238.2623787, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776885239.1541178, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886277.062197, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886278.1459754, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886279.583329, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886280.5413704, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886282.136364, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886283.440183, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886284.6452188, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886285.6715775, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886287.336686, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886288.2389884, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886294.1622045, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886295.4484034, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886296.6042523, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886319.8954113, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886320.968873, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886326.961676, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886328.0599198, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886329.226674, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886337.8155656, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886338.9417937, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886344.9127603, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886345.9548516, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886347.0740478, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776886348.1740174, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1776886349.2905312, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886355.3929465, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1776886356.5778868, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1776886357.5469024, "api": "v4", "method": "DeleteWordstatReport", "ok": true}
+{"ts": 1776940414.3421414, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 72, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776940411_fcbf044a.tsv", "ok": true}
+{"ts": 1776942120.2299778, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776942122.0184717, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776942122.954622, "service": "negativekeywordsharedsets", "method": "get", "units": null, "ok": true}
+{"ts": 1776942123.7376525, "service": "bidmodifiers", "method": "get", "error": {"request_id": "6474894801923482213", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр Levels", "error_string": "Некорректный запрос"}}
+{"ts": 1776942162.7193367, "service": "dictionaries", "method": "get", "units": null, "ok": true}
+{"ts": 1776942166.5378668, "service": "bidmodifiers", "method": "get", "error": {"request_id": "9182016337912930331", "error_code": 8000, "error_detail": "Элемент массива MobileAdjustmentFieldNames содержит неверное значение перечисления, ожидается одно из значений: BidModifier, OperatingSystemType", "error_string": "Некорректный запрос"}}
+{"ts": 1776942183.4221792, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776942495.0277312, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776942497.2781193, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776942499.861961, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776942501.104201, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776942502.541884, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776945587.9259362, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776946140.3923388, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776946141.3190331, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776946979.1556685, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776946989.3568351, "service": "campaigns", "method": "get", "error": {"request_id": "8207789988735010067", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: BlockedIps, ExcludedSites, Currency, DailyBudget, Notification, EndDate, Funds, ClientInfo, Id, Name, NegativeKeywords, RepresentedBy, StartDate, CreateTime, Statistics, State, Status, StatusPayment, StatusClarification, SourceId, TimeTargeting, TimeZone, Type", "error_string": "Некорректный запрос"}}
+{"ts": 1776946990.6884258, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776946998.783013, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947008.2641761, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947014.9338646, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947015.763336, "service": "negativekeywordsharedsets", "method": "get", "units": null, "ok": true}
+{"ts": 1776947016.7031848, "service": "bidmodifiers", "method": "get", "error": {"request_id": "3706711525681791799", "error_code": 8000, "error_detail": "Элемент массива MobileAdjustmentFieldNames содержит неверное значение перечисления, ожидается одно из значений: BidModifier, OperatingSystemType", "error_string": "Некорректный запрос"}}
+{"ts": 1776947020.8718998, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776947027.0530448, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776947028.2528646, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776947032.91865, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776947034.0752952, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776947032_7b5f3e3f.tsv", "ok": true}
+{"ts": 1776947042.8252912, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947044.5431318, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947046.195379, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776947047.62717, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776957822.3237329, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776957824.7064023, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776957826.1407118, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776962457.7058065, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776962458.637415, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776962459.7434244, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776962479.4516907, "service": "bidmodifiers", "method": "get", "error": {"request_id": "6912530652714528700", "error_code": 8000, "error_detail": "Элемент массива MobileAdjustmentFieldNames содержит неверное значение перечисления, ожидается одно из значений: BidModifier, OperatingSystemType", "error_string": "Некорректный запрос"}}
+{"ts": 1776962486.8095944, "service": "bidmodifiers", "method": "get", "error": {"request_id": "8583674485008822121", "error_code": 8000, "error_detail": "Элемент массива DemographicsAdjustmentFieldNames содержит неверное значение перечисления, ожидается одно из значений: Gender, Age, BidModifier, Enabled", "error_string": "Некорректный запрос"}}
+{"ts": 1776962494.4698098, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776962512.0087075, "service": "retargetinglists", "method": "get", "units": null, "ok": true}
+{"ts": 1776962526.8059616, "service": "audiencetargets", "method": "get", "units": null, "ok": true}
+{"ts": 1776962536.1871903, "service": "sitelinks", "method": "get", "units": null, "ok": true}
+{"ts": 1776962546.7391088, "service": "adextensions", "method": "get", "error": {"request_id": "4650243529199031247", "error_code": 8000, "error_detail": "Отсутствует обязательный параметр SelectionCriteria", "error_string": "Некорректный запрос"}}
+{"ts": 1776962552.728374, "service": "adextensions", "method": "get", "units": null, "ok": true}
+{"ts": 1776962567.6778297, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776962568.6847336, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776962569.944357, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776962580.2911348, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776962581.3293633, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776962582.3338308, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776962612.7343192, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776963918.6884725, "service": "changes", "method": "check", "error": {"request_id": "346738185719657436", "error_code": 8000, "error_detail": "Элемент массива FieldNames содержит неверное значение перечисления, ожидается одно из значений: CampaignIds, AdGroupIds, AdIds, CampaignsStat", "error_string": "Некорректный запрос"}}
+{"ts": 1776963921.250621, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776963923.6160917, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776963925.2058647, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776964547.7526264, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 5562, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776964533_2825bc53.tsv", "ok": true}
+{"ts": 1776977694.0198052, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 9717, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776977679_f5ae4902.tsv", "ok": true}
+{"ts": 1776982831.892037, "service": "reports", "status": 400, "body": "{\"error\":{\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_code\":\"8000\",\"request_id\":\"4588264369406847815\",\"error_string\":\"Некорректный запрос\"}}"}
+{"ts": 1776982851.6366029, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 1303, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776982848_0572a147.tsv", "ok": true}
+{"ts": 1776982876.448846, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776983629.281159, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776983630.4076793, "service": "keywords", "method": "get", "error": {"request_id": "5831164781943938934", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983631.6334617, "service": "keywords", "method": "get", "error": {"request_id": "7369187747609097401", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983632.5312629, "service": "keywords", "method": "get", "error": {"request_id": "2689640281302684258", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983633.3716364, "service": "keywords", "method": "get", "error": {"request_id": "4151008673189507455", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983634.1908662, "service": "keywords", "method": "get", "error": {"request_id": "3759152816387330205", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983635.08845, "service": "keywords", "method": "get", "error": {"request_id": "4375340751589081379", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983636.0885916, "service": "keywords", "method": "get", "error": {"request_id": "6473332056614595659", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983636.955413, "service": "keywords", "method": "get", "error": {"request_id": "7342913317749120668", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983637.8617945, "service": "keywords", "method": "get", "error": {"request_id": "6756322006862286649", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983646.47942, "service": "keywords", "method": "get", "error": {"request_id": "3968863931545207270", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983647.4041944, "service": "keywords", "method": "get", "error": {"request_id": "7778782502953043474", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983648.2201545, "service": "keywords", "method": "get", "error": {"request_id": "3379394511217598434", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983649.244056, "service": "keywords", "method": "get", "error": {"request_id": "1802778646591256903", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983657.5327685, "service": "keywords", "method": "get", "error": {"request_id": "4163653425735217090", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983658.4619849, "service": "keywords", "method": "get", "error": {"request_id": "138979746012563086", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983659.3560917, "service": "keywords", "method": "get", "error": {"request_id": "8208337897124139528", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983660.4064512, "service": "keywords", "method": "get", "error": {"request_id": "3795062356372102128", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776983669.8162143, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776983683.0726287, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776983685.006375, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776983686.71547, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984609.436522, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776984628.5233324, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984626_27e6c906.tsv", "ok": true}
+{"ts": 1776984629.5472405, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1776984630.5758717, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1776984631.6955564, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1776984643.7791793, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984642_9ac975f3.tsv", "ok": true}
+{"ts": 1776984645.3053772, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984643_845d3669.tsv", "ok": true}
+{"ts": 1776984652.384012, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984651_b6d90343.tsv", "ok": true}
+{"ts": 1776984653.847825, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 7, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984652_3d8603bc.tsv", "ok": true}
+{"ts": 1776984671.4276364, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776984672.3491418, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984681.7083433, "service": "adgroups", "method": "get", "units": null, "ok": true}
+{"ts": 1776984682.4119427, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984681_764ddb2c.tsv", "ok": true}
+{"ts": 1776984685.2920082, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 2, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984682_d31e109b.tsv", "ok": true}
+{"ts": 1776984700.613545, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776984716.0827737, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776984720.3121548, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984718_db2429ca.tsv", "ok": true}
+{"ts": 1776984736.386928, "service": "reports", "status": 400, "body": "{\"error\":{\"error_code\":\"8000\",\"error_detail\":\"Operator содержит неверное значение перечисления\",\"request_id\":\"3380126729223574287\",\"error_string\":\"Некорректный запрос\"}}"}
+{"ts": 1776984738.714534, "service": "reports", "status": 400, "body": "{\"error\":{\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_code\":\"8000\",\"request_id\":\"7900466621806394825\",\"error_string\":\"Некорректный запрос\"}}"}
+{"ts": 1776984741.0413437, "service": "reports", "status": 400, "body": "{\"error\":{\"error_string\":\"Некорректный запрос\",\"error_code\":\"8000\",\"request_id\":\"7331992141262769986\",\"error_detail\":\"Operator содержит неверное значение перечисления\"}}"}
+{"ts": 1776984742.5967069, "service": "reports", "status": 400, "body": "{\"error\":{\"error_string\":\"Некорректный запрос\",\"request_id\":\"5185857981880486912\",\"error_code\":\"8000\",\"error_detail\":\"Operator содержит неверное значение перечисления\"}}"}
+{"ts": 1776984762.015363, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 9717, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984747_9b3beec5.tsv", "ok": true}
+{"ts": 1776984831.8413403, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 1303, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984817_25d58ff6.tsv", "ok": true}
+{"ts": 1776984838.6026416, "service": "reports", "status": 400, "body": "{\"error\":{\"request_id\":\"8087096601509536183\",\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_code\":\"8000\",\"error_string\":\"Некорректный запрос\"}}"}
+{"ts": 1776984840.345845, "service": "reports", "status": 400, "body": "{\"error\":{\"error_string\":\"Некорректный запрос\",\"request_id\":\"7429480228921609663\",\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_code\":\"8000\"}}"}
+{"ts": 1776984842.5461056, "service": "reports", "status": 400, "body": "{\"error\":{\"error_code\":\"8000\",\"request_id\":\"2152501541012286842\",\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_string\":\"Некорректный запрос\"}}"}
+{"ts": 1776984843.7244103, "service": "reports", "status": 400, "body": "{\"error\":{\"request_id\":\"9092786840931541765\",\"error_code\":\"8000\",\"error_string\":\"Некорректный запрос\",\"error_detail\":\"Operator содержит неверное значение перечисления\"}}"}
+{"ts": 1776984869.0543957, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 13, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776984867_250c4893.tsv", "ok": true}
+{"ts": 1776984881.7683706, "service": "bidmodifiers", "method": "get", "units": null, "ok": true}
+{"ts": 1776984882.7022636, "service": "retargetinglists", "method": "get", "units": null, "ok": true}
+{"ts": 1776984899.993561, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984902.2685373, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984904.3998225, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984916.2175608, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1776984917.2012668, "service": "keywords", "method": "get", "error": {"request_id": "4274022235110213071", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776984918.0798624, "service": "keywords", "method": "get", "error": {"request_id": "1498127806725127845", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776984918.9851837, "service": "keywords", "method": "get", "error": {"request_id": "2031922080231141283", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1776984920.8674371, "service": "ads", "method": "get", "units": null, "ok": true}
+{"ts": 1776984928.7106817, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984930.398254, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984943.3250425, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984945.2766147, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984953.1635346, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984954.3170178, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984955.5933082, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776984956.8334255, "service": "keywords", "method": "get", "units": null, "ok": true}
+{"ts": 1776985337.5662084, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 72, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1776985335_7be216d8.tsv", "ok": true}
+{"ts": 1777014465.0853682, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 53, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1777014463_61335530.tsv", "ok": true}
+{"ts": 1777017114.3174796, "service": "reports", "report_type": "CAMPAIGN_PERFORMANCE_REPORT", "rows": 62, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1777017112_aa0008d9.tsv", "ok": true}
+{"ts": 1777017115.2942135, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
+{"ts": 1777017116.305932, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
+{"ts": 1777017117.3401241, "service": "changes", "method": "check", "units": null, "ok": true}

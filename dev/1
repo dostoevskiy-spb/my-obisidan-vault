@@ -530,3 +530,5 @@ nohup: ввод игнорируется, вывод добавляется в '
 [27654:0422/080854.216503:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 17104896 times!
 [27654:0422/081805.811875:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 17170432 times!
 [27654:0422/081805.811875:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 17170432 times!
+[27544:0422/151414.047569:FATAL:content/browser/gpu/gpu_data_manager_impl_private.cc:415] GPU process isn't usable. Goodbye.
+[27544:0422/151414.047569:FATAL:content/browser/gpu/gpu_data_manager_impl_private.cc:415] GPU process isn't usable. Goodbye.

@@ -111,7 +111,13 @@
       "mcp__yandex-direct__read_cached",
       "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(110, 120\\)]\")",
       "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(140, 150\\)]\")",
-      "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(170, 180\\)]\")"
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/tmp/phrases_all.json'\\)\\); [print\\(d[i]['exact']\\) for i in range\\(170, 180\\)]\")",
+      "Bash(curl -sS 'https://azt-teplica.ru/sitemap-files.xml?_=__TRACKED_VAR__')",
+      "Bash(curl -sS 'https://azt-teplica.ru/ekb/?_=__TRACKED_VAR__')",
+      "Bash(curl -sS 'https://azt-teplica.ru/tmn/?_=__TRACKED_VAR__')",
+      "Bash(jq -r ' .text_indicator_to_statistics[] | . as $q | { query: $q.text_indicator.value, impressions: \\([$q.statistics[] | select\\(.field==\"IMPRESSIONS\"\\) | .value] | add // 0\\), clicks: \\([$q.statistics[] | select\\(.field==\"CLICKS\"\\) | .value] | add // 0\\), avg_show: \\([$q.statistics[] | select\\(.field==\"POSITION\"\\) | .value] | \\(add/length\\) // 0\\), avg_click: \\([$q.statistics[] | select\\(.field==\"CLICK_POSITION\"\\) | .value] | \\(add/length\\) // 0\\) } | [.query, .impressions, .clicks, .avg_show, .avg_click] | @tsv ' wc -l /tmp/azt_webmaster_queries_p1.tsv)",
+      "mcp__yandex-direct__find_keyword",
+      "Bash(npx -y @modelcontextprotocol/server-gdrive auth)"
     ],
     "additionalDirectories": [
       "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache",
