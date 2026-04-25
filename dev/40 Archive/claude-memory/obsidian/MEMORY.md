@@ -1,0 +1,18 @@
+- [User profile](user_profile.md) — Pavel, software developer, Bringo project
+- [Vault structure](project_vault_structure.md) — PARA+Zettelkasten+Kill-List+Alerts second brain
+- [OpenClaw setup](project_openclaw.md) — Separate workspace, drafts in "Бадян" project
+- [No plan for trivial](feedback_no_plan_for_trivial.md) — Just do small changes, don't plan them
+- [Use Obsidian CLI](feedback_use_obsidian_cli.md) — Prefer `obsidian` CLI over manual .md edits for vault operations
+- [Data flow pipeline](project_data_flow.md) — Session log collection from projects into vault (local /collect-sessions + server /digest)
+- [Multi-agent plan](project_multi_agent.md) — Future Telegram multi-agent: personal, work, recipes, events threads
+- [No test data](feedback_real_data_only.md) — Only real data in vault, never test entries
+- [Session protocol](feedback_session_protocol.md) — Always run startup protocol and update daily note
+- [AZT project](project_azt.md) — Помощь другу с сайтом azt-teplica.ru, SEO/GEO аудит и оптимизация
+- [Yandex Webmaster reference](reference_yandex_webmaster.md) — Сроки обновления данных (до 2 недель), связка с Метрикой, диагностика пустых данных
+- [Webmaster readonly](feedback_webmaster_readonly.md) — КРИТИЧНО: в Яндекс Вебмастере только read-only, никаких write-действий через MCP/API
+- [Yandex Direct billing](reference_yandex_direct_billing.md) — Где теряются деньги в Директе: антифрод не возвращает деньги за высокий bounce rate, только оплата за конверсии защищает от слива; Мастер Кампаний — отдельный раздел кабинета
+- [Agency partnership tone](feedback_agency_partnership_tone.md) — С агентствами работать как с союзниками; внутренние заметки фиксируют все нестыковки, официальные коммуникации — конструктивные
+- [AZT финансы](project_azt_finances.md) — AOV `88 000 ₽` (подтверждено 19.04.2026); CR и маржа — прикидки до уточнения; таймлайн подрядчиков в кабинете Директа
+- [Yandex Direct API limits](reference_yandex_direct_api_limits.md) — МК-кампании невидимы через `campaigns.get` v5; `changes.check` ограничен 7 сутками и не ловит создание МК
+- [AZT роль консультанта](feedback_azt_role_consultant.md) — Мы контроль качества, разработчик+SEO+PPC все на стороне Maximus Media. Формулировки: «попросить агентство», не «отдать разработчику»
+- [AZT поисковые кластеры](project_azt_search_clusters.md) — Капелька (13 конв, CPA 157 ₽, CR 87%) реально работает; арочные за 90 дней 0 конверсий, 0 показов >20; скидка/акция в 1,6× дороже капельки
