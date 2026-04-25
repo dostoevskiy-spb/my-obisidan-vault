@@ -3,8 +3,11 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-23_12-43_init-claude-md.md
 session_date: 2026-04-23
-tags: [session, raw, bringo]
-created: 2026-04-24
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

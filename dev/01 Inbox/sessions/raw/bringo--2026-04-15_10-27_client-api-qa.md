@@ -1,11 +1,13 @@
 ---
 type: session-log-raw
 project: bringo
-submodule: client-api
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-15_10-27_client-api-qa.md
 session_date: 2026-04-15
-tags: [session, qa, client-api, bugs]
-created: 2026-04-16
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

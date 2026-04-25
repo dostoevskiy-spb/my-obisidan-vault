@@ -3,8 +3,11 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-22_11-51_hubspot-crm-integration.md
 session_date: 2026-04-22
-tags: [session, raw, bringo]
-created: 2026-04-24
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

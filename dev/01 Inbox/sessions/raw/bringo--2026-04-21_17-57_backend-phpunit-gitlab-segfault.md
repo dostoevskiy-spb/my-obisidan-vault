@@ -3,8 +3,11 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-21_17-57_backend-phpunit-gitlab-segfault.md
 session_date: 2026-04-21
-tags: [session-log-raw, bringo, backend, gitlab-ci, phpunit]
-created: 2026-04-22
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

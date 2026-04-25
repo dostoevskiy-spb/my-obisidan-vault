@@ -974,3 +974,16 @@
 {"ts": 1777017115.2942135, "service": "changes", "method": "checkDictionaries", "units": null, "ok": true}
 {"ts": 1777017116.305932, "service": "changes", "method": "checkCampaigns", "units": null, "ok": true}
 {"ts": 1777017117.3401241, "service": "changes", "method": "check", "units": null, "ok": true}
+{"ts": 1777045103.4508126, "service": "reports", "report_type": "ADGROUP_PERFORMANCE_REPORT", "rows": 44, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1777045100_297ba962.tsv", "ok": true}
+{"ts": 1777045125.6607604, "service": "campaigns", "method": "get", "units": null, "ok": true}
+{"ts": 1777045126.4685466, "service": "adgroups", "method": "get", "error": {"request_id": "878074439634053149", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1777045127.2680976, "service": "adgroups", "method": "get", "error": {"request_id": "5043468693394051308", "error_code": 4001, "error_detail": "Превышено допустимое количество идентификаторов в массиве SelectionCriteria.CampaignIds", "error_string": "Неверно заданы параметры фильтрации SelectionCriteria"}}
+{"ts": 1777045141.4295366, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 247, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1777045138_4d9eaa8c.tsv", "ok": true}
+{"ts": 1777102026.4771094, "service": "reports", "status": 400, "body": "{\"error\":{\"request_id\":\"3227719580933624280\",\"error_string\":\"Некорректный запрос\",\"error_code\":\"8000\",\"error_detail\":\"Operator содержит неверное значение перечисления\"}}"}
+{"ts": 1777102028.5595067, "service": "reports", "status": 400, "body": "{\"error\":{\"error_string\":\"Некорректный запрос\",\"error_detail\":\"Operator содержит неверное значение перечисления\",\"error_code\":\"8000\",\"request_id\":\"6826363132514497952\"}}"}
+{"ts": 1777102040.9375646, "service": "reports", "report_type": "SEARCH_QUERY_PERFORMANCE_REPORT", "rows": 72, "path": "/home/pavel/dev/obsidian/dev/.claude/tools/yandex-direct-mcp/cache/report_1777102037_4ccb14a4.tsv", "ok": true}
+{"ts": 1777102332.6987605, "api": "v4", "method": "CreateNewWordstatReport", "ok": true}
+{"ts": 1777102333.7414374, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1777102339.6423833, "api": "v4", "method": "GetWordstatReportList", "ok": true}
+{"ts": 1777102340.9348366, "api": "v4", "method": "GetWordstatReport", "ok": true}
+{"ts": 1777102341.943486, "api": "v4", "method": "DeleteWordstatReport", "ok": true}

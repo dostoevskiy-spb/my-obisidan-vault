@@ -4,11 +4,10 @@ project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-13_16-07_openapi-spec-validation.md
 session_date: 2026-04-13
 tags:
-  - session
+  - session-log
+  - raw
   - bringo
-  - client-api
-  - openapi
-created: 2026-04-15
+created: 2026-04-26
 status: unprocessed
 ---
 

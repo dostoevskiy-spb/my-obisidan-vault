@@ -1,11 +1,13 @@
 ---
 type: session-log-raw
 project: bringo
-submodule: client-api, backend
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-09_15-18_api-webhook-relay-research.md
 session_date: 2026-04-09
-tags: [session-log-raw, bringo, webhook, redis, research]
-created: 2026-04-13
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

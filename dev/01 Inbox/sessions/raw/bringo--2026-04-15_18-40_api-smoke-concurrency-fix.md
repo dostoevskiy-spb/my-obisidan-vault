@@ -4,10 +4,10 @@ project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-15_18-40_api-smoke-concurrency-fix.md
 session_date: 2026-04-15
 tags:
-  - session
-  - session-log-raw
+  - session-log
+  - raw
   - bringo
-created: 2026-04-18
+created: 2026-04-26
 status: unprocessed
 ---
 

@@ -3,8 +3,11 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-22_16-26_backoffice-root-route-fix.md
 session_date: 2026-04-22
-tags: [session-log-raw, bringo, backoffice, laravel, nginx, filament]
-created: 2026-04-23
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

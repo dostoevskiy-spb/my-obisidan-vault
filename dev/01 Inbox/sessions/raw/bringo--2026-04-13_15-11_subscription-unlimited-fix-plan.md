@@ -1,11 +1,13 @@
 ---
 type: session-plan-raw
 project: bringo
-submodule: backend
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/plans/2026-04-13_15-11_subscription-unlimited-fix.md
 session_date: 2026-04-13
-tags: [session-plan-raw, bringo, subscription, enterprise, bugfix]
-created: 2026-04-20
+tags:
+  - session-plan
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

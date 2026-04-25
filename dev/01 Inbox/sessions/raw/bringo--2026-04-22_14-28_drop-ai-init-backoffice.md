@@ -3,10 +3,14 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-22_14-28_drop-ai-init-backoffice.md
 session_date: 2026-04-22
-tags: [session, raw, bringo]
-created: 2026-04-24
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
+
 
 # Сессия: Дроп ai/migration-ai, инит backoffice
 **Дата:** 2026-04-22 14:28

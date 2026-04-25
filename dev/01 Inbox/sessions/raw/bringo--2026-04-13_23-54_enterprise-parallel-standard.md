@@ -1,14 +1,13 @@
 ---
 type: session-log-raw
 project: bringo
-submodule: backend
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-13_23-54_enterprise-parallel-standard.md
 session_date: 2026-04-13
 tags:
-  - session-log-raw
+  - session-log
+  - raw
   - bringo
-  - backend
-created: 2026-04-14
+created: 2026-04-26
 status: unprocessed
 ---
 

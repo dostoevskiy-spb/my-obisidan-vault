@@ -3,8 +3,11 @@ type: session-log-raw
 project: bringo
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-08_16-17_redis-autowire-fix.md
 session_date: 2026-04-08
-tags: [session-log-raw, bringo, backend, redis, autowire]
-created: 2026-04-09
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 

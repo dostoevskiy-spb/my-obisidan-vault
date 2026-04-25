@@ -1,11 +1,13 @@
 ---
 type: session-log-raw
 project: bringo
-submodule: backend, shared-models, client-api
 source: /home/pavel/dev/www/bringo/bringo-co-uk/main/.claude/sessions/2026-04-09_14-06_enterprise-api-tokens.md
 session_date: 2026-04-09
-tags: [session-log-raw, bringo, enterprise, api-tokens, grpc]
-created: 2026-04-13
+tags:
+  - session-log
+  - raw
+  - bringo
+created: 2026-04-26
 status: unprocessed
 ---
 
